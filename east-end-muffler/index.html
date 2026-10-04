@@ -169,7 +169,7 @@ section[id] { scroll-margin-top: 64px; }
   <a class="btn alt" id="dir-btn" href="#" target="_blank" rel="noopener">Directions</a>
 </div>
 <main id="content"><div class="loading">Loading…</div></main>
-<footer><span id="foot-name"></span> · Content managed with SiteKeeper.</footer>
+<footer><span id="foot-name"></span></footer>
 <script>
 fetch('content.json', { cache: 'no-store' })
   .then(r => { if (!r.ok) throw 0; return r.json(); })

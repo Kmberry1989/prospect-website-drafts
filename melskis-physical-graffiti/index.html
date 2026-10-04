@@ -155,8 +155,7 @@ section[id] { scroll-margin-top: 64px; }
 <main id="content"><div class="loading">Loading&hellip;</div></main>
 <footer>
   <p id="foot-name"></p>
-  <p>Content managed with SiteKeeper.</p>
-</footer>
+  </footer>
 <script>
 fetch('content.json', { cache: 'no-store' })
   .then(r => { if (!r.ok) throw 0; return r.json(); })
