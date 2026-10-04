@@ -4,12 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Website Concept Drafts</title>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f1420; color: #e8ecf4; padding: 2rem 1rem; }
   .wrap { max-width: 1000px; margin: 0 auto; }
+  .topbar { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
   h1 { font-size: 1.8rem; margin-bottom: 0.4rem; }
   .sub { color: #9aa5b8; margin-bottom: 0.8rem; }
+  .auth { display: flex; align-items: center; gap: 0.6rem; }
+  .auth button { background: #1d2638; border: 1px solid #33415c; color: #e8ecf4; border-radius: 999px; padding: 0.45rem 1rem; font: inherit; font-size: 0.85rem; font-weight: 600; cursor: pointer; }
+  .auth button:hover { border-color: #4a5f8a; }
+  .auth .who { font-size: 0.8rem; color: #9aa5b8; }
+  .auth .dot { width: 8px; height: 8px; border-radius: 50%; background: #5c6578; display: inline-block; margin-right: 0.35rem; }
+  .auth .dot.on { background: #3ddc84; }
   .stats { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.4rem; }
   .stat { background: #161d2e; border: 1px solid #26314a; border-radius: 999px; padding: 0.35rem 0.85rem; font-size: 0.85rem; color: #b9c4d8; }
   .stat b { color: #fff; }
@@ -30,7 +40,6 @@
   .card textarea:focus { outline: none; border-color: #4a5f8a; }
   .card .go { display: inline-block; margin-top: 0.7rem; font-size: 0.85rem; color: #6ea8fe; font-weight: 600; text-decoration: none; }
   .card .go:hover { text-decoration: underline; }
-  /* calendar */
   .cal-wrap { background: #161d2e; border: 1px solid #26314a; border-radius: 12px; padding: 1.1rem 1.2rem; }
   .cal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem; }
   .cal-head button { background: #1d2638; border: 1px solid #33415c; color: #e8ecf4; border-radius: 8px; padding: 0.35rem 0.8rem; font-size: 1rem; cursor: pointer; }
@@ -63,10 +72,18 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>Website Concept Drafts</h1>
-  <p class="sub">One-page concept sites prepared for local businesses without a web presence.</p>
+  <div class="topbar">
+    <div>
+      <h1>Website Concept Drafts</h1>
+      <p class="sub">One-page concept sites prepared for local businesses without a web presence.</p>
+    </div>
+    <div class="auth" id="auth">
+      <span class="who" id="auth-status"><span class="dot" id="auth-dot"></span><span id="auth-text">Not signed in</span></span>
+      <button id="auth-btn">Sign in with Google</button>
+    </div>
+  </div>
   <div class="stats" id="stats"></div>
-  <p class="privacy">Pipeline and notes are saved only in this browser.</p>
+  <p class="privacy" id="sync-note">Sign in to sync your pipeline across devices. Otherwise everything is saved only in this browser.</p>
 
   <h2>Kokomo area</h2>
   <div class="grid" id="grid-kokomo"></div>
@@ -97,6 +114,16 @@
   <footer>Concepts prepared October 2026. Details shown are from public listings and verified business pages.</footer>
 </div>
 <script>
+/* Firebase config — Prospect Tracker project (prospect-tracker-9bb7f). */
+const firebaseConfig = {
+  apiKey: "AIzaSyCQETba-Gba5EWhAHBKVr_ttZZskJulLis",
+  authDomain: "prospect-tracker-9bb7f.firebaseapp.com",
+  projectId: "prospect-tracker-9bb7f",
+  storageBucket: "prospect-tracker-9bb7f.firebasestorage.app",
+  messagingSenderId: "860856535566",
+  appId: "1:860856535566:web:7362b7c2dad348a1464a5f"
+};
+
 const BUSINESSES = [
   { id:'jerry-love-auto', name:'Jerry Love Auto Repair', meta:'Auto repair · 218 W Jackson St, Kokomo, IN<br>4.9★ on Google', phone:'+17654524755', display:'(765) 452-4755', href:'jerry-love-auto/', group:'kokomo' },
   { id:'barlows-barbershop', name:"Barlow's Barbershop", meta:'Barbershop · 119 W Sycamore St, Kokomo, IN<br>5.0★ on Google', phone:'+17658655912', display:'(765) 865-5912', href:'barlows-barbershop/', group:'kokomo' },
@@ -115,14 +142,60 @@ const BUSINESSES = [
   { id:'roann-engraving', name:'Roann Engraving', meta:'Custom engraving · 125 N Washington St, Roann, IN', phone:'+12602291640', display:'(260) 229-1640', href:'roann-engraving/', group:'nonlocal' },
 ];
 const LS_KEY = 'prospect-tracker-v1';
-let store = { checks:{}, notes:{}, meetings:[] };
+let store = { checks:{}, notes:{}, meetings:[], updatedAt:0 };
 try {
   const raw = localStorage.getItem(LS_KEY);
   if (raw) store = Object.assign(store, JSON.parse(raw));
 } catch(e) {}
-function save(){ try { localStorage.setItem(LS_KEY, JSON.stringify(store)); } catch(e) {} }
-const STAGES = [['called','Called'],['pitched','Pitched'],['closed','Closed']];
+function saveLocal(){ try { localStorage.setItem(LS_KEY, JSON.stringify(store)); } catch(e) {} }
 
+/* ---- Firebase sync (Google sign-in; Firestore doc tracker/state) ---- */
+let db = null, auth = null, cloudTimer = null, unsub = null, signedIn = false;
+function cloudAvailable(){ return !!firebaseConfig && typeof firebase !== 'undefined'; }
+function docRef(){ return db.collection('tracker').doc('state'); }
+function scheduleCloudSave(){
+  if (!signedIn || !db) return;
+  clearTimeout(cloudTimer);
+  cloudTimer = setTimeout(()=>{
+    store.updatedAt = Date.now();
+    saveLocal();
+    docRef().set(store, { merge:false }).catch(()=>{});
+  }, 800);
+}
+function applyRemote(data){
+  if (!data || typeof data !== 'object') return;
+  if ((data.updatedAt||0) <= (store.updatedAt||0)) return;
+  store = Object.assign({ checks:{}, notes:{}, meetings:[], updatedAt:0 }, data);
+  saveLocal();
+  renderAll();
+}
+function initFirebase(){
+  if (!cloudAvailable()) return;
+  firebase.initializeApp(firebaseConfig);
+  auth = firebase.auth(); db = firebase.firestore();
+  const btn = document.getElementById('auth-btn');
+  btn.addEventListener('click', ()=>{
+    if (signedIn) { auth.signOut(); }
+    else { auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()); }
+  });
+  auth.onAuthStateChanged(user=>{
+    signedIn = !!user;
+    document.getElementById('auth-dot').classList.toggle('on', signedIn);
+    document.getElementById('auth-text').textContent = signedIn ? (user.email || 'Signed in') : 'Not signed in';
+    btn.textContent = signedIn ? 'Sign out' : 'Sign in with Google';
+    document.getElementById('sync-note').textContent = signedIn
+      ? 'Signed in — pipeline syncs across your devices.'
+      : 'Sign in to sync your pipeline across devices. Otherwise everything is saved only in this browser.';
+    if (unsub){ unsub(); unsub = null; }
+    if (signedIn){
+      docRef().get().then(snap=>{ if (snap.exists) applyRemote(snap.data()); scheduleCloudSave(); }).catch(()=>{});
+      unsub = docRef().onSnapshot(snap=>{ if (snap.exists) applyRemote(snap.data()); }, ()=>{});
+    }
+  });
+}
+function save(){ saveLocal(); scheduleCloudSave(); }
+
+const STAGES = [['called','Called'],['pitched','Pitched'],['closed','Closed']];
 function renderCards(){
   for (const g of ['kokomo','nonlocal']){
     const grid = document.getElementById('grid-'+g);
@@ -196,8 +269,8 @@ function renderDay(){
   const panel = document.getElementById('day-panel');
   if (!selDate){ panel.hidden = true; return; }
   panel.hidden = false;
-  const [y,m,d] = selDate.split('-').map(Number);
-  document.getElementById('day-title').textContent = MONTHS[m-1]+' '+d+', '+y;
+  const parts = selDate.split('-').map(Number);
+  document.getElementById('day-title').textContent = MONTHS[parts[1]-1]+' '+parts[2]+', '+parts[0];
   const ul = document.getElementById('day-list');
   ul.innerHTML = '';
   const list = meetingsOn(selDate);
@@ -213,6 +286,7 @@ function renderDay(){
     ul.appendChild(li);
   });
 }
+function renderAll(){ renderCards(); renderStats(); renderCal(); renderDay(); }
 document.getElementById('cal-prev').addEventListener('click', ()=>{ vm--; if(vm<0){vm=11;vy--;} renderCal(); });
 document.getElementById('cal-next').addEventListener('click', ()=>{ vm++; if(vm>11){vm=0;vy++;} renderCal(); });
 (function initBizSelect(){
@@ -223,13 +297,14 @@ document.getElementById('cal-next').addEventListener('click', ()=>{ vm++; if(vm>
 document.getElementById('mtg-add').addEventListener('click', ()=>{
   const text = document.getElementById('mtg-text').value.trim();
   if (!text || !selDate) return;
-  store.meetings.push({ date: selDate, text, biz: document.getElementById('mtg-biz').value, time: document.getElementById('mtg-time').value });
+  store.meetings.push({ date: selDate, text: text, biz: document.getElementById('mtg-biz').value, time: document.getElementById('mtg-time').value });
   document.getElementById('mtg-text').value='';
   document.getElementById('mtg-time').value='';
   save(); renderCal(); renderDay();
 });
 
-renderCards(); renderStats(); renderCal();
+initFirebase();
+renderAll();
 </script>
 </body>
 </html>
