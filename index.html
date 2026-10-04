@@ -368,7 +368,11 @@ function initFirebase(){
     if (signedIn) { auth.signOut(); }
     else { auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()); }
   });
-  document.getElementById('lock-signin').addEventListener('click', ()=> btn.click());
+  document.getElementById('lock-signin').addEventListener('click', ()=>{
+    auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()).catch(err=>{
+      document.getElementById('lock-sub').textContent = 'Sign-in failed: ' + (err && err.message ? err.message : err);
+    });
+  });
   document.getElementById('lock-signout').addEventListener('click', ()=> auth.signOut());
   auth.onAuthStateChanged(user=>{
     signedIn = !!user;
