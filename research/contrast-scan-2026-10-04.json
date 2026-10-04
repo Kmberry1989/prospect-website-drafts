@@ -1934,66 +1934,10 @@
     "large": false
    },
    {
-    "text": "Hours",
-    "fg": "white",
-    "bg": "rgb(231,102,86)",
-    "ratio": 3.26,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Monday\u2013Friday",
-    "fg": "white",
-    "bg": "rgb(231,102,86)",
-    "ratio": 3.26,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "11 AM\u20139 PM",
-    "fg": "white",
-    "bg": "rgb(231,102,86)",
-    "ratio": 3.26,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Saturday",
-    "fg": "white",
-    "bg": "rgb(231,102,86)",
-    "ratio": 3.26,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "11 AM\u20138 PM",
-    "fg": "white",
-    "bg": "rgb(231,102,86)",
-    "ratio": 3.26,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Sunday",
-    "fg": "white",
-    "bg": "rgb(231,102,86)",
-    "ratio": 3.26,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Closed",
-    "fg": "white",
-    "bg": "rgb(231,102,86)",
-    "ratio": 3.26,
-    "need": 4.5,
-    "large": false
-   },
-   {
     "text": "Please confirm evening closing times with the owner.",
     "fg": "#fff9e8",
-    "bg": "rgb(231,102,86)",
-    "ratio": 3.1,
+    "bg": "rgb(217,51,30)",
+    "ratio": 4.49,
     "need": 4.5,
     "large": false
    }
