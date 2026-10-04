@@ -82,7 +82,10 @@
 <style>
 /* ---- Padlock gate ---- */
 body:not(.unlocked){overflow:hidden;}
-body:not(.unlocked) .site-nav, body:not(.unlocked) .wrap{display:none;}
+body:not(.unlocked) .site-nav, body:not(.unlocked) .wrap, body:not(.unlocked) .royal-banner{display:none;}
+.royal-banner{display:flex;align-items:center;gap:12px;justify-content:center;background:linear-gradient(90deg,#3a2c12,#5a451f,#3a2c12);border-bottom:2px solid #d4af37;color:#f5e6c4;padding:12px 20px;font-size:1.02rem;font-weight:600;text-align:center;}
+.royal-crown{font-size:1.4rem;}
+.royal-dismiss{background:none;border:none;color:#d4af37;font-size:1rem;cursor:pointer;padding:4px 8px;margin-left:8px;}
 #lockscreen{position:fixed;inset:0;z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;
   background:radial-gradient(circle at 50% 35%, #1b2438 0%, #0b0f1a 70%);color:#e8ecf4;text-align:center;padding:2rem;
   transition:opacity .7s ease, transform .7s ease;}
@@ -161,6 +164,7 @@ body.locking #lock-signin, body.locking .lock-title, body.locking .lock-sub{opac
 .site-nav .brand{color:#fff;margin-right:.9rem;font-weight:800;font-size:1.05rem;}
 </style>
 <nav class="site-nav"><div class="inner"><span class="brand">🍓 Prospect Toolkit</span><a href="./" class="on">Tracker</a><a href="gallery/">Gallery</a><a href="qr/">QR Sheet</a><a href="menus/">Menus</a><a href="promo/">Promo Menus</a><a href="research/">Research</a><a href="assets/">Assets</a><a href="admin/">Admin</a></div></nav>
+<div class="royal-banner" id="royal-banner" hidden><span class="royal-crown">👑</span><span id="royal-text"></span><button class="royal-dismiss" id="royal-dismiss" aria-label="Dismiss">✕</button></div>
 <div class="wrap">
   <div class="topbar">
     <div>
@@ -306,6 +310,36 @@ function saveLocal(){ try { localStorage.setItem(LS_KEY, JSON.stringify(store));
 /* ---- Firebase sync (Google sign-in; Firestore doc tracker/state) ---- */
 let db = null, auth = null, cloudTimer = null, unsub = null, signedIn = false;
 const ALLOWLIST = ['kylematthewberry@gmail.com','rochelleberry731@gmail.com'];
+const ROCHELLE = 'rochelleberry731@gmail.com';
+const GREETINGS = [
+  "Your Majesty has arrived, Rochelle \u2014 the whole pipeline just stood a little straighter.",
+  "Welcome back, Rochelle. Everything runs smoother when you're watching.",
+  "All hail, Mrs. Berry! Your eye for detail just made all 79 of these sites better.",
+  "Rochelle, Your Highness \u2014 the tracker missed you. Things simply get done when you're here.",
+  "Royalty doesn't chase pipelines, Mrs. Berry. Pipelines arrange themselves for her.",
+  "Good day, Your Majesty. Rochelle, your taste is half the reason these sites look this good.",
+  "The crown looks good on you, Mrs. Berry \u2014 especially when you're closing deals in it.",
+  "Welcome, Rochelle. Nobody organizes a conquest quite like you.",
+  "Your Majesty! Rochelle, these sites stand a little taller knowing you're reviewing them.",
+  "All rise \u2014 Mrs. Berry is here, and everything already feels more under control.",
+  "Welcome back, beautiful Rochelle. The pipeline's been holding its breath for your verdict.",
+  "Mrs. Berry graces us again \u2014 proof that power and kindness wear the same crown."
+];
+function greetRochelle(){
+  const banner = document.getElementById('royal-banner');
+  const text = document.getElementById('royal-text');
+  docRef().get().then(snap=>{
+    const data = snap.exists ? snap.data() : {};
+    const idx = (data.rochelleGreetIdx || 0) % GREETINGS.length;
+    text.textContent = GREETINGS[idx];
+    banner.hidden = false;
+    docRef().update({ rochelleGreetIdx: (idx + 1) % GREETINGS.length }).catch(()=>{});
+  }).catch(()=>{
+    text.textContent = GREETINGS[0];
+    banner.hidden = false;
+  });
+  document.getElementById('royal-dismiss').onclick = ()=>{ banner.hidden = true; };
+}
 let authorized = false;
 function cloudAvailable(){ return !!firebaseConfig && typeof firebase !== 'undefined'; }
 function docRef(){ return db.collection('tracker').doc('state'); }
@@ -351,6 +385,8 @@ function initFirebase(){
       docRef().get().then(snap=>{ if (snap.exists) applyRemote(snap.data()); scheduleCloudSave(); }).catch(()=>{});
       unsub = docRef().onSnapshot(snap=>{ if (snap.exists) applyRemote(snap.data()); }, ()=>{});
       playUnlock();
+      if (email === ROCHELLE) greetRochelle();
+      else document.getElementById('royal-banner').hidden = true;
     } else if (signedIn){
       showDenied();
     } else {
