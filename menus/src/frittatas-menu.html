@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Source Sans 3', sans-serif; color: #2e1f16; }
+  .page { width: 8.5in; height: 11in; padding: 0.55in 0.65in; background: #faf6ee; position: relative; overflow: hidden; page-break-after: always; }
+  .page:last-child { page-break-after: avoid; }
+  .rule-top { border-top: 3px double #8c2f1b; padding-top: 0.18in; }
+  header { text-align: center; margin-bottom: 0.22in; }
+  header img { width: 1.05in; height: 1.05in; border-radius: 50%; border: 2px solid #8c2f1b; object-fit: cover; }
+  h1 { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 44pt; letter-spacing: 1px; color: #8c2f1b; margin: 0.06in 0 0.02in; }
+  .tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 13pt; color: #6b4a2f; }
+  .est { font-size: 9pt; letter-spacing: 3px; text-transform: uppercase; color: #8c2f1b; margin-top: 0.06in; }
+  section { margin-bottom: 0.2in; }
+  h2 { font-family: 'Playfair Display', serif; font-size: 16pt; color: #8c2f1b; border-bottom: 1px solid #d8c39a; padding-bottom: 0.05in; margin-bottom: 0.1in; letter-spacing: 0.5px; }
+  h2 .sub { font-family: 'Source Sans 3', sans-serif; font-size: 9pt; font-weight: 400; color: #6b4a2f; letter-spacing: 1px; text-transform: uppercase; margin-left: 0.12in; }
+  .item { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.07in; gap: 0.15in; }
+  .item .nm { font-weight: 700; font-size: 11pt; }
+  .item .nm .desc { font-weight: 400; font-size: 9.5pt; color: #6b4a2f; display: block; }
+  .item .dots { flex: 1; border-bottom: 1px dotted #cbb27f; }
+  .item .pr { font-weight: 700; font-size: 11pt; color: #8c2f1b; white-space: nowrap; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 0.35in; }
+  footer { position: absolute; bottom: 0.45in; left: 0.65in; right: 0.65in; text-align: center; font-size: 9.5pt; color: #6b4a2f; border-top: 3px double #8c2f1b; padding-top: 0.12in; }
+  footer b { color: #8c2f1b; }
+  .feature { background: #8c2f1b; color: #faf6ee; border-radius: 8px; padding: 0.14in 0.18in; margin-bottom: 0.16in; }
+  .feature h2 { color: #faf6ee; border-bottom-color: rgba(250,246,238,0.4); }
+  .feature .item .nm .desc { color: #f0dfc8; }
+  .feature .item .pr { color: #ffd98a; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="rule-top">
+  <header>
+    <img src="../assets/frittatas/logo-fb.jpg" alt="Frittatas logo">
+    <h1>Frittatas</h1>
+    <div class="tagline">The Ultimate Experience in Breakfast &amp; Lunch!</div>
+    <div class="est">Kokomo, Indiana</div>
+  </header>
+
+  <section>
+    <h2>Best Benedicts <span class="sub">served on a toasted english muffin</span></h2>
+    <div class="item"><div class="nm">The Original Eggs Benedict<span class="desc">Poached eggs, ham &amp; hollandaise</span></div><div class="dots"></div><div class="pr">8.89</div></div>
+    <div class="item"><div class="nm">Hoosier Benedict<span class="desc">Our Hoosier take on the classic</span></div><div class="dots"></div><div class="pr">8.49</div></div>
+    <div class="item"><div class="nm">Hobo Benedict<span class="desc">A hearty wanderer's benedict</span></div><div class="dots"></div><div class="pr"></div></div>
+  </section>
+
+  <section>
+    <h2>Rise and Shine</h2>
+    <div class="item"><div class="nm">Hamburger Patty and Eggs<span class="desc">Seasoned patty with two eggs any style</span></div><div class="dots"></div><div class="pr">7.39</div></div>
+    <div class="item"><div class="nm">Country-Fried Steak Fritter and Eggs<span class="desc">Crispy fritter, country gravy, two eggs</span></div><div class="dots"></div><div class="pr">7.39</div></div>
+  </section>
+
+  <section>
+    <h2>Breakfast Burritos</h2>
+    <div class="item"><div class="nm">Scrambled Egg Burrito<span class="desc">Fluffy eggs wrapped warm</span></div><div class="dots"></div><div class="pr">3.69</div></div>
+    <div class="item"><div class="nm">Egg and Cheese Burrito<span class="desc">Simple, melty, satisfying</span></div><div class="dots"></div><div class="pr">3.99</div></div>
+    <div class="item"><div class="nm">Ranchero Burrito<span class="desc">Zesty ranchero sauce</span></div><div class="dots"></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Breakfast Chimichanga<span class="desc">Crispy-fried, stuffed with hash browns</span></div><div class="dots"></div><div class="pr"></div></div>
+  </section>
+
+  <section>
+    <h2>Country Morning</h2>
+    <div class="item"><div class="nm">Golden Fried Cornmeal Mush<span class="desc">Old-fashioned, griddled golden</span></div><div class="dots"></div><div class="pr">4.89</div></div>
+  </section>
+  </div>
+  <footer><b>306 Espanol Drive, Kokomo, IN</b> &nbsp;·&nbsp; (765) 626-0239 &nbsp;·&nbsp; Tue–Sat 6 AM–2 PM, Sun 7 AM–2 PM, Closed Monday</footer>
+</div>
+
+<div class="page">
+  <div class="rule-top">
+  <section>
+    <h2>Omelettes <span class="sub">three-egg, served with toast</span></h2>
+    <div class="item"><div class="nm">Farmer's Omelette<span class="desc">Hearty farmhouse fillings</span></div><div class="dots"></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Chef's Omelette<span class="desc">The chef's daily creation</span></div><div class="dots"></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Jumbo Idaho Omelette<span class="desc">Stuffed with Idaho potatoes</span></div><div class="dots"></div><div class="pr"></div></div>
+  </section>
+
+  <div class="feature">
+    <h2>House Signatures</h2>
+    <div class="item"><div class="nm">ULTIMATE Cinnamon Swirl Pancakes<span class="desc">Our legendary swirl, cinnamon-sugar griddled</span></div><div class="dots"></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Strawberry Bavarian Pancakes<span class="desc">Strawberry bavarian cream</span></div><div class="dots"></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">The Namesake Frittata<span class="desc">Tomato, mushroom, spinach &amp; cheddar</span></div><div class="dots"></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Farmer's Skillet<span class="desc">A skillet built for appetites</span></div><div class="dots"></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Upside-Down Manhattan<span class="desc">With pork tenderloin</span></div><div class="dots"></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Hand-Cut Tenderloin<span class="desc">Cut and breaded in-house</span></div><div class="dots"></div><div class="pr"></div></div>
+  </div>
+
+  <section>
+    <h2>Comfort Classics</h2>
+    <div class="cols">
+      <div>
+        <div class="item"><div class="nm">Biscuits &amp; Gravy</div><div class="dots"></div><div class="pr"></div></div>
+        <div class="item"><div class="nm">Corned Beef Hash</div><div class="dots"></div><div class="pr"></div></div>
+      </div>
+      <div>
+        <div class="item"><div class="nm">Chef's Potatoes</div><div class="dots"></div><div class="pr"></div></div>
+        <div class="item"><div class="nm">Banana Bread<span class="desc" style="font-weight:400;font-size:9.5pt;color:#6b4a2f;display:block">With banana cream &amp; cinnamon butter</span></div><div class="dots"></div><div class="pr"></div></div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <footer><b>306 Espanol Drive, Kokomo, IN</b> &nbsp;·&nbsp; (765) 626-0239 &nbsp;·&nbsp; Grab some friends and come on down for a hearty home-cooked meal!</footer>
+</div>
+
+</body>
+</html>

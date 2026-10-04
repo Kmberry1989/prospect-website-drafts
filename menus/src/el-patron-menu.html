@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; color: #3a2418; }
+  .page { width: 8.5in; height: 11in; padding: 0.5in 0.65in; background: #fff8ec; position: relative; overflow: hidden; page-break-after: always; }
+  .page:last-child { page-break-after: avoid; }
+  .tile-border { position: absolute; inset: 0; pointer-events: none;
+    background:
+      repeating-linear-gradient(45deg, transparent 0 14px, rgba(193,39,45,0.10) 14px 16px, transparent 16px 30px, rgba(26,122,60,0.10) 30px 32px);
+    -webkit-mask: linear-gradient(#000,#000) center/100% 0.32in no-repeat, linear-gradient(#000,#000) center/0.32in 100% no-repeat;
+    -webkit-mask-composite: source-in; mask-composite: intersect;
+  }
+  header { text-align: center; margin-bottom: 0.18in; }
+  header img { width: 1.5in; height: 1.5in; border-radius: 50%; object-fit: cover; border: 4px solid #c1272d; box-shadow: 0 4px 14px rgba(0,0,0,0.18); }
+  h1 { font-family: 'DM Serif Display', serif; font-size: 40pt; color: #c1272d; margin-top: 0.06in; }
+  h1 span { color: #1a7a3c; }
+  .tagline { font-style: italic; font-family: 'DM Serif Display', serif; font-size: 13pt; color: #7a5a3a; }
+  .chips { display: inline-block; margin-top: 0.08in; background: #1a7a3c; color: #fff; font-weight: 700; font-size: 10pt; letter-spacing: 1px; padding: 0.06in 0.25in; border-radius: 999px; text-transform: uppercase; }
+  section { margin-bottom: 0.17in; }
+  h2 { font-weight: 800; font-size: 13pt; text-transform: uppercase; letter-spacing: 2px; color: #c1272d; margin-bottom: 0.08in; }
+  h2::after { content: ""; display: block; height: 3px; width: 0.7in; background: linear-gradient(90deg, #c1272d, #1a7a3c); margin-top: 0.04in; border-radius: 2px; }
+  .item { display: flex; justify-content: space-between; align-items: baseline; gap: 0.14in; margin-bottom: 0.06in; }
+  .item .nm { font-weight: 700; font-size: 11pt; }
+  .item .nm small { display: block; font-weight: 400; font-size: 9pt; color: #7a5a3a; }
+  .item .pr { font-weight: 800; color: #1a7a3c; white-space: nowrap; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 0.35in; }
+  .bar-callout { background: linear-gradient(135deg, #c1272d, #8f1d22); color: #fff; border-radius: 10px; padding: 0.15in 0.2in; margin-bottom: 0.17in; }
+  .bar-callout h2 { color: #ffd98a; }
+  .bar-callout h2::after { background: #ffd98a; }
+  .bar-callout .item .nm small { color: #ffe3c2; }
+  .bar-callout .item .pr { color: #ffd98a; }
+  footer { position: absolute; bottom: 0.42in; left: 0.65in; right: 0.65in; text-align: center; font-size: 9.5pt; color: #7a5a3a; border-top: 2px solid #c1272d; padding-top: 0.1in; }
+  footer b { color: #c1272d; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="tile-border"></div>
+  <header>
+    <img src="../assets/el-patron/logo-fb.jpg" alt="El Patron logo">
+    <h1>EL <span>PATRON</span></h1>
+    <div class="tagline">Authentic Mexican Restaurant — Greentown's fiesta on Main Street</div><br>
+    <div class="chips">Complimentary chips &amp; salsa with every visit</div>
+  </header>
+
+  <section>
+    <h2>Salads</h2>
+    <div class="cols">
+      <div>
+        <div class="item"><div class="nm">Taco Salad<small>Crispy flour tortilla, beef or shredded chicken, refried beans, lettuce, tomato, cheese, sour cream &amp; guacamole</small></div><div class="pr"></div></div>
+        <div class="item"><div class="nm">Chicken Salad</div><div class="pr"></div></div>
+      </div>
+      <div>
+        <div class="item"><div class="nm">Guacamole Salad</div><div class="pr"></div></div>
+        <div class="item"><div class="nm">Shrimp Salad</div><div class="pr"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Fajitas</h2>
+    <div class="item"><div class="nm">Fajitas Texanas<small>The works — sizzling for the whole table</small></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Chicken Fajitas<small>Sizzling peppers &amp; onions</small></div><div class="pr"></div></div>
+  </section>
+
+  <section>
+    <h2>House Specialties</h2>
+    <div class="item"><div class="nm">Seafood Burrito<small>Loaded with seafood, a house favorite</small></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Arroz con Pollo<small>Classic chicken with rice</small></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Mexican Corn<small>Street-style elote</small></div><div class="pr"></div></div>
+  </section>
+
+  <div class="bar-callout">
+    <h2>Full Bar · Margaritas</h2>
+    <div class="item"><div class="nm">Margaritas<small>The perfect fiesta companion</small></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Full Bar<small>Ask about today's specials</small></div><div class="pr"></div></div>
+  </div>
+
+  <footer><b>204 E Main St, Greentown, IN</b> &nbsp;·&nbsp; (765) 408-0268<br>Sun 11–8 · Mon–Thu 11–9 · Fri 11–10 · Sat 11–9</footer>
+</div>
+
+</body>
+</html>

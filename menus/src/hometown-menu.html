@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Source Sans 3', sans-serif; color: #33231a; }
+  .page { width: 8.5in; height: 11in; padding: 0.5in 0.65in; background: #fbf7ef; position: relative; overflow: hidden; page-break-after: always; }
+  .page:last-child { page-break-after: avoid; }
+  .gingham { height: 0.22in; background: repeating-linear-gradient(90deg, #a83a2a 0 0.22in, #fbf7ef 0.22in 0.44in); border-top: 2px solid #a83a2a; border-bottom: 2px solid #a83a2a; margin: -0.5in -0.65in 0.22in; }
+  header { text-align: center; margin-bottom: 0.18in; }
+  .over { font-size: 10pt; letter-spacing: 4px; text-transform: uppercase; color: #a83a2a; font-weight: 700; }
+  h1 { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 42pt; color: #33231a; line-height: 1.05; margin: 0.04in 0; }
+  h1 em { color: #a83a2a; font-style: italic; }
+  .allday { display: inline-block; margin-top: 0.08in; border: 2px solid #a83a2a; color: #a83a2a; font-weight: 700; letter-spacing: 1.5px; font-size: 11pt; padding: 0.07in 0.3in; border-radius: 6px; text-transform: uppercase; }
+  section { margin-bottom: 0.17in; }
+  h2 { font-family: 'Playfair Display', serif; font-size: 15pt; color: #a83a2a; margin-bottom: 0.08in; }
+  h2 small { font-family: 'Source Sans 3', sans-serif; font-size: 9pt; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #8a6a4a; margin-left: 0.15in; }
+  .item { display: flex; justify-content: space-between; align-items: baseline; gap: 0.14in; margin-bottom: 0.06in; }
+  .item .nm { font-weight: 700; font-size: 11pt; }
+  .item .nm small { display: block; font-weight: 400; font-size: 9pt; color: #8a6a4a; }
+  .item .pr { font-weight: 700; color: #a83a2a; white-space: nowrap; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 0.35in; }
+  .friday { background: #a83a2a; color: #fbf7ef; border-radius: 10px; padding: 0.16in 0.2in; margin-bottom: 0.17in; text-align: center; }
+  .friday h2 { color: #ffd98a; margin-bottom: 0.04in; }
+  .friday p { font-size: 11pt; }
+  .friday .big { font-family: 'Playfair Display', serif; font-size: 20pt; font-weight: 900; }
+  footer { position: absolute; bottom: 0.42in; left: 0.65in; right: 0.65in; text-align: center; font-size: 9.5pt; color: #8a6a4a; border-top: 2px solid #a83a2a; padding-top: 0.1in; }
+  footer b { color: #a83a2a; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="gingham"></div>
+  <header>
+    <div class="over">Greentown, Indiana</div>
+    <h1>Hometown <em>Family</em> Restaurant</h1>
+    <div class="allday">Breakfast served all day!!</div>
+  </header>
+
+  <section>
+    <h2>Breakfast All Day <small>omelettes &amp; morning plates</small></h2>
+    <div class="cols">
+      <div>
+        <div class="item"><div class="nm">Western Omelette</div><div class="pr"></div></div>
+        <div class="item"><div class="nm">Greek Omelette</div><div class="pr"></div></div>
+        <div class="item"><div class="nm">Farmers Omelette<small>With hashbrowns &amp; country gravy</small></div><div class="pr"></div></div>
+      </div>
+      <div>
+        <div class="item"><div class="nm">Country Fried Steak &amp; Eggs</div><div class="pr"></div></div>
+        <div class="item"><div class="nm">French Toast<small>Thick Texas toast, hint of cinnamon</small></div><div class="pr"></div></div>
+        <div class="item"><div class="nm">Biscuits &amp; Gravy<small>With sausage gravy</small></div><div class="pr"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hearty Plates</h2>
+    <div class="item"><div class="nm">Hoosier Tenderloin with Fries<small>The Indiana classic, done right</small></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Belly Buster Dagwood Burger<small>Bring an appetite</small></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Bacon Cheeseburger &amp; Fries</div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Breaded Tenderloin</div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Liver and Onions<small>A diner tradition</small></div><div class="pr"></div></div>
+  </section>
+
+  <section>
+    <h2>Sides</h2>
+    <div class="cols">
+      <div>
+        <div class="item"><div class="nm">Diced Potatoes</div><div class="pr"></div></div>
+      </div>
+      <div>
+        <div class="item"><div class="nm">Sausage Gravy</div><div class="pr"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="friday">
+    <h2>Friday Special</h2>
+    <div class="big">All-You-Can-Eat Catfish</div>
+    <p>Every Friday — come hungry, leave happy</p>
+  </div>
+
+  <footer><b>721 W Main St, Greentown, IN</b> &nbsp;·&nbsp; (765) 627-4025<br>Closed Monday &nbsp;·&nbsp; Tue–Sat 7 AM–7:30 PM &nbsp;·&nbsp; Sun 7 AM–2 PM<br><i>A variety of home cooked food — good food and good vibes.</i></footer>
+</div>
+
+</body>
+</html>

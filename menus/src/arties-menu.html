@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@400;500;600&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Oswald', sans-serif; color: #241a12; }
+  .page { width: 8.5in; height: 11in; padding: 0.5in 0.7in; background: #f3e9d2; position: relative; overflow: hidden; page-break-after: always; }
+  .page:last-child { page-break-after: avoid; }
+  .page::before { content: ""; position: absolute; inset: 0.28in; border: 3px solid #b02a20; pointer-events: none; }
+  .page::after { content: ""; position: absolute; inset: 0.36in; border: 1px solid #b02a20; pointer-events: none; }
+  .inner { position: relative; height: 100%; }
+  header { text-align: center; margin-bottom: 0.2in; padding-top: 0.1in; }
+  .since { font-family: 'Special Elite', monospace; font-size: 11pt; letter-spacing: 6px; color: #b02a20; }
+  h1 { font-family: 'Alfa Slab One', serif; font-size: 52pt; color: #b02a20; line-height: 1; margin: 0.05in 0; text-shadow: 2px 2px 0 #e8d5ae; }
+  h1 .artie { display: block; font-size: 60pt; }
+  .tag { font-family: 'Special Elite', monospace; font-size: 11pt; color: #5a3d22; }
+  .star { color: #b02a20; font-size: 14pt; letter-spacing: 8px; margin: 0.08in 0; }
+  section { margin-bottom: 0.18in; }
+  h2 { font-family: 'Alfa Slab One', serif; font-size: 15pt; color: #fff; background: #b02a20; display: inline-block; padding: 0.05in 0.22in; margin-bottom: 0.1in; letter-spacing: 1px; }
+  .item { display: flex; justify-content: space-between; align-items: baseline; gap: 0.12in; margin-bottom: 0.055in; }
+  .item .nm { font-weight: 600; font-size: 11.5pt; text-transform: uppercase; letter-spacing: 0.5px; }
+  .item .nm small { display: block; font-weight: 400; font-size: 9pt; text-transform: none; letter-spacing: 0; color: #5a3d22; }
+  .item .pr { font-family: 'Special Elite', monospace; font-size: 12pt; color: #b02a20; white-space: nowrap; }
+  .hero { border: 2px dashed #b02a20; border-radius: 10px; padding: 0.14in 0.18in; margin-bottom: 0.18in; background: rgba(176,42,32,0.06); }
+  .hero .item .nm { font-size: 13pt; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 0.4in; }
+  footer { position: absolute; bottom: 0.5in; left: 0.7in; right: 0.7in; text-align: center; font-family: 'Special Elite', monospace; font-size: 10pt; color: #5a3d22; }
+  footer b { color: #b02a20; }
+</style>
+</head>
+<body>
+
+<div class="page"><div class="inner">
+  <header>
+    <div class="since">★ EST. 1938 ★</div>
+    <h1><span class="artie">Artie's</span>TENDERLOIN</h1>
+    <div class="star">★ ★ ★</div>
+    <div class="tag">Hand-breaded every single day. Never frozen.</div>
+  </header>
+
+  <div class="hero">
+    <h2>The Famous Tenderloin</h2>
+    <div class="item"><div class="nm">Fried Breaded Tenderloin Sandwich<small>So massive it makes the bun look like a garnish</small></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Breaded Pork Tenderloin</div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Grilled Pork Tenderloin</div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Tenderloin Deluxe Basket<small>With fries</small></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Tenderloin and Fries</div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Tenderloin Manhattan</div><div class="pr"></div></div>
+  </div>
+
+  <section>
+    <h2>Breakfast</h2>
+    <div class="cols">
+      <div>
+        <div class="item"><div class="nm">Ham Breakfast Sandwich</div><div class="pr"></div></div>
+        <div class="item"><div class="nm">French Toast with Meat</div><div class="pr">6.80</div></div>
+        <div class="item"><div class="nm">Pancake</div><div class="pr">4.25</div></div>
+        <div class="item"><div class="nm">Pancake with Meat</div><div class="pr">6.00</div></div>
+      </div>
+      <div>
+        <div class="item"><div class="nm">French Toast</div><div class="pr">5.00</div></div>
+        <div class="item"><div class="nm">2-Egg Omelet</div><div class="pr">6.00</div></div>
+        <div class="item"><div class="nm">Oatmeal</div><div class="pr">3.50</div></div>
+        <div class="item"><div class="nm">Sausage, Egg &amp; Cheese Sandwich</div><div class="pr"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Burgers &amp; More</h2>
+    <div class="item"><div class="nm">Triple Cheeseburger</div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Homemade Desserts<small>Made from scratch daily</small></div><div class="pr"></div></div>
+    <div class="item"><div class="nm">Daily Specials<small>Ask your server</small></div><div class="pr"></div></div>
+  </section>
+
+  <footer><b>922 S Main St, Kokomo, IN</b> &nbsp;·&nbsp; (765) 457-9003 &nbsp;·&nbsp; Mon–Sat 6 AM–2 PM · Closed Sunday<br>Kokomo's longest-running restaurant — serving breakfast &amp; lunch since 1938</footer>
+</div></div>
+
+</body>
+</html>
