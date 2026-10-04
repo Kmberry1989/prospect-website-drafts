@@ -48,6 +48,37 @@ Three beats, every time:
 - **"My nephew does computers."** — Smile. "Then he'll tell you this is a good deal. The draft's free either way — want to see it?"
 - **"Business is fine without it."** — "That's exactly why this is cheap insurance. The customers you're NOT getting are the ones who searched, didn't find you, and called someone else — you never even knew they existed."
 
+## Reaction responses — what they say, what you say back
+
+### When they see the draft
+- **"Wow, that's actually really good."** → "It's all your real stuff — your menu, your hours, your photos. Imagine what the finished version looks like with your tweaks."
+- **"My hours are wrong / that price is old."** → "Good catch — that's exactly why I show the draft first. Give me the right ones and they're fixed before it goes live. What should it say?" (Write it down. This is them co-owning it — that's buying behavior.)
+- **"I don't love the color / the photo."** → "Then we change it. This is a starting point, not a finished product — the finished version looks however you want."
+- **"Did you just do this for me?"** → "Just for you. I only build drafts for businesses I'd actually want as clients."
+- **[Silence, just scrolling]** → Say nothing. Let them scroll. The first one to talk loses.
+
+### When they hear the price
+- **"That's it? What's the catch?"** → "No catch. I'm local, I don't have agency overhead, and these sites are built to run for years without babysitting. You pay when it's live and you love it — that's the whole deal."
+- **"That's more than I expected."** → "Fair. Which tier were you looking at? The $499 Starter gets you found on Google with everything working — most businesses start there and it's still everything done-for-you."
+- **"What's the monthly thing?"** → "Nothing monthly unless you want it. Every package includes months of care free. After that it's $49 a month or $490 a year — hosting, small updates, and you can just text me. Cancel anytime."
+- **"Can you do it cheaper?"** → "I can do the Starter at $499 — that's the smallest I go, because below that I can't do work I'd put my name on. Want to see what the Starter covers?"
+
+### During the kit walk
+- **"Do I really need [the QR menus / the booking / the cards]?"** → "You don't need all of it — that's why there are tiers. But [the specific item] is the part that pays for the whole package: [one concrete example — 'a table tent that gets you Google reviews while you sleep' / 'booking that takes appointments while the shop is closed']."
+- **"How long does it take?"** → "Finished version live [this week / next week] once you approve the draft. Most of the work's already done — you saw it."
+- **"What if I hate it?"** → "Then you pay nothing and keep the draft link. That's the entire risk structure — it's all on me."
+
+### At the close
+- **"Let's do it."** → "Great. I'll send you [a quick email / a text] with exactly what's included and the timeline. First thing I need from you: [one small thing — correct hours, a photo, the logo file]. The sooner I get that, the sooner we're live."
+- **"I need to talk to my [spouse / partner / manager]."** → "Of course. I'll text you the draft link right now so you can show them — it's easier than explaining it. When should I check back — Thursday or Friday?" (Send it before you leave. Log the day in the tracker.)
+- **"Not right now."** → "No pressure. The draft stays up — if anything changes, you've got my number on the card." (Leave a card with the QR to their draft on it. Log it.)
+- **"Is this a scam? How'd you get my number?"** → Laugh, don't get defensive. "Totally fair question. I'm Kyle Berry from Kokomo — [your street / your shop] isn't far from me. Your number's on your Google listing. And the draft's free — a scammer wouldn't build you a website first."
+
+### On the phone specifically
+- **"I'm busy right now."** → "I'll be quick — thirty seconds. I built a draft website for [Business] and it's on my phone. Can I text you the link? Look at it when you have a minute, I'll call back Thursday." (Get the text out. A viewed draft beats a perfect call.)
+- **"We already have someone."** → "Good — then you know what this stuff costs. Mine's $499 to $1,250, one time, and the draft's already built. If they ever drop the ball, you've got my number."
+- **Voicemail** → "Hi, this is Kyle Berry, web designer in Kokomo. I built a draft website for [Business] — your menu, your hours, the works — and I'd love to show it to you. I'll text you the link, and I'll try you again Thursday. My number is [yours]."
+
 ## Contact order — highest conviction first
 
 Call in this order. Every name below has a strong rating, a real gap, and a finished draft with real photos where available. Skip the flagged ones until cleared.
