@@ -100,18 +100,10 @@
     "warn": "over-image"
    },
    {
-    "text": "Come by",
-    "fg": "#ffd795",
-    "bg": "rgb(223,85,71)",
-    "ratio": 2.79,
-    "need": 4.5,
-    "large": false
-   },
-   {
     "text": "A longtime Kokomo neighborhood stop",
     "fg": "#ffe4c8",
-    "bg": "rgb(223,85,71)",
-    "ratio": 3.11,
+    "bg": "rgb(211,52,36)",
+    "ratio": 4.01,
     "need": 4.5,
     "large": false
    }
@@ -317,9 +309,9 @@
   "light": [
    {
     "text": "Handyman Services",
-    "fg": "#ffe8d6",
+    "fg": "#0d2f2b",
     "bg": "rgb(42,157,143)",
-    "ratio": 2.81,
+    "ratio": 4.33,
     "need": 4.5,
     "large": false
    },
@@ -754,6 +746,32 @@
  "el-patron": {
   "light": [
    {
+    "text": "Fajitas Texanas",
+    "fg": "#fff8e7",
+    "bg": "rgb(255,241,200)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Seafood Burrito",
+    "fg": "#fff8e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Margaritas",
+    "fg": "#fff8e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   }
+  ],
+  "dark": [
+   {
     "text": "(765) 408-0268",
     "fg": "#d84c3f",
     "bg": "rgb(33,24,22)",
@@ -824,30 +842,6 @@
     "ratio": null,
     "need": 3.0,
     "warn": "over-image"
-   },
-   {
-    "text": "Make it a fiesta",
-    "fg": "#effffb",
-    "bg": "rgb(66,175,163)",
-    "ratio": 2.58,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Chips, salsa, and something sizzling.",
-    "fg": "#fff8e7",
-    "bg": "rgb(66,175,163)",
-    "ratio": 2.51,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Start with complimentary chips and salsa, settle in with fri",
-    "fg": "#effffb",
-    "bg": "rgb(66,175,163)",
-    "ratio": 2.58,
-    "need": 4.5,
-    "large": false
    },
    {
     "text": "Greentown\u2019s fiesta spot",
@@ -924,16 +918,6 @@
   ]
  },
  "frittatas": {
-  "light": [
-   {
-    "text": "Your hometown breakfast table",
-    "fg": "#ffe3a1",
-    "bg": "rgb(204,61,34)",
-    "ratio": 3.93,
-    "need": 4.5,
-    "large": false
-   }
-  ],
   "dark": [
    {
     "text": "Your hometown breakfast table",
@@ -1192,22 +1176,6 @@
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
-   },
-   {
-    "text": "Hometown Family Restaurant",
-    "fg": "#fff5e6",
-    "bg": "rgb(238,128,104)",
-    "ratio": 2.46,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "721 W Main St, Greentown, IN",
-    "fg": "#fff5e6",
-    "bg": "rgb(238,128,104)",
-    "ratio": 2.46,
-    "need": 4.5,
-    "large": false
    }
   ]
  },
@@ -1384,14 +1352,6 @@
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
-   },
-   {
-    "text": "Please choose an appliance, enter the service city or ZIP co",
-    "fg": "#ffaaa5",
-    "bg": "rgb(255,255,255)",
-    "ratio": 1.82,
-    "need": 4.5,
-    "large": false
    }
   ],
   "dark": [
@@ -1410,6 +1370,14 @@
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
+   },
+   {
+    "text": "Please choose an appliance, enter the service city or ZIP co",
+    "fg": "#c0392b",
+    "bg": "rgb(13,33,53)",
+    "ratio": 3.0,
+    "need": 4.5,
+    "large": false
    }
   ]
  },
@@ -1671,7 +1639,7 @@
   "light": [
    {
     "text": "Made personal",
-    "fg": "#f0ca86",
+    "fg": "#d9b36f",
     "bg": "image/gradient",
     "ratio": null,
     "need": 4.5,
@@ -1702,28 +1670,94 @@
     "warn": "over-image"
    },
    {
-    "text": "01",
-    "fg": "#d5a55f",
-    "bg": "rgb(168,190,169)",
-    "ratio": 1.13,
-    "need": 3.0,
-    "large": true
+    "text": "Custom work",
+    "fg": "#a46f2f",
+    "bg": "rgb(244,240,231)",
+    "ratio": 3.77,
+    "need": 4.5,
+    "large": false
    },
    {
-    "text": "02",
-    "fg": "#d5a55f",
-    "bg": "rgb(168,190,169)",
-    "ratio": 1.13,
-    "need": 3.0,
-    "large": true
+    "text": "Work & possibilities",
+    "fg": "#a46f2f",
+    "bg": "rgb(244,240,231)",
+    "ratio": 3.77,
+    "need": 4.5,
+    "large": false
    },
    {
-    "text": "03",
-    "fg": "#d5a55f",
-    "bg": "rgb(168,190,169)",
-    "ratio": 1.13,
-    "need": 3.0,
-    "large": true
+    "text": "Start your order",
+    "fg": "#a46f2f",
+    "bg": "rgb(231,223,209)",
+    "ratio": 3.24,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Visit",
+    "fg": "#a46f2f",
+    "bg": "rgb(244,240,231)",
+    "ratio": 3.77,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call before visiting",
+    "fg": "#a46f2f",
+    "bg": "rgb(244,240,231)",
+    "ratio": 3.77,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Hours",
+    "fg": "#a46f2f",
+    "bg": "rgb(244,240,231)",
+    "ratio": 3.77,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(260) 229-1640",
+    "fg": "#a46f2f",
+    "bg": "rgb(244,240,231)",
+    "ratio": 3.77,
+    "need": 4.5,
+    "large": false
+   }
+  ],
+  "dark": [
+   {
+    "text": "Made personal",
+    "fg": "#f0ca86",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Roann",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Engraving",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (260) 229-1640",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
    }
   ]
  },
@@ -1812,8 +1846,8 @@
    {
     "text": "Call",
     "fg": "#fff",
-    "bg": "rgb(255,107,107)",
-    "ratio": 2.78,
+    "bg": "rgb(217,79,79)",
+    "ratio": 4.05,
     "need": 4.5,
     "large": false
    },
@@ -1882,22 +1916,6 @@
     "ratio": 3.44,
     "need": 4.5,
     "large": false
-   },
-   {
-    "text": "Sandwiches & baskets",
-    "fg": "white",
-    "bg": "rgb(53,183,190)",
-    "ratio": 2.42,
-    "need": 3.0,
-    "large": true
-   },
-   {
-    "text": "Cold drinks",
-    "fg": "white",
-    "bg": "rgb(53,183,190)",
-    "ratio": 2.42,
-    "need": 3.0,
-    "large": true
    },
    {
     "text": "Still tasteslike summer.",
@@ -1985,9 +2003,9 @@
   "light": [
    {
     "text": "Pools, Spas & Service",
-    "fg": "#ffdf80",
+    "fg": "#062a3a",
     "bg": "rgb(0,150,199)",
-    "ratio": 2.61,
+    "ratio": 4.42,
     "need": 4.5,
     "large": false
    },
@@ -2222,14 +2240,6 @@
  "two-sisters-housekeeping": {
   "light": [
    {
-    "text": "Now Welcoming Clients",
-    "fg": "#fff",
-    "bg": "rgb(245,179,1)",
-    "ratio": 1.85,
-    "need": 4.5,
-    "large": false
-   },
-   {
     "text": "Loading\u2026",
     "fg": "#5f7a73",
     "bg": "rgb(242,250,247)",
@@ -2283,27 +2293,11 @@
   "light": [
    {
     "text": "\u2026",
-    "fg": "#e86a9b",
+    "fg": "#b83a6a",
     "bg": "image/gradient",
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
-   },
-   {
-    "text": "Call",
-    "fg": "#ffffff",
-    "bg": "rgb(232,106,155)",
-    "ratio": 3.01,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Directions",
-    "fg": "#e86a9b",
-    "bg": "rgb(255,249,251)",
-    "ratio": 2.9,
-    "need": 4.5,
-    "large": false
    },
    {
     "text": "Loading\u2026",
@@ -2390,12 +2384,70 @@
     "warn": "over-image"
    },
    {
-    "text": "Auto repair in Mattoon, Illinois",
-    "fg": "#c5d8e7",
-    "bg": "rgb(240,170,67)",
-    "ratio": 1.36,
+    "text": "WinnettAutomotive",
+    "fg": "#f4f8fb",
+    "bg": "image/gradient",
+    "ratio": null,
     "need": 4.5,
-    "large": false
+    "warn": "over-image"
+   },
+   {
+    "text": "Straight answers. Solid repairs. A local shop for the mainte",
+    "fg": "#e3edf3",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Prepare a quote request",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "1805 Lafayette Ave \u00b7 Mattoon, IL",
+    "fg": "#aebfcb",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Lafayette Avenue \u00b7 Mattoon",
+    "fg": "#d5e5ef",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   }
+  ],
+  "dark": [
+   {
+    "text": "Services",
+    "fg": "#dbe9f3",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Location",
+    "fg": "#dbe9f3",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Request a quote",
+    "fg": "#dbe9f3",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
    },
    {
     "text": "WinnettAutomotive",
