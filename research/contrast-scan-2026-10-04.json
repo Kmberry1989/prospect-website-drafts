@@ -28,14 +28,6 @@
   ],
   "dark": [
    {
-    "text": "See the menu",
-    "fg": "#fff",
-    "bg": "rgb(223,85,71)",
-    "ratio": 3.8,
-    "need": 4.5,
-    "large": false
-   },
-   {
     "text": "$6.80",
     "fg": "#df5547",
     "bg": "rgb(33,31,28)",
@@ -246,14 +238,6 @@
     "warn": "over-image"
    },
    {
-    "text": "Call (765) 459-8997",
-    "fg": "#fff",
-    "bg": "rgb(230,96,40)",
-    "ratio": 3.46,
-    "need": 4.5,
-    "large": false
-   },
-   {
     "text": "Request a tune-up",
     "fg": "#fff",
     "bg": "image/gradient",
@@ -268,46 +252,6 @@
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
-   },
-   {
-    "text": "01",
-    "fg": "#d5541f",
-    "bg": "rgb(255,253,247)",
-    "ratio": 4.03,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "02",
-    "fg": "#d5541f",
-    "bg": "rgb(255,253,247)",
-    "ratio": 4.03,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Prepare text request",
-    "fg": "#fff",
-    "bg": "rgb(230,96,40)",
-    "ratio": 3.46,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Text request to Ben's",
-    "fg": "#fff",
-    "bg": "rgb(213,84,31)",
-    "ratio": 4.1,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Talk to the shop",
-    "fg": "#fff",
-    "bg": "rgb(230,96,40)",
-    "ratio": 3.46,
-    "need": 4.5,
-    "large": false
    },
    {
     "text": "Built for work.Serviced to last.",
@@ -344,14 +288,6 @@
     "warn": "over-image"
    },
    {
-    "text": "Call (765) 459-8997",
-    "fg": "#fff",
-    "bg": "rgb(230,96,40)",
-    "ratio": 3.46,
-    "need": 4.5,
-    "large": false
-   },
-   {
     "text": "Request a tune-up",
     "fg": "#fff",
     "bg": "image/gradient",
@@ -366,30 +302,6 @@
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
-   },
-   {
-    "text": "Prepare text request",
-    "fg": "#fff",
-    "bg": "rgb(230,96,40)",
-    "ratio": 3.46,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Text request to Ben's",
-    "fg": "#fff",
-    "bg": "rgb(240,108,50)",
-    "ratio": 3.05,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Talk to the shop",
-    "fg": "#fff",
-    "bg": "rgb(230,96,40)",
-    "ratio": 3.46,
-    "need": 4.5,
-    "large": false
    },
    {
     "text": "Built for work.Serviced to last.",
@@ -674,6 +586,14 @@
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
+   },
+   {
+    "text": "See services",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
    }
   ],
   "dark": [
@@ -696,6 +616,22 @@
    {
     "text": "\u201cWe are your 1 stop shop for auto repair and service. We pro",
     "fg": "#e8e9e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "24-HR Towing \u2014 Call Now",
+    "fg": "#fff",
+    "bg": "rgb(240,68,56)",
+    "ratio": 3.76,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "See services",
+    "fg": "#fff",
     "bg": "image/gradient",
     "ratio": null,
     "need": 4.5,
@@ -795,14 +731,6 @@
    },
    {
     "text": "Loading\u2026",
-    "fg": "#9a8c6e",
-    "bg": "rgb(244,236,216)",
-    "ratio": 2.81,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "SiteKeeper-managed site",
     "fg": "#9a8c6e",
     "bg": "rgb(244,236,216)",
     "ratio": 2.81,
@@ -998,100 +926,20 @@
  "frittatas": {
   "light": [
    {
-    "text": "Call (765) 626-0239",
-    "fg": "#fff",
-    "bg": "rgb(255,255,255)",
-    "ratio": 1.0,
-    "need": 4.5,
-    "large": false
-   },
-   {
     "text": "Your hometown breakfast table",
     "fg": "#ffe3a1",
-    "bg": "rgb(255,255,255)",
-    "ratio": 1.25,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "A Sunday-morning kind of place.",
-    "fg": "#fff8ed",
-    "bg": "rgb(255,255,255)",
-    "ratio": 1.06,
-    "need": 3.0,
-    "large": true
-   },
-   {
-    "text": "Warm waitresses, big portions, small prices and a packed boo",
-    "fg": "#fff8ed",
-    "bg": "rgb(255,255,255)",
-    "ratio": 1.06,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "\u201cSo grab some friends and come on down to join us for a hard",
-    "fg": "#fff8ed",
-    "bg": "rgb(255,255,255)",
-    "ratio": 1.06,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Call (765) 626-0239",
-    "fg": "#fff",
-    "bg": "rgb(255,255,255)",
-    "ratio": 1.0,
+    "bg": "rgb(204,61,34)",
+    "ratio": 3.93,
     "need": 4.5,
     "large": false
    }
   ],
   "dark": [
    {
-    "text": "Call (765) 626-0239",
-    "fg": "#fff",
-    "bg": "rgb(201,86,68)",
-    "ratio": 4.29,
-    "need": 4.5,
-    "large": false
-   },
-   {
     "text": "Your hometown breakfast table",
     "fg": "#ffe3a1",
-    "bg": "rgb(228,116,95)",
-    "ratio": 2.41,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "A Sunday-morning kind of place.",
-    "fg": "#fff8ed",
-    "bg": "rgb(228,116,95)",
-    "ratio": 2.86,
-    "need": 3.0,
-    "large": true
-   },
-   {
-    "text": "Warm waitresses, big portions, small prices and a packed boo",
-    "fg": "#fff8ed",
-    "bg": "rgb(228,116,95)",
-    "ratio": 2.86,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "\u201cSo grab some friends and come on down to join us for a hard",
-    "fg": "#fff8ed",
-    "bg": "rgb(228,116,95)",
-    "ratio": 2.86,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Call (765) 626-0239",
-    "fg": "#fff",
-    "bg": "rgb(201,86,68)",
-    "ratio": 4.29,
+    "bg": "rgb(204,61,34)",
+    "ratio": 3.93,
     "need": 4.5,
     "large": false
    }
@@ -1400,14 +1248,6 @@
     "ratio": 3.27,
     "need": 4.5,
     "large": false
-   },
-   {
-    "text": "SiteKeeper-managed site",
-    "fg": "#8b8570",
-    "bg": "rgb(246,241,227)",
-    "ratio": 3.27,
-    "need": 4.5,
-    "large": false
    }
   ]
  },
@@ -1444,6 +1284,14 @@
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#fff",
+    "bg": "rgb(125,140,111)",
+    "ratio": 3.59,
+    "need": 4.5,
+    "large": false
    }
   ]
  },
@@ -1451,14 +1299,6 @@
   "light": [
    {
     "text": "Loading\u2026",
-    "fg": "#8a755e",
-    "bg": "rgb(250,244,232)",
-    "ratio": 4.0,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "SiteKeeper-managed site",
     "fg": "#8a755e",
     "bg": "rgb(250,244,232)",
     "ratio": 4.0,
@@ -1530,38 +1370,6 @@
  "mid-central-appliance": {
   "light": [
    {
-    "text": "01",
-    "fg": "#e85b20",
-    "bg": "rgb(255,255,255)",
-    "ratio": 3.53,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "02",
-    "fg": "#e85b20",
-    "bg": "rgb(255,255,255)",
-    "ratio": 3.53,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "03",
-    "fg": "#e85b20",
-    "bg": "rgb(255,255,255)",
-    "ratio": 3.53,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "04",
-    "fg": "#e85b20",
-    "bg": "rgb(255,255,255)",
-    "ratio": 3.53,
-    "need": 4.5,
-    "large": false
-   },
-   {
     "text": "Decatur, IL",
     "fg": "#fff",
     "bg": "image/gradient",
@@ -1588,14 +1396,6 @@
   ],
   "dark": [
    {
-    "text": "Call (479) 318-6855",
-    "fg": "#fff",
-    "bg": "rgb(255,155,115)",
-    "ratio": 2.06,
-    "need": 4.5,
-    "large": false
-   },
-   {
     "text": "Decatur, IL",
     "fg": "#fff",
     "bg": "image/gradient",
@@ -1610,22 +1410,6 @@
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
-   },
-   {
-    "text": "Prepare call details",
-    "fg": "#fff",
-    "bg": "rgb(255,155,115)",
-    "ratio": 2.06,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Call now",
-    "fg": "#fff",
-    "bg": "rgb(255,155,115)",
-    "ratio": 2.06,
-    "need": 4.5,
-    "large": false
    }
   ]
  },
@@ -1654,14 +1438,6 @@
     "ratio": 3.91,
     "need": 4.5,
     "large": false
-   },
-   {
-    "text": "SiteKeeper-managed site",
-    "fg": "#6d727c",
-    "bg": "rgb(16,17,20)",
-    "ratio": 3.91,
-    "need": 4.5,
-    "large": false
    }
   ]
  },
@@ -1674,6 +1450,14 @@
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#fff",
+    "bg": "rgb(31,163,184)",
+    "ratio": 3.0,
+    "need": 4.5,
+    "large": false
    }
   ]
  },
@@ -1846,14 +1630,6 @@
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
-   },
-   {
-    "text": "What we repair",
-    "fg": "#dc6a32",
-    "bg": "rgb(246,247,245)",
-    "ratio": 3.18,
-    "need": 4.5,
-    "large": false
    }
   ],
   "dark": [
@@ -1882,28 +1658,12 @@
     "warn": "over-image"
    },
    {
-    "text": "Call (217) 292-6509",
-    "fg": "#fff",
-    "bg": "rgb(255,152,104)",
-    "ratio": 2.11,
-    "need": 4.5,
-    "large": false
-   },
-   {
     "text": "Prepare a repair request",
     "fg": "#fff",
     "bg": "image/gradient",
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
-   },
-   {
-    "text": "Prepare request summary",
-    "fg": "#fff",
-    "bg": "rgb(255,152,104)",
-    "ratio": 2.11,
-    "need": 4.5,
-    "large": false
    }
   ]
  },
@@ -2020,14 +1780,6 @@
     "ratio": 2.62,
     "need": 4.5,
     "large": false
-   },
-   {
-    "text": "SiteKeeper-managed site",
-    "fg": "#a39d8d",
-    "bg": "rgb(253,251,247)",
-    "ratio": 2.62,
-    "need": 4.5,
-    "large": false
    }
   ]
  },
@@ -2060,16 +1812,16 @@
    {
     "text": "Call",
     "fg": "#fff",
-    "bg": "rgb(255,247,239)",
-    "ratio": 1.06,
+    "bg": "rgb(255,107,107)",
+    "ratio": 2.78,
     "need": 4.5,
     "large": false
    },
    {
     "text": "Get Directions",
     "fg": "#fff",
-    "bg": "rgb(255,247,239)",
-    "ratio": 1.06,
+    "bg": "rgb(42,157,143)",
+    "ratio": 3.32,
     "need": 4.5,
     "large": false
    }
@@ -2098,14 +1850,6 @@
  "south-pole": {
   "light": [
    {
-    "text": "Call (765) 675-6869",
-    "fg": "#fff",
-    "bg": "rgb(217,78,63)",
-    "ratio": 4.11,
-    "need": 4.5,
-    "large": false
-   },
-   {
     "text": "\u2605\u2605\u2605\u2605\u2605",
     "fg": "#f6c84b",
     "bg": "rgb(8,127,137)",
@@ -2128,81 +1872,9 @@
     "ratio": 4.34,
     "need": 4.5,
     "large": false
-   },
-   {
-    "text": "Hours",
-    "fg": "white",
-    "bg": "rgb(217,78,63)",
-    "ratio": 4.11,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Monday\u2013Friday",
-    "fg": "white",
-    "bg": "rgb(217,78,63)",
-    "ratio": 4.11,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "11 AM\u20139 PM",
-    "fg": "white",
-    "bg": "rgb(217,78,63)",
-    "ratio": 4.11,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Saturday",
-    "fg": "white",
-    "bg": "rgb(217,78,63)",
-    "ratio": 4.11,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "11 AM\u20138 PM",
-    "fg": "white",
-    "bg": "rgb(217,78,63)",
-    "ratio": 4.11,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Sunday",
-    "fg": "white",
-    "bg": "rgb(217,78,63)",
-    "ratio": 4.11,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Closed",
-    "fg": "white",
-    "bg": "rgb(217,78,63)",
-    "ratio": 4.11,
-    "need": 4.5,
-    "large": false
-   },
-   {
-    "text": "Please confirm evening closing times with the owner.",
-    "fg": "#fff9e8",
-    "bg": "rgb(217,78,63)",
-    "ratio": 3.91,
-    "need": 4.5,
-    "large": false
    }
   ],
   "dark": [
-   {
-    "text": "Call (765) 675-6869",
-    "fg": "#fff",
-    "bg": "rgb(231,102,86)",
-    "ratio": 3.26,
-    "need": 4.5,
-    "large": false
-   },
    {
     "text": "\u2605\u2605\u2605\u2605\u2605",
     "fg": "#ffd76a",
@@ -2434,14 +2106,6 @@
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
-   },
-   {
-    "text": "Prepare my order brief",
-    "fg": "#fff",
-    "bg": "rgb(184,99,54)",
-    "ratio": 4.31,
-    "need": 4.5,
-    "large": false
    }
   ],
   "dark": [
@@ -2484,14 +2148,6 @@
     "ratio": null,
     "need": 4.5,
     "warn": "over-image"
-   },
-   {
-    "text": "Prepare my order brief",
-    "fg": "#fff",
-    "bg": "rgb(226,139,89)",
-    "ratio": 2.6,
-    "need": 4.5,
-    "large": false
    }
   ]
  },
@@ -2704,14 +2360,6 @@
     "ratio": 3.05,
     "need": 4.5,
     "large": false
-   },
-   {
-    "text": "SiteKeeper-managed site",
-    "fg": "#8a857c",
-    "bg": "rgb(236,234,228)",
-    "ratio": 3.05,
-    "need": 4.5,
-    "large": false
    }
   ]
  },
@@ -2719,7 +2367,7 @@
   "light": [
    {
     "text": "Services",
-    "fg": "#fff",
+    "fg": "#dbe9f3",
     "bg": "image/gradient",
     "ratio": null,
     "need": 4.5,
@@ -2727,7 +2375,7 @@
    },
    {
     "text": "Location",
-    "fg": "#fff",
+    "fg": "#dbe9f3",
     "bg": "image/gradient",
     "ratio": null,
     "need": 4.5,
@@ -2735,7 +2383,7 @@
    },
    {
     "text": "Request a quote",
-    "fg": "#fff",
+    "fg": "#dbe9f3",
     "bg": "image/gradient",
     "ratio": null,
     "need": 4.5,
