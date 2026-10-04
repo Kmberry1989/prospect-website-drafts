@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Gallery — scroll or swipe through every concept</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f1420; color: #e8ecf4; }
+  header { position: sticky; top: 0; z-index: 20; background: rgba(15,20,32,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #24304a; padding: 0.7rem 1rem; }
+  header .row { max-width: 1200px; margin: 0 auto; display: flex; gap: 0.8rem; align-items: center; }
+  header h1 { font-size: 1rem; white-space: nowrap; }
+  #counter { color: #9aa5b8; font-size: 0.85rem; white-space: nowrap; }
+  #filter { flex: 1; max-width: 320px; margin-left: auto; padding: 0.5rem 0.8rem; border-radius: 8px; border: 1px solid #24304a; background: #1a2338; color: #fff; font-size: 0.9rem; }
+  .nav { position: fixed; z-index: 30; top: 50%; transform: translateY(-50%); width: 3rem; height: 3rem; border-radius: 50%; border: 1px solid #24304a; background: rgba(26,35,56,0.9); color: #fff; font-size: 1.3rem; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .nav:hover { background: #24304a; }
+  #prev { left: 0.6rem; } #next { right: 0.6rem; }
+  .grid { max-width: 1200px; margin: 0 auto; padding: 1.2rem 1rem 4rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.4rem; }
+  .card { background: #1a2338; border: 1px solid #24304a; border-radius: 14px; overflow: hidden; scroll-margin-top: 4.5rem; }
+  .card .bar { display: flex; align-items: center; gap: 0.6rem; padding: 0.7rem 0.9rem; }
+  .card .bar .dot { width: 0.65rem; height: 0.65rem; border-radius: 50%; background: #2f3d5c; flex-shrink: 0; }
+  .card .bar .nm { font-weight: 700; font-size: 0.88rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .card .bar a { margin-left: auto; color: #7ea4f8; font-size: 0.78rem; text-decoration: none; flex-shrink: 0; }
+  .frame { position: relative; width: 100%; aspect-ratio: 390 / 620; background: #fff; }
+  .frame iframe { position: absolute; inset: 0; width: 390px; height: 620px; border: 0; transform-origin: top left; }
+  .frame .ph { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #98a2b3; font-size: 0.85rem; }
+  .hint { text-align: center; color: #9aa5b8; font-size: 0.85rem; padding: 0.4rem 1rem 0; }
+  @media (max-width: 640px) { .nav { width: 2.6rem; height: 2.6rem; } #prev { left: 0.3rem; } #next { right: 0.3rem; } header h1 { display: none; } }
+</style>
+</head>
+<body>
+<header><div class="row">
+  <h1>Concept gallery</h1><span id="counter"></span>
+  <input id="filter" type="search" placeholder="Filter sites…">
+</div></header>
+<p class="hint">Scroll up &amp; down to browse &middot; swipe left/right or use &larr; &rarr; keys for previous / next site &middot; tap a name to open it live</p>
+<button class="nav" id="prev" aria-label="Previous site">&#8592;</button>
+<button class="nav" id="next" aria-label="Next site">&#8594;</button>
+<div class="grid" id="grid"></div>
+<script>
+const SITES = [{"slug": "allure-hair-artistry", "name": "Allure Hair Artistry"}, {"slug": "alpha-nails", "name": "Alpha Nails"}, {"slug": "arties-tenderloin", "name": "Artie's Tenderloin \u2014 Since 1938"}, {"slug": "bk-drive-in-rochester", "name": "B & K Drive In"}, {"slug": "bg-handyman", "name": "B&G Handyman Services"}, {"slug": "bk-rootbeer-peru", "name": "B&K Rootbeer"}, {"slug": "bk-root-beer-gas-city", "name": "B-K Root Beer"}, {"slug": "barlows-barbershop", "name": "Barlow's Barbershop \u2014 Kokomo, Indiana"}, {"slug": "bens-small-engine", "name": "Ben's Small Engine Repair | Kokomo, Indiana"}, {"slug": "bryans-painting", "name": "Bryan's Painting"}, {"slug": "classic-family-hair", "name": "Classic Family Hair"}, {"slug": "coffings-garage-doors", "name": "Coffing's Ro-Way Door Sales & Service Inc"}, {"slug": "cone-palace", "name": "Cone Palace"}, {"slug": "crazy-omelette", "name": "Crazy Omelette"}, {"slug": "dm-small-engine-repair", "name": "D and M Small Engine Repair"}, {"slug": "dads-garage", "name": "Dads Garage"}, {"slug": "debs-laundry", "name": "Deb's Laundry"}, {"slug": "denning-automotive", "name": "Denning Automotive | Auto Repair &amp; 24-Hour Towing"}, {"slug": "dennys-hvac", "name": "Denny's Heating & Cooling Inc"}, {"slug": "dicks-drive-in", "name": "Dick's Drive-In"}, {"slug": "dillingers-peru", "name": "Dillinger's"}, {"slug": "east-end-muffler", "name": "East End Muffler"}, {"slug": "el-patron", "name": "El Patron Mexican Restaurant \u2014 Greentown, Indiana"}, {"slug": "evers-tire-auto", "name": "Evers Tire and Auto Service"}, {"slug": "fatt-matts-tatts", "name": "Fatt Matt's Tatts"}, {"slug": "filament-tattoo-co", "name": "Filament Tattoo Co."}, {"slug": "fissel-electric", "name": "Fissel Electric Services Inc"}, {"slug": "friermood-tire", "name": "Friermood Tire"}, {"slug": "frittatas", "name": "Frittatas Restaurant \u2014 Kokomo, Indiana"}, {"slug": "hair-heaven-peru", "name": "Hair Heaven"}, {"slug": "hair-razors", "name": "Hair Razors"}, {"slug": "hairtique-fountain-blues", "name": "Hairtique and Fountain Blues"}, {"slug": "hometown-family", "name": "Hometown Family Restaurant \u2014 Greentown, Indiana"}, {"slug": "jackies-family-restaurant", "name": "Jackie's Family Restaurant"}, {"slug": "jarrells-auto-repair", "name": "Jarrell's Auto Repair"}, {"slug": "jeffs-barber-kokomo", "name": "Jeff's Barber Shop"}, {"slug": "jeffs-barber-peru", "name": "Jeff's Barber Shop"}, {"slug": "jerry-love-auto", "name": "Jerry Love Auto Repair \u2014 Kokomo, Indiana"}, {"slug": "karnes-sweeper", "name": "Karnes Sweeper Company"}, {"slug": "kissanes-memorial-flowers", "name": "Kissane's Memorial Flowers"}, {"slug": "mb-body-shop", "name": "M & B Body Shop"}, {"slug": "marion-sew-and-vac", "name": "Marion Sew And Vac"}, {"slug": "melskis-physical-graffiti", "name": "Melski's Physical Graffiti"}, {"slug": "mens-classic-cuts", "name": "Men's Classic Cuts LLC"}, {"slug": "mid-central-appliance", "name": "Mid Central Appliance Repair"}, {"slug": "mind-over-metal", "name": "Mind Over Metal LLC"}, {"slug": "mr-bs-laundry-tanning", "name": "Mr. B's Laundry and Tanning"}, {"slug": "murrays-body-shop", "name": "Murray's Body Shop LLC"}, {"slug": "nails-number-1", "name": "Nails Number 1"}, {"slug": "neffs-septic", "name": "Neff's Septic Services"}, {"slug": "pauleys-septic", "name": "Pauley's Sewer & Septic Services"}, {"slug": "phil-and-cheryls-grill", "name": "Phil & Cheryl's Grill"}, {"slug": "precision-autotech", "name": "Precision AutoTech LLC"}, {"slug": "primebridge-appliance", "name": "PrimeBridge Appliance Repair Co"}, {"slug": "roann-engraving", "name": "Roann Engraving \u2014 Custom Gifts & Awards"}, {"slug": "rock-solid-concrete", "name": "Rock Solid Concrete"}, {"slug": "ronas-alterations", "name": "Rona's Alterations"}, {"slug": "samis-shags-n-wags", "name": "Sami's Shags N Wags"}, {"slug": "schroders-5th-street-barber", "name": "Schroder's 5th Street Barber"}, {"slug": "securepath-appliance", "name": "SecurePath Appliance Repair Group"}, {"slug": "shear-envy-studio", "name": "Shear Envy Hair Studio"}, {"slug": "shear-image", "name": "Shear Image"}, {"slug": "south-peru-hair-boutique", "name": "South Peru Hair Boutique & Skin Care Center"}, {"slug": "stoltes-pools-spas", "name": "Stolte's Pools-Spas & Services"}, {"slug": "straight-edge-salon", "name": "Straight Edge Hair Salon"}, {"slug": "sycamore-drive-in", "name": "Sycamore Drive-In"}, {"slug": "tarks-pizza", "name": "Tark's Pizza"}, {"slug": "tates-engraving", "name": "Tate's Laser Engraving \u2014 Custom Gifts & Awards in Kokomo"}, {"slug": "south-pole", "name": "The South Pole \u2014 Tipton, Indiana"}, {"slug": "tipton-nails", "name": "Tipton Nails"}, {"slug": "tracks-end-restaurant", "name": "Track's End Restaurant"}, {"slug": "twisted-scissors", "name": "Twisted Scissors"}, {"slug": "two-sisters-housekeeping", "name": "Two Sisters Housekeeping Service"}, {"slug": "uptown-style", "name": "Uptown Style"}, {"slug": "usa-nails", "name": "USA Nails"}, {"slug": "wally-and-olly", "name": "Wally and Olly's Ice Cream"}, {"slug": "walt-moss-barber", "name": "Walt Moss Barber Shop"}, {"slug": "williams-small-engines", "name": "Williams Small Engines"}, {"slug": "winnett-automotive", "name": "Winnett Automotive | Auto Repair in Mattoon, IL"}];
+const grid = document.getElementById('grid');
+const counter = document.getElementById('counter');
+let cards = [], current = 0;
+
+function frameScale() {
+  const w = document.querySelector('.frame').clientWidth;
+  document.querySelectorAll('.frame iframe').forEach(f => { f.style.transform = 'scale(' + (w / 390) + ')'; });
+}
+
+SITES.forEach((s, i) => {
+  const el = document.createElement('div');
+  el.className = 'card'; el.dataset.name = s.name.toLowerCase(); el.dataset.idx = i;
+  el.innerHTML = '<div class="bar"><span class="dot"></span><span class="nm">' + s.name.replace(/</g, '&lt;') + '</span><a href="../' + s.slug + '/" target="_blank" rel="noopener">open live &#8599;</a></div>' +
+    '<div class="frame"><div class="ph">loading preview…</div><iframe title="' + s.name.replace(/"/g, '') + '" loading="lazy" data-src="../' + s.slug + '/"></iframe></div>';
+  grid.appendChild(el);
+});
+cards = [...grid.children];
+
+const io = new IntersectionObserver(es => es.forEach(e => {
+  const f = e.target.querySelector('iframe');
+  if (e.isIntersecting && !f.src) {
+    f.src = f.dataset.src;
+    f.onload = () => { const ph = e.target.querySelector('.ph'); if (ph) ph.remove(); };
+  }
+}), { rootMargin: '600px' });
+cards.forEach(c => io.observe(c));
+
+const vis = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) {
+    const shown = cards.filter(c => c.style.display !== 'none');
+    current = shown.indexOf(e.target);
+    counter.textContent = (current + 1) + ' / ' + shown.length;
+  }
+}), { threshold: 0.4 });
+cards.forEach(c => vis.observe(c));
+
+function go(d) {
+  const shown = cards.filter(c => c.style.display !== 'none');
+  if (!shown.length) return;
+  current = (current + d + shown.length) % shown.length;
+  shown[current].scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+document.getElementById('prev').onclick = () => go(-1);
+document.getElementById('next').onclick = () => go(1);
+addEventListener('keydown', e => {
+  if (e.target.id === 'filter') return;
+  if (e.key === 'ArrowLeft') go(-1);
+  if (e.key === 'ArrowRight') go(1);
+});
+let tx = null;
+addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+addEventListener('touchend', e => {
+  if (tx === null) return;
+  const dx = e.changedTouches[0].clientX - tx; tx = null;
+  if (Math.abs(dx) > 70) go(dx < 0 ? 1 : -1);
+}, { passive: true });
+document.getElementById('filter').addEventListener('input', e => {
+  const q = e.target.value.toLowerCase();
+  cards.forEach(c => { c.style.display = c.dataset.name.includes(q) ? '' : 'none'; });
+  current = 0;
+  const shown = cards.filter(c => c.style.display !== 'none');
+  counter.textContent = shown.length ? '1 / ' + shown.length : '0 / 0';
+  if (shown.length) shown[0].scrollIntoView({ block: 'start' });
+});
+addEventListener('resize', frameScale);
+addEventListener('load', () => { frameScale(); counter.textContent = '1 / ' + cards.length; });
+frameScale(); counter.textContent = '1 / ' + cards.length;
+</script>
+</body>
+</html>
