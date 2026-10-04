@@ -1,0 +1,106 @@
+{
+  "business": {
+    "name": "Track's End Restaurant",
+    "tagline": "A railroad-themed diner inside the Mississinewa Silo Lodging \u2014 motel guests' breakfast spot, open to the public.",
+    "phone": "(765) 472-4187",
+    "address": "60 Roxy Ln, Peru, IN 46970"
+  },
+  "announcement": "Our hours aren't published online \u2014 call (765) 472-4187 to confirm today's hours.",
+  "specials": [
+    {
+      "title": "Railroader Omelet",
+      "desc": "The signature plate."
+    },
+    {
+      "title": "Railroad-Themed Menu",
+      "desc": "Every plate is named for the train crew \u2014 order like a railroader."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Signature Plates",
+      "items": [
+        {
+          "name": "Railroader Omelet",
+          "desc": "The signature"
+        },
+        {
+          "name": "The Railroader",
+          "price": "$9.00"
+        },
+        {
+          "name": "Hillbilly",
+          "price": "$8.00"
+        },
+        {
+          "name": "Sizzler",
+          "price": "$8.00"
+        },
+        {
+          "name": "Iron Horse",
+          "price": "$7.00"
+        },
+        {
+          "name": "Conductor",
+          "price": "$7.30"
+        },
+        {
+          "name": "Pork Tenderloin",
+          "price": "$6.00"
+        },
+        {
+          "name": "Frito Chili Pie",
+          "price": "$6.00"
+        },
+        {
+          "name": "Peddler",
+          "price": "$5.80"
+        },
+        {
+          "name": "Brakeman",
+          "price": "$5.30"
+        },
+        {
+          "name": "Steam Engine",
+          "price": "$5.30"
+        },
+        {
+          "name": "Caboose",
+          "price": "$4.30"
+        }
+      ],
+      "note": "Prices from an older published menu \u2014 today's prices may differ."
+    },
+    {
+      "section": "Breakfast Basics",
+      "items": [
+        {
+          "name": "Biscuits & Gravy"
+        },
+        {
+          "name": "Pancakes"
+        },
+        {
+          "name": "2 Eggs with Meat",
+          "price": "$4.00"
+        }
+      ],
+      "note": "Prices from an older published menu \u2014 today's prices may differ."
+    },
+    {
+      "section": "Also on the Menu",
+      "items": [
+        {
+          "name": "Grilled Chicken Wrap"
+        },
+        {
+          "name": "Fish Filet"
+        },
+        {
+          "name": "Chicken Fried Steak"
+        }
+      ]
+    }
+  ],
+  "hours": []
+}

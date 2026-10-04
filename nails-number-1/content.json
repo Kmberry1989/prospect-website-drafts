@@ -1,0 +1,52 @@
+{
+  "business": {
+    "name": "Nails Number 1",
+    "tagline": "Walk-ins welcome.",
+    "phone": "(765) 454-9706",
+    "address": "1104 S Seventeenth St, Kokomo, IN 46902"
+  },
+  "announcement": "Hours vary — please call ahead for today's hours.",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Nail Services",
+      "items": [
+        {
+          "name": "Manicure"
+        },
+        {
+          "name": "Mani / Pedi"
+        },
+        {
+          "name": "Nail Fill-In"
+        },
+        {
+          "name": "Polish Change / Removal"
+        },
+        {
+          "name": "Acrylic"
+        },
+        {
+          "name": "Pink & White"
+        }
+      ]
+    },
+    {
+      "section": "More Services",
+      "items": [
+        {
+          "name": "Pedicures",
+          "desc": "Relax in a massage chair while you soak"
+        },
+        {
+          "name": "Waxing",
+          "desc": "Brow and lip"
+        }
+      ]
+    }
+  ],
+  "hours": [],
+  "meta": {
+    "townTrade": "Kokomo, IN — Nail Salon"
+  }
+}

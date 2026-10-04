@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hair Heaven — Peru, IN — Hair Salon</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,'Times New Roman',serif;background:#faf7f0;color:#38302a;line-height:1.65}
+.banner{display:none;background:#7a5c3d;color:#faf7f0;text-align:center;padding:.75rem 1rem;font-weight:700}
+.band{background:#7a5c3d;color:#faf7f0;padding:2.6rem 1.2rem 2rem;text-align:center}
+.band h1{font-size:clamp(2rem,7vw,3rem);line-height:1.12}
+.band .est{letter-spacing:.3em;font-size:.72rem;text-transform:uppercase;opacity:.85;margin-bottom:.7rem}
+.band .tag{font-style:italic;margin-top:.6rem;font-size:1.08rem;opacity:.95;max-width:560px;margin-left:auto;margin-right:auto}
+.strap{background:#a31621;height:8px}
+.contactbar{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap;padding:1.4rem 1.2rem;background:#fffdf9;border-bottom:1px solid #e2d8c4}
+.contactbar a{min-height:48px;display:inline-flex;align-items:center;padding:.6rem 1.3rem;border-radius:6px;font-weight:700;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+.contactbar .call{background:#a31621;color:#faf7f0}
+.contactbar .dir{border:2px solid #7a5c3d;color:#7a5c3d}
+.contactbar .fb{border:2px solid #7d7264;color:#7d7264;display:none}
+.addr{text-align:center;color:#7d7264;padding:1rem 1.2rem 0}
+main{max-width:700px;margin:0 auto;padding:2rem 1.2rem 3rem}
+.block{margin-bottom:2.4rem}
+h2{color:#7a5c3d;font-size:1.35rem;margin-bottom:.8rem}
+h2 .no{color:#a31621;margin-right:.5rem}
+.special{border:2px dashed #a31621;border-radius:8px;padding:1rem 1.1rem;margin-bottom:.8rem;background:#fffdf9}
+.special b{display:block;font-size:1.05rem}
+.special span{color:#7d7264;font-size:.95rem}
+.item{padding:.6rem 0;border-bottom:1px solid #e2d8c4;display:flex;justify-content:space-between;gap:1rem}
+.item .n{font-weight:700}
+.item .n small{display:block;font-weight:400;color:#7d7264;font-size:.87rem;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+.item .p{font-weight:700;color:#a31621;white-space:nowrap}
+.hours{border-top:3px solid #7a5c3d}
+.hrow{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid #e2d8c4}
+.hrow span:last-child{font-weight:700}
+footer{text-align:center;padding:1.6rem;color:#7d7264;font-size:.85rem;border-top:1px solid #e2d8c4}
+.loading{text-align:center;padding:4rem 1rem;color:#7d7264}
+</style>
+</head>
+<body>
+<div class="banner" id="banner"></div>
+<div class="band">
+<div class="est">Peru · Indiana</div>
+<h1 id="biz-name">…</h1>
+<div class="tag" id="biz-tag"></div>
+</div>
+<div class="strap"></div>
+<div class="addr" id="biz-addr"></div>
+<div class="contactbar">
+<a class="call" id="biz-phone" href="#" style="display:none">Call</a>
+<a class="dir" id="biz-dir" href="#">Get Directions</a>
+<a class="fb" id="fb-link" href="#">Facebook</a>
+</div>
+<main id="content"><div class="loading">Loading…</div></main>
+<footer><span id="foot-name"></span><br><span id="foot-addr"></span></footer>
+<script>
+
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    const b = c.business || {};
+    document.title = b.name + ' — ' + c.meta.townTrade;
+    set('biz-name', b.name); set('biz-tag', b.tagline);
+    set('biz-addr', b.address);
+    const ph = document.getElementById('biz-phone');
+    if (b.phone) { ph.textContent = b.phone; ph.href = 'tel:+1' + b.phone.replace(/\D/g, ''); ph.style.display = ''; }
+    const dl = document.getElementById('biz-dir');
+    if (dl && b.address) dl.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(b.name + ' ' + b.address);
+    const fb = document.getElementById('fb-link');
+    if (fb && b.facebook) { fb.href = b.facebook; fb.style.display = ''; }
+    const an = document.getElementById('banner');
+    if (c.announcement) { an.textContent = c.announcement; an.style.display = 'block'; }
+    let h = '';
+    if (c.specials && c.specials.length) {
+      h += '<section class="block"><h2>Specials</h2>' + c.specials.map(s =>
+        '<div class="special"><b>' + esc(s.title) + '</b>' + (s.desc ? '<span>' + esc(s.desc) + '</span>' : '') + '</div>').join('') + '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      h += '<section class="block"><h2>' + esc(sec.section) + '</h2>' +
+        (sec.items || []).map(it =>
+          '<div class="item"><div class="n">' + esc(it.name) +
+          (it.desc ? '<small>' + esc(it.desc) + '</small>' : '') + '</div>' +
+          (it.price ? '<div class="p">' + esc(it.price) + '</div>' : '') + '</div>').join('') + '</section>';
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section class="block"><h2>Hours</h2><div class="hours">' + c.hours.map(x =>
+        '<div class="hrow"><span>' + esc(x.days) + '</span><span>' + esc(x.time) + '</span></div>').join('') + '</div></section>';
+    }
+    document.getElementById('content').innerHTML = h;
+    document.getElementById('foot-name').textContent = b.name || '';
+    document.getElementById('foot-addr').textContent = b.address || '';
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">Could not load content.</div>'; });
+function set(id, v) { const e = document.getElementById(id); if (e && v) e.textContent = v; }
+function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+
+</script>
+</body>
+</html>

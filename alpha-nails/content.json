@@ -1,0 +1,54 @@
+{
+  "business": {
+    "name": "Alpha Nails",
+    "tagline": "Nail art is the specialty — freehand designs and inspiration photos, replicated.",
+    "phone": "(765) 662-3001",
+    "address": "235 S Baldwin Ave, Marion, IN 46952"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Nail Services",
+      "items": [
+        {
+          "name": "Dip Powder"
+        },
+        {
+          "name": "Gel Manicures"
+        },
+        {
+          "name": "Acrylic Nails"
+        },
+        {
+          "name": "Pedicures"
+        },
+        {
+          "name": "Nail Art",
+          "desc": "Freehand designs and replication of inspiration photos"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday",
+      "time": "Closed"
+    },
+    {
+      "days": "Tuesday – Friday",
+      "time": "9:00 AM – 6:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "9:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Marion, IN — Nail Art Studio"
+  }
+}

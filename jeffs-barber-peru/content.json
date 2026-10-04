@@ -1,0 +1,55 @@
+{
+  "business": {
+    "name": "Jeff's Barber Shop",
+    "tagline": "A one-man neighborhood shop, in the back on Broadway.",
+    "phone": "(765) 460-8901",
+    "address": "62 S Broadway Ave, Peru, IN 46970"
+  },
+  "announcement": "Walk-ins only.",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Haircut"
+        },
+        {
+          "name": "Straight Razor Neck Shave"
+        },
+        {
+          "name": "Beard Trim"
+        },
+        {
+          "name": "Military-Regulation Haircuts",
+          "desc": "A specialty"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday",
+      "time": "Closed"
+    },
+    {
+      "days": "Tuesday – Wednesday",
+      "time": "8:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Thursday – Friday",
+      "time": "9:00 AM – 6:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "8:00 AM – 12:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Peru, IN — Barber Shop"
+  }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sami's Shags N Wags | Pet Grooming in Logansport, IN</title>
+<meta name="description" content="Sami's Shags N Wags — pet grooming in Logansport, IN. Gentle handling for nervous pups, fair pricing. Call (574) 727-0844.">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.65; color: #4a3428; background: #fff7ef; }
+.banner { display: none; text-align: center; padding: 0.8rem 1rem; font-weight: 700; background: #ff6b6b; color: #fff; }
+.hero { text-align: center; padding: 3rem 1.2rem 2.2rem; background: radial-gradient(circle at 15% 20%, #ffe3c2 0 90px, transparent 91px), radial-gradient(circle at 88% 70%, #ffd9e0 0 70px, transparent 71px), linear-gradient(180deg, #ffefd9 0%, #fff7ef 100%); border-bottom: 4px dashed #ff9d76; }
+.hero h1 { font-family: "Trebuchet MS", "Comic Sans MS", Verdana, sans-serif; font-size: clamp(2.1rem, 8vw, 3.2rem); color: #c2432b; line-height: 1.15; margin: 0.6rem 0 0.4rem; }
+.tag { font-size: 1.08rem; color: #a05a3c; font-weight: 600; }
+.contact-bar { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; padding: 0 1.2rem; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; min-width: 160px; padding: 0.7rem 1.4rem; font-size: 1.05rem; font-weight: 700; text-decoration: none; border-radius: 999px; .btn.call { background: #ff6b6b; color: #fff; border: none; box-shadow: 0 3px 0 #c2432b; } .btn.dir { background: #2a9d8f; color: #fff; border: none; box-shadow: 0 3px 0 #1d6f65; } }
+.addr { text-align: center; padding: 0.9rem 1.2rem 0.4rem; color: #8a6a52; font-size: 0.98rem; }
+main { max-width: 760px; margin: 0 auto; padding: 1.6rem 1.2rem 3rem; }
+section { margin-bottom: 2.4rem; }
+section h2 { font-family: "Trebuchet MS", "Comic Sans MS", Verdana, sans-serif; font-size: 1.5rem; color: #c2432b; margin-bottom: 0.9rem; border-bottom: 3px solid #ffd9c2; padding-bottom: 0.3rem; }
+.special { background: #fff; border: 2px solid #ff9d76; border-radius: 18px; padding: 0.85rem 1.1rem; margin-bottom: 0.8rem; color: #4a3428; }
+.special b { display: block; font-size: 1.05rem; }
+.special span { font-size: 0.96rem; }
+.item { display: flex; justify-content: space-between; gap: 1rem; padding: 0.65rem 0; border-bottom: 2px dotted #eccfb4; background: #fff; border-radius: 12px; padding-left: 0.8rem; padding-right: 0.8rem; margin-bottom: 0.35rem; }
+.item .n { font-weight: 700; font-size: 1.02rem; }
+.item .n small { display: block; font-weight: 400; font-size: 0.9rem; color: #8a6a52; margin-top: 0.15rem; }
+.item .p { font-weight: 700; white-space: nowrap; color: #c2432b; }
+.hours { width: 100%; border-collapse: collapse; }
+.hours td { padding: 0.55rem 0; border-bottom: 1px dotted #eccfb4; }
+.hours td:last-child { text-align: right; font-weight: 700; }
+footer { text-align: center; padding: 1.6rem 1.2rem 2.2rem; font-size: 0.88rem; color: #a08672; border-top: 3px dashed #ff9d76; }
+.loading { text-align: center; padding: 4rem 1rem; }
+.badge-row { display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; margin-top: 0.9rem; }
+.badge { display: inline-block; padding: 0.35rem 0.9rem; font-size: 0.85rem; font-weight: 700; border-radius: 999px; background: #2a9d8f; color: #fff; }
+.fb-link { display: inline-block; margin-top: 0.7rem; font-weight: 700; color: #2a9d8f; }
+.deco { margin-bottom: 0.4rem; }
+a:focus-visible, .btn:focus-visible { outline: 3px solid #ff6b6b; outline-offset: 2px; }
+
+</style>
+</head>
+<body>
+<div class="banner" id="banner" role="note"></div>
+<header class="hero">
+  <svg class="deco" width="54" height="54" viewBox="0 0 100 100" aria-hidden="true"><g fill="#ff9d76"><ellipse cx="50" cy="62" rx="24" ry="20"/><ellipse cx="24" cy="36" rx="10" ry="13"/><ellipse cx="42" cy="24" rx="10" ry="13"/><ellipse cx="60" cy="24" rx="10" ry="13"/><ellipse cx="78" cy="36" rx="10" ry="13"/></g></svg>
+  <h1 id="biz-name">&hellip;</h1>
+  <p class="tag" id="biz-tag"></p>
+  <div class="badge-row"><span class="badge">Gentle with nervous pups</span><span class="badge">4.9 stars on Google</span></div>
+</header>
+<div class="contact-bar">
+  <a class="btn call" id="biz-phone" href="#">Call</a>
+  <a class="btn dir" id="biz-dir" href="#" target="_blank" rel="noopener">Get Directions</a>
+</div>
+<p class="addr" id="biz-addr"></p>
+
+<main id="content"><div class="loading">Loading&hellip;</div></main>
+<footer>
+  <p id="foot-name"></p>
+  <p>Content managed with SiteKeeper.</p>
+</footer>
+<script>
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    document.title = c.business.name + ' | ' + (c.business.tagline || '');
+    document.getElementById('biz-name').textContent = c.business.name;
+    document.getElementById('biz-tag').textContent = c.business.tagline || '';
+    document.getElementById('biz-addr').textContent = c.business.address || '';
+    document.getElementById('foot-name').textContent = c.business.name + ' — ' + (c.business.address || '');
+    var ph = document.getElementById('biz-phone');
+    ph.textContent = 'Call ' + (c.business.phone || '');
+    ph.href = 'tel:' + (c.business.phone || '').replace(/\D/g, '');
+    document.getElementById('biz-dir').href =
+      'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(c.business.address || '');
+    if (c.announcement) {
+      var b = document.getElementById('banner');
+      b.textContent = c.announcement;
+      b.style.display = 'block';
+    }
+    var h = '';
+    if (c.specials && c.specials.length) {
+      h += '<section aria-label="Specials"><h2>Specials</h2>' + c.specials.map(s =>
+        '<div class="special"><b>' + esc(s.title) + '</b><span>' + esc(s.desc) + '</span></div>').join('') + '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      h += '<section><h2>' + esc(sec.section) + '</h2>' + (sec.items || []).map(it =>
+        '<div class="item"><div class="n">' + esc(it.name) +
+        (it.desc ? '<small>' + esc(it.desc) + '</small>' : '') +
+        '</div>' + (it.price ? '<div class="p">' + esc(it.price) + '</div>' : '') + '</div>').join('') + '</section>';
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section><h2>Hours</h2><table class="hours"><tbody>' + c.hours.map(x =>
+        '<tr><td>' + esc(x.days) + '</td><td>' + esc(x.time) + '</td></tr>').join('') + '</tbody></table></section>';
+    }
+    document.getElementById('content').innerHTML = h;
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">Could not load content.</div>'; });
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+</script>
+</body>
+</html>

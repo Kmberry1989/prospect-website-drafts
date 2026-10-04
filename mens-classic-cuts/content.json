@@ -1,0 +1,61 @@
+{
+  "business": {
+    "name": "Men's Classic Cuts LLC",
+    "tagline": "The missing link between a barbershop and a salon.",
+    "phone": "(765) 919-6239",
+    "address": "53 S Broadway Ave, Peru, IN 46970",
+    "facebook": "http://www.facebook.com/mensclassiccuts"
+  },
+  "announcement": "Walk-ins only.",
+  "specials": [
+    {
+      "title": "Everyday Discounts",
+      "desc": "Discounts for veterans, seniors, and city employees."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Barber Cut"
+        },
+        {
+          "name": "Hot-Towel Shave"
+        },
+        {
+          "name": "Beard Trim"
+        },
+        {
+          "name": "Military-Regulation Haircuts",
+          "desc": "A noted specialty"
+        },
+        {
+          "name": "Reuzel Pomade",
+          "desc": "Stocked in the shop"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Tuesday",
+      "time": "Closed"
+    },
+    {
+      "days": "Wednesday – Friday",
+      "time": "9:00 AM – 6:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "9:00 AM – 1:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Peru, IN — Barber Shop"
+  }
+}

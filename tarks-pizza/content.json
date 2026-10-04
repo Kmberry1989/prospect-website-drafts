@@ -1,0 +1,69 @@
+{
+  "business": {
+    "name": "Tark's Pizza",
+    "tagline": "Small-town pizza at its finest \u2014 fiercely local, family-run, takeout-first.",
+    "phone": "(574) 699-7115",
+    "address": "429 S California St, Galveston, IN 46932"
+  },
+  "announcement": "Cash only \u2014 there's an ATM next door. Takeout only \u2014 we don't deliver.",
+  "specials": [
+    {
+      "title": "Meat Lovers with BBQ Sauce",
+      "desc": "The cult item \u2014 regulars call it the best pizza in the nation."
+    },
+    {
+      "title": "Super Breadsticks",
+      "desc": "A.K.A. the cheese bread \u2014 folks say it's the best around."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Pizza",
+      "items": [
+        {
+          "name": "Meat Lovers with BBQ Sauce",
+          "desc": "The cult favorite"
+        },
+        {
+          "name": "Classic Pizzas",
+          "desc": "Ask about today's options"
+        }
+      ]
+    },
+    {
+      "section": "Subs, Stromboli & More",
+      "items": [
+        {
+          "name": "Tark's Sub"
+        },
+        {
+          "name": "Stromboli"
+        },
+        {
+          "name": "Super Breadsticks",
+          "desc": "The famous cheese bread"
+        },
+        {
+          "name": "Power Bowls"
+        },
+        {
+          "name": "Nostalgic Sodas"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Sun \u2013 Thu",
+      "time": "4:00 \u2013 9:00 PM"
+    },
+    {
+      "days": "Friday",
+      "time": "11:00 AM \u2013 10:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "12:00 \u2013 10:00 PM"
+    }
+  ]
+}

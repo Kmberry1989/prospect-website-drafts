@@ -1,0 +1,114 @@
+{
+  "business": {
+    "name": "Phil & Cheryl's Grill",
+    "tagline": "Mom-and-pop comfort cooking \u2014 home of the famous Cheese and Toast.",
+    "phone": "(765) 674-6011",
+    "address": "800 E Main St, Gas City, IN 46933"
+  },
+  "announcement": "",
+  "specials": [
+    {
+      "title": "Cheese and Toast",
+      "desc": "The cult favorite \u2014 ask for it by name."
+    },
+    {
+      "title": "Rosie's Cheese & Spaghetti Sauce",
+      "desc": "Take a pint or quart home \u2014 cheese by the pint, sauce by the pint or quart."
+    },
+    {
+      "title": "Tenderloin Chips with Gravy",
+      "desc": "A house original."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Breakfast",
+      "items": [
+        {
+          "name": "Biscuits & Gravy",
+          "price": "$5.75"
+        },
+        {
+          "name": "Stack O' Pancakes",
+          "price": "$4.60"
+        },
+        {
+          "name": "French Toast",
+          "price": "$9.20"
+        },
+        {
+          "name": "The Masked Bandit",
+          "price": "$16.10"
+        },
+        {
+          "name": "Down Home Special",
+          "price": "$11.50"
+        },
+        {
+          "name": "Mush",
+          "price": "$7.45"
+        },
+        {
+          "name": "1/2 Hash Browns",
+          "price": "$4.00"
+        },
+        {
+          "name": "Extra Egg",
+          "price": "$2.30"
+        }
+      ],
+      "note": "Sides mostly $5.75."
+    },
+    {
+      "section": "Lunch",
+      "items": [
+        {
+          "name": "Tenderloin Chips with Gravy"
+        },
+        {
+          "name": "Cheese and Toast",
+          "desc": "The famous one"
+        },
+        {
+          "name": "Taco Baked Potato",
+          "price": "$10.99"
+        },
+        {
+          "name": "Chili + Grilled Cheese",
+          "price": "$8.99"
+        }
+      ]
+    },
+    {
+      "section": "Take Home",
+      "items": [
+        {
+          "name": "Pint of Rosie's Cheese",
+          "price": "$11.00"
+        },
+        {
+          "name": "Bag of Toast",
+          "price": "$7.00"
+        },
+        {
+          "name": "Quart of Rosie's Sauce",
+          "price": "$12.00"
+        },
+        {
+          "name": "Quart of Sauce + 6 Meatballs",
+          "price": "$18.00"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Sunday",
+      "time": "7:00 AM \u2013 2:00 PM"
+    },
+    {
+      "days": "Mon \u2013 Sat",
+      "time": "7:00 AM \u2013 1:00 PM"
+    }
+  ]
+}

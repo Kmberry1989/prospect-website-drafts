@@ -1,0 +1,47 @@
+{
+  "business": {
+    "name": "Allure Hair Artistry",
+    "tagline": "A multi-stylist salon — each stylist books her own chair.",
+    "phone": "(574) 992-8346",
+    "address": "1030 N 3rd St, Logansport, IN 46947",
+    "facebook": "https://www.facebook.com/allurehairartistry"
+  },
+  "announcement": "Stylists book direct — call the shop to reach your stylist.",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Cut & Color"
+        },
+        {
+          "name": "Strength / Repair Treatments"
+        },
+        {
+          "name": "Lash Lift"
+        },
+        {
+          "name": "Waxing"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Friday",
+      "time": "10:00 AM – 6:30 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "10:00 AM – 3:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Logansport, IN — Hair Salon"
+  }
+}

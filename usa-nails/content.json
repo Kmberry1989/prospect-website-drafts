@@ -1,0 +1,66 @@
+{
+  "business": {
+    "name": "USA Nails",
+    "tagline": "Treated like family — walk-ins welcome.",
+    "phone": "(765) 472-0389",
+    "address": "16 N Broadway St, Peru, IN 46970"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Nail Services",
+      "items": [
+        {
+          "name": "Acrylic Nails"
+        },
+        {
+          "name": "Gel Manicures"
+        },
+        {
+          "name": "Dip Powder"
+        },
+        {
+          "name": "Pedicures"
+        },
+        {
+          "name": "Polish Removal"
+        }
+      ]
+    },
+    {
+      "section": "More Services",
+      "items": [
+        {
+          "name": "Brow / Lip Wax"
+        }
+      ]
+    },
+    {
+      "section": "Good to Know",
+      "items": [
+        {
+          "name": "Husband-and-Wife Team",
+          "desc": "Technicians Becky and Kevin"
+        },
+        {
+          "name": "Parking",
+          "desc": "Lot parking available"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Saturday",
+      "time": "9:00 AM – 7:30 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "11:00 AM – 5:00 PM"
+    }
+  ],
+  "meta": {
+    "townTrade": "Peru, IN — Nail Salon"
+  }
+}

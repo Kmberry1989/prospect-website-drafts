@@ -1,0 +1,81 @@
+{
+  "business": {
+    "name": "Shear Image",
+    "tagline": "Color specialists — balayage, vivid color, and trending techniques.",
+    "phone": "(574) 223-2224",
+    "address": "708 E 9th St, Rochester, IN 46975"
+  },
+  "announcement": "Evening hours Wednesday and Thursday — open till 9:00 PM.",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Color Services",
+      "items": [
+        {
+          "name": "Balayage"
+        },
+        {
+          "name": "Vivid Color"
+        },
+        {
+          "name": "Specialty Haircolor"
+        },
+        {
+          "name": "Trending Color Techniques"
+        }
+      ]
+    },
+    {
+      "section": "Salon & Spa",
+      "items": [
+        {
+          "name": "Hair Extensions"
+        },
+        {
+          "name": "Eyelash Extensions"
+        },
+        {
+          "name": "Manicures / Pedicures",
+          "desc": "With gel polish"
+        },
+        {
+          "name": "Waxing"
+        },
+        {
+          "name": "Special-Occasion & Formal Styling"
+        },
+        {
+          "name": "Makeup"
+        },
+        {
+          "name": "Spray Tanning"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Tuesday",
+      "time": "9:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Wednesday – Thursday",
+      "time": "9:00 AM – 9:00 PM"
+    },
+    {
+      "days": "Friday",
+      "time": "9:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "9:00 AM – 3:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Rochester, IN — Salon & Spa"
+  }
+}

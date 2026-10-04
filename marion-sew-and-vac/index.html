@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marion Sew And Vac — Marion, IN — Sewing Machines & Vacuums</title>
+<meta name="description" content="Marion Sew And Vac in Marion, Indiana: sewing machine and vacuum sales, service, repair and parts. Serving Marion since 1987.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --cream:#faf4e8; --paper:#fffdf8; --cranberry:#8f2d23; --cranberry-dark:#6d2119; --sage:#5b6e46; --thread:#d9c9a8; --ink:#3a2c22; }
+  body { font-family: Georgia, "Times New Roman", serif; background: var(--cream); color: var(--ink); line-height: 1.65; padding-bottom: 76px; }
+  .banner { background: var(--cranberry); color: #fff8ec; text-align: center; padding: 0.7rem 1rem; font-size: 0.95rem; display: none; }
+  header.hero { text-align: center; padding: 2.6rem 1.2rem 1.6rem; background: var(--paper); border-bottom: 3px dashed var(--thread); position: relative; }
+  header.hero::after { content: "✂"; font-size: 1.6rem; display: block; margin-top: 0.6rem; color: var(--sage); }
+  header h1 { font-size: clamp(1.9rem, 7vw, 2.7rem); color: var(--cranberry-dark); line-height: 1.15; }
+  header .tag { font-style: italic; color: var(--sage); font-size: 1.05rem; margin-top: 0.4rem; }
+  main { max-width: 720px; margin: 0 auto; padding: 0 1.2rem 3rem; }
+  section { margin: 2rem 0; }
+  h2 { font-size: 1.45rem; color: var(--cranberry-dark); margin-bottom: 0.9rem; padding-bottom: 0.35rem; border-bottom: 2px dashed var(--thread); }
+  .special { background: var(--paper); border: 2px dashed var(--cranberry); border-radius: 10px; padding: 0.9rem 1rem; margin-bottom: 0.8rem; }
+  .special b { display: block; font-size: 1.05rem; }
+  .special span { font-size: 0.95rem; color: #5a4636; }
+  .svc { background: var(--paper); border: 1px solid var(--thread); border-left: 5px solid var(--cranberry); border-radius: 0 10px 10px 0; padding: 0.8rem 1rem; margin-bottom: 0.7rem; }
+  .svc .n { font-weight: bold; font-size: 1.05rem; }
+  .svc .d { font-size: 0.93rem; color: #5a4636; }
+  .brandchips { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; }
+  .brandchips li { background: var(--paper); border: 1px solid var(--thread); border-radius: 999px; padding: 0.35rem 0.9rem; font-size: 0.92rem; }
+  table.hours { width: 100%; border-collapse: collapse; background: var(--paper); border: 1px solid var(--thread); border-radius: 10px; overflow: hidden; }
+  table.hours td { padding: 0.6rem 1rem; border-bottom: 1px dashed var(--thread); }
+  table.hours tr:last-child td { border-bottom: none; }
+  table.hours td:last-child { text-align: right; font-weight: bold; }
+  .visit { background: var(--paper); border: 1px solid var(--thread); border-radius: 10px; padding: 1rem 1.1rem; font-size: 0.95rem; }
+  .visit a { color: var(--cranberry); font-weight: bold; }
+  .cta { display: flex; gap: 0.7rem; flex-wrap: wrap; margin: 1.4rem 0 0; }
+  .btn { flex: 1 1 150px; display: inline-block; text-align: center; text-decoration: none; padding: 0.9rem 1rem; border-radius: 10px; font-size: 1.05rem; min-height: 48px; line-height: 1.4; font-family: inherit; }
+  .btn.call { background: var(--cranberry); color: #fff8ec; font-weight: bold; }
+  .btn.dir { background: var(--sage); color: #fff; font-weight: bold; }
+  footer { text-align: center; padding: 1.5rem 1rem 2rem; color: #8a755e; font-size: 0.85rem; }
+  .dock { position: fixed; left: 0; right: 0; bottom: 0; display: flex; background: var(--cranberry-dark); z-index: 50; }
+  .dock a { flex: 1; text-align: center; color: #fff8ec; text-decoration: none; font-weight: bold; padding: 1rem 0.5rem; min-height: 56px; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; font-family: inherit; }
+  .dock a + a { border-left: 1px solid rgba(255,255,255,0.25); }
+  .loading { text-align: center; padding: 4rem 1rem; color: #8a755e; font-style: italic; }
+</style>
+</head>
+<body>
+<div class="banner" id="banner"></div>
+<header class="hero">
+  <h1 id="biz-name">…</h1>
+  <div class="tag" id="biz-tag"></div>
+</header>
+<main id="content"><div class="loading">Loading…</div></main>
+<footer>SiteKeeper-managed site</footer>
+<nav class="dock" aria-label="Quick actions">
+  <a id="dock-call" href="#">📞 Call</a>
+  <a id="dock-dir" href="#">🧭 Directions</a>
+</nav>
+<script>
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    const b = c.business || {};
+    document.getElementById('biz-name').textContent = b.name || '';
+    document.getElementById('biz-tag').textContent = b.tagline || '';
+    const tel = 'tel:+1' + (b.phone || '').replace(/\D/g, '');
+    const maps = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(b.address || '');
+    document.getElementById('dock-call').href = tel;
+    document.getElementById('dock-dir').href = maps;
+    if (c.announcement) {
+      const bn = document.getElementById('banner');
+      bn.textContent = c.announcement;
+      bn.style.display = 'block';
+    }
+    let h = '';
+    h += '<section><div class="visit"><b>' + esc(b.address || '') + '</b><br><a href="' + esc(maps) + '">Get directions</a></div>';
+    h += '<div class="cta"><a class="btn call" href="' + esc(tel) + '">Call ' + esc(b.phone || '') + '</a><a class="btn dir" href="' + esc(maps) + '">Directions</a></div></section>';
+    if (c.specials && c.specials.length) {
+      h += '<section><h2>Specials</h2>' + c.specials.map(s =>
+        '<div class="special"><b>' + esc(s.title) + '</b><span>' + esc(s.desc) + '</span></div>').join('') + '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      if (/brand/i.test(sec.section || '')) {
+        h += '<section><h2>' + esc(sec.section) + '</h2><ul class="brandchips">' +
+          (sec.items || []).map(it => '<li>' + esc(it.name) + '</li>').join('') + '</ul></section>';
+      } else {
+        h += '<section><h2>' + esc(sec.section) + '</h2>' + (sec.items || []).map(it =>
+          '<div class="svc"><div class="n">' + esc(it.name) + '</div>' +
+          (it.desc ? '<div class="d">' + esc(it.desc) + '</div>' : '') + '</div>').join('') + '</section>';
+      }
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section><h2>Hours</h2><table class="hours"><tbody>' + c.hours.map(x =>
+        '<tr><td>' + esc(x.days) + '</td><td>' + esc(x.time) + '</td></tr>').join('') + '</tbody></table></section>';
+    }
+    document.getElementById('content').innerHTML = h;
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">Could not load content. Please try again later.</div>'; });
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+</script>
+</body>
+</html>

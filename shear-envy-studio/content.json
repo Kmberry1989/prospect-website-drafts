@@ -1,0 +1,36 @@
+{
+  "business": {
+    "name": "Shear Envy Hair Studio",
+    "tagline": "A boutique studio focused on color.",
+    "phone": "(260) 563-3310",
+    "address": "170 W Harrison Ave, Wabash, IN 46992"
+  },
+  "announcement": "Call for current hours and availability.",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Color Services",
+      "items": [
+        {
+          "name": "Highlight Placement"
+        },
+        {
+          "name": "Traditional Highlights"
+        },
+        {
+          "name": "Root Smudge"
+        },
+        {
+          "name": "Peekaboo Color"
+        },
+        {
+          "name": "Lowlights"
+        }
+      ]
+    }
+  ],
+  "hours": [],
+  "meta": {
+    "townTrade": "Wabash, IN — Color Studio"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "business": {
+    "name": "Jeff's Barber Shop",
+    "tagline": "An old-fashioned barber shop — not a beauty salon.",
+    "phone": "(765) 459-5194",
+    "address": "1729 S Lafountain St, Kokomo, IN 46902"
+  },
+  "announcement": "Hours vary — please call ahead for today's hours.",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Haircut"
+        },
+        {
+          "name": "Haircut + Beard Trim"
+        },
+        {
+          "name": "Beard Trim / Shave"
+        },
+        {
+          "name": "Flat Tops",
+          "desc": "A specialty of the house, per longtime clients"
+        }
+      ]
+    }
+  ],
+  "hours": [],
+  "meta": {
+    "townTrade": "Kokomo, IN — Barber Shop"
+  }
+}

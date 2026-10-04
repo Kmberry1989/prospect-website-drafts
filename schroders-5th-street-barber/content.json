@@ -1,0 +1,55 @@
+{
+  "business": {
+    "name": "Schroder's 5th Street Barber",
+    "tagline": "A classic barber shop in downtown Logansport.",
+    "phone": "(574) 702-3039",
+    "address": "122 S 5th St, Logansport, IN 46947",
+    "facebook": "https://m.facebook.com/5thstreetbarber/"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Classic Haircuts"
+        },
+        {
+          "name": "Modern Styles"
+        },
+        {
+          "name": "Scissor Cuts"
+        },
+        {
+          "name": "Straight Razor Shave"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Tuesday",
+      "time": "8:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Wednesday",
+      "time": "Closed"
+    },
+    {
+      "days": "Thursday – Friday",
+      "time": "8:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "8:00 AM – 12:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Logansport, IN — Barber Shop"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "business": {
+    "name": "Deb's Laundry",
+    "tagline": "Self-Serve & Wash-and-Fold Laundry \u2014 Marion, Indiana",
+    "phone": "(765) 664-8206",
+    "address": "2237 Westwood Sq, Marion, IN 46952"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Laundry Services",
+      "items": [
+        {
+          "name": "Self-Serve Washing",
+          "desc": "Self-serve laundry \u2014 attendant always on duty."
+        },
+        {
+          "name": "Drop-Off Service",
+          "desc": "Drop-off wash service."
+        },
+        {
+          "name": "Wash-and-Fold",
+          "desc": "Wash-and-fold service."
+        },
+        {
+          "name": "Ironing",
+          "desc": "Ironing service."
+        },
+        {
+          "name": "Large Items",
+          "desc": "Large-item cleaning."
+        },
+        {
+          "name": "Dry Cleaning",
+          "desc": "We do not have dry-clean services."
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday",
+      "time": "8:00 AM \u2013 7:30 PM"
+    },
+    {
+      "days": "Tuesday",
+      "time": "8:00 AM \u2013 7:30 PM"
+    },
+    {
+      "days": "Wednesday",
+      "time": "8:00 AM \u2013 7:30 PM"
+    },
+    {
+      "days": "Thursday",
+      "time": "8:00 AM \u2013 7:30 PM"
+    },
+    {
+      "days": "Friday",
+      "time": "8:00 AM \u2013 7:30 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "8:00 AM \u2013 7:30 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "8:00 AM \u2013 7:30 PM"
+    }
+  ]
+}

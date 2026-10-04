@@ -1,0 +1,91 @@
+{
+  "business": {
+    "name": "Wally and Olly's Ice Cream",
+    "tagline": "Family-owned by Debbie and Ron Toth \u2014 named after their grandsons, Wally and Olly.",
+    "phone": "(765) 437-3419",
+    "address": "15 E Linden Ave, Logansport, IN 46947"
+  },
+  "announcement": "",
+  "specials": [
+    {
+      "title": "Kokomo Shop",
+      "desc": "419 E Gano St, Kokomo \u00b7 (765) 437-0287 \u2014 look for the giant Betty Boop out front."
+    },
+    {
+      "title": "On the Eel River",
+      "desc": "Our Logansport shop has rocking chairs, picnic tables, and duck and goose watching."
+    },
+    {
+      "title": "Hand-Spun Shakes",
+      "desc": "The lemon shake is famous \u2014 huge portions, fast service, good prices."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Ice Cream",
+      "items": [
+        {
+          "name": "Hard-Dip Ice Cream",
+          "desc": "Glover's, Deans, and Hundleston"
+        },
+        {
+          "name": "Hand-Spun Shakes",
+          "desc": "The lemon shake is a favorite"
+        },
+        {
+          "name": "Sundaes",
+          "desc": "S'mores, strawberry, banana split"
+        },
+        {
+          "name": "Blasts & Soft Serve"
+        }
+      ]
+    },
+    {
+      "section": "Concession Food",
+      "items": [
+        {
+          "name": "Pulled Pork Nachos"
+        },
+        {
+          "name": "Pulled Pork Sandwich"
+        },
+        {
+          "name": "Coney Dogs"
+        },
+        {
+          "name": "Taco Salad"
+        },
+        {
+          "name": "Pretzels & Nachos"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Logansport \u2014 Sunday",
+      "time": "12:00 \u2013 9:30 PM"
+    },
+    {
+      "days": "Logansport \u2014 Mon \u2013 Fri",
+      "time": "2:00 \u2013 9:00 PM"
+    },
+    {
+      "days": "Logansport \u2014 Saturday",
+      "time": "12:00 \u2013 9:30 PM"
+    },
+    {
+      "days": "Kokomo \u2014 Wed \u2013 Fri",
+      "time": "3:00 \u2013 9:00 PM"
+    },
+    {
+      "days": "Kokomo \u2014 Sat \u2013 Sun",
+      "time": "2:00 \u2013 9:00 PM"
+    },
+    {
+      "days": "Kokomo \u2014 Mon \u2013 Tue",
+      "time": "Closed"
+    }
+  ]
+}

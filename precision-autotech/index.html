@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0f2a43">
+<link rel="icon" href="data:,">
+<title>Precision AutoTech LLC — Peru, IN | ASE Master Technician Auto Repair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0f2a43;
+    --navy-2: #163a5c;
+    --steel: #5b7a99;
+    --accent: #2fbf9b;
+    --paper: #f2f5f7;
+    --card: #ffffff;
+    --ink: #1c2733;
+    --muted: #5c6f82;
+    --line: #d9e2ea;
+    --mono: "IBM Plex Mono", ui-monospace, monospace;
+  }
+  body { font-family: "IBM Plex Sans", system-ui, sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; font-size: 17px; }
+  a { color: inherit; }
+  .topline { height: 6px; background: linear-gradient(90deg, var(--accent), var(--steel), var(--accent)); }
+  .banner { background: var(--accent); color: #06231b; text-align: center; padding: 0.75rem 1rem; font-weight: 700; font-family: var(--mono); font-size: 0.95rem; display: none; }
+  header { background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 100%); color: #fff; padding: 2.6rem 1.25rem 2.2rem; text-align: center; }
+  header .mono-kicker { font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.7rem; }
+  header h1 { font-weight: 700; font-size: clamp(2rem, 7.5vw, 2.9rem); line-height: 1.1; letter-spacing: -0.01em; }
+  header .tag { margin: 1rem auto 0; max-width: 36ch; font-family: var(--mono); font-size: 1.02rem; color: var(--accent); border: 1px solid rgba(47,191,155,.45); border-radius: 8px; padding: 0.7rem 1rem; background: rgba(0,0,0,.25); }
+  header .ase { margin-top: 1rem; font-family: var(--mono); font-size: 0.82rem; color: #a9c3d8; letter-spacing: 0.06em; }
+  .cta { display: grid; gap: 0.7rem; max-width: 520px; margin: 0 auto; padding: 1.5rem 1.25rem 0; }
+  .btn { display: flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 58px; padding: 0.85rem 1.4rem; border-radius: 8px; font-weight: 700; font-size: 1.1rem; text-decoration: none; font-family: var(--mono); }
+  .btn.primary { background: var(--accent); color: #06231b; }
+  .btn.secondary { background: var(--card); color: var(--navy); border: 2px solid var(--navy); }
+  .btn:active { transform: translateY(1px); }
+  main { max-width: 720px; margin: 0 auto; padding: 1.6rem 1.25rem 2.5rem; }
+  section { margin-bottom: 2.2rem; }
+  h2 { font-family: var(--mono); font-weight: 600; font-size: 0.95rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--steel); margin-bottom: 0.9rem; }
+  .special { background: #e7f8f2; border: 1px solid var(--accent); border-radius: 10px; padding: 1rem 1.1rem; margin-bottom: 0.9rem; }
+  .special b { display: block; font-size: 1.05rem; }
+  .special span { color: var(--muted); font-size: 0.93rem; }
+  .svc { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 0.9rem 1.05rem; margin-bottom: 0.65rem; display: flex; align-items: baseline; gap: 0.8rem; }
+  .svc .code { font-family: var(--mono); font-size: 0.78rem; color: var(--steel); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 0.2rem 0.5rem; flex: none; }
+  .svc .n { font-weight: 600; }
+  .svc .n small { display: block; font-weight: 400; color: var(--muted); font-size: 0.88rem; }
+  .hours { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .hours td { padding: 0.75rem 1.05rem; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 0.95rem; }
+  .hours tr:last-child td { border-bottom: none; }
+  .hours td:last-child { text-align: right; font-weight: 600; color: var(--navy); }
+  .visit { background: var(--navy); color: #d9e6f2; border-radius: 12px; padding: 1.4rem; }
+  .visit p { margin-bottom: 0.5rem; font-family: var(--mono); font-size: 0.95rem; }
+  .visit a { color: var(--accent); font-weight: 600; }
+  footer { text-align: center; padding: 1.6rem 1rem 2.4rem; color: var(--muted); font-size: 0.85rem; font-family: var(--mono); }
+  .loading { text-align: center; padding: 4rem 1rem; color: var(--muted); font-family: var(--mono); }
+</style>
+</head>
+<body>
+<div class="topline" aria-hidden="true"></div>
+<div class="banner" id="banner"></div>
+<header>
+  <div class="mono-kicker">Peru, Indiana</div>
+  <h1 id="biz-name">…</h1>
+  <div class="tag" id="biz-tag"></div>
+  <div class="ase">ASE CERTIFIED MASTER TECHNICIAN</div>
+</header>
+<div class="cta">
+  <a class="btn primary" id="call-btn" href="#">Call for an Appointment</a>
+  <a class="btn secondary" id="dir-btn" href="#" target="_blank" rel="noopener">Get Directions</a>
+</div>
+<main id="content"><div class="loading">loading…</div></main>
+<footer><span id="foot-name"></span> · content managed with sitekeeper</footer>
+<div class="topline" aria-hidden="true"></div>
+<script>
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    const b = c.business || {};
+    document.title = b.name + ' — Peru, IN | ASE Master Technician Auto Repair';
+    document.getElementById('biz-name').textContent = b.name;
+    document.getElementById('biz-tag').textContent = b.tagline || '';
+    document.getElementById('foot-name').textContent = b.name || '';
+    const banner = document.getElementById('banner');
+    if (c.announcement) { banner.textContent = c.announcement; banner.style.display = 'block'; }
+    const tel = 'tel:' + String(b.phone || '').replace(/\D/g, '');
+    const callBtn = document.getElementById('call-btn');
+    callBtn.href = tel;
+    callBtn.textContent = 'Call ' + (b.phone || 'for an Appointment');
+    const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(b.address || b.name);
+    document.getElementById('dir-btn').href = mapsUrl;
+    let h = '';
+    if (c.specials && c.specials.length) {
+      h += '<section><h2>// Specials</h2>' + c.specials.map(s =>
+        '<div class="special"><b>' + esc(s.title) + '</b><span>' + esc(s.desc) + '</span></div>').join('') + '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      h += '<section><h2>// ' + esc(sec.section) + '</h2>' + (sec.items || []).map((it, i) =>
+        '<div class="svc"><span class="code">SVC-' + String(i + 1).padStart(2, '0') + '</span><div class="n">' + esc(it.name) +
+        (it.desc ? '<small>' + esc(it.desc) + '</small>' : '') + '</div></div>').join('') + '</section>';
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section><h2>// Hours</h2><table class="hours">' + c.hours.map(x =>
+        '<tr><td>' + esc(x.days) + '</td><td>' + esc(x.time) + '</td></tr>').join('') + '</table></section>';
+    }
+    h += '<section><h2>// Find Us</h2><div class="visit"><p>' + esc(b.address || '') + '</p>' +
+      '<p>tel &gt; <a href="' + tel + '">' + esc(b.phone || '') + '</a></p>' +
+      '<p><a href="' + mapsUrl + '" target="_blank" rel="noopener">open in google maps &#8599;</a></p></div></section>';
+    document.getElementById('content').innerHTML = h;
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">could not load content.</div>'; });
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+</script>
+</body>
+</html>

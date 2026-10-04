@@ -1,0 +1,104 @@
+{
+  "business": {
+    "name": "Jackie's Family Restaurant",
+    "tagline": "Down-home cooking \u2014 Jackie takes the orders and serves the food herself. Nothing fancy, just great value.",
+    "phone": "(765) 674-7509",
+    "address": "105 N Harrisburg Ave, Gas City, IN 46933"
+  },
+  "announcement": "Cash only \u2014 please plan accordingly.",
+  "specials": [
+    {
+      "title": "Sloppy Joe Sandwich",
+      "desc": "The signature \u2014 a secret recipe passed down from Jackie's grandmother to her mother to her. She won't share it."
+    },
+    {
+      "title": "Thu & Fri Dinners",
+      "desc": "Open late for dinner Thursday and Friday \u2014 breakfast and lunch all week."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Breakfast",
+      "items": [
+        {
+          "name": "Biscuits & Gravy",
+          "price": "$3.25"
+        },
+        {
+          "name": "Half B&G with 2 Eggs",
+          "price": "$4.25"
+        },
+        {
+          "name": "Two Eggs with Bacon",
+          "price": "$4.50"
+        },
+        {
+          "name": "Omelettes",
+          "price": "$3.75 \u2013 $5.50"
+        },
+        {
+          "name": "Hot Cakes",
+          "price": "$3.30 \u2013 $4.60"
+        }
+      ],
+      "note": "Menu prices from 2022\u20132023 menus \u2014 today's prices may differ."
+    },
+    {
+      "section": "Lunch",
+      "items": [
+        {
+          "name": "Sloppy Joe Sandwich",
+          "desc": "The secret family recipe"
+        },
+        {
+          "name": "Hamburger Steak"
+        },
+        {
+          "name": "Cheeseburger"
+        },
+        {
+          "name": "Breaded Tenderloin"
+        },
+        {
+          "name": "Breakfast Burrito"
+        },
+        {
+          "name": "Fried Potatoes"
+        }
+      ],
+      "note": "Menu prices from 2022\u20132023 menus \u2014 today's prices may differ."
+    },
+    {
+      "section": "Kids & Drinks",
+      "items": [
+        {
+          "name": "Kids Meal",
+          "price": "$4.75"
+        },
+        {
+          "name": "Drinks",
+          "price": "$1.25 \u2013 $1.30"
+        }
+      ],
+      "note": "Menu prices from 2022\u20132023 menus \u2014 today's prices may differ."
+    }
+  ],
+  "hours": [
+    {
+      "days": "Mon \u2013 Wed",
+      "time": "5:00 AM \u2013 2:00 PM"
+    },
+    {
+      "days": "Thu \u2013 Fri",
+      "time": "5:00 AM \u2013 8:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "5:00 AM \u2013 2:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "business": {
+    "name": "Mr. B's Laundry and Tanning",
+    "tagline": "Laundromat & Tanning \u2014 Peru, Indiana",
+    "phone": "(765) 473-6915",
+    "address": "25 N Grant St, Peru, IN 46970"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Laundry",
+      "items": [
+        {
+          "name": "Self-Service Laundry",
+          "desc": "Coin-operated machines \u2014 cash accepted."
+        },
+        {
+          "name": "Drop-Off Laundry",
+          "desc": "Drop it off \u2014 attendants on staff."
+        }
+      ]
+    },
+    {
+      "section": "Tanning",
+      "items": [
+        {
+          "name": "Tanning Beds",
+          "desc": "One 15-minute bed and two 20-minute beds."
+        },
+        {
+          "name": "Lotions & Bronzers",
+          "desc": "Tanning lotions and bronzers sold on-site."
+        }
+      ]
+    },
+    {
+      "section": "Dry Cleaning",
+      "items": [
+        {
+          "name": "Dry-Cleaning Service",
+          "desc": "Dry-cleaning drop-off available."
+        }
+      ]
+    },
+    {
+      "section": "Amenities",
+      "items": [
+        {
+          "name": "Comforts",
+          "desc": "Free Wi-Fi, private parking lot, wheelchair accessible, walk-ins welcome."
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday \u2013 Saturday",
+      "time": "9:00 AM \u2013 8:00 PM \u00b7 last wash & tan 7:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "8:00 AM \u2013 8:00 PM \u00b7 last wash & tan 7:00 PM"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "business": {
+    "name": "Neff's Septic Services",
+    "tagline": "Family-run septic service since 1953.",
+    "phone": "(574) 753-3122",
+    "address": "1702 N County Road 50 E, Logansport, IN 46947"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Septic tank pumping & cleaning"
+        },
+        {
+          "name": "Septic tank installation"
+        },
+        {
+          "name": "Sewer systems"
+        },
+        {
+          "name": "Septic system construction"
+        },
+        {
+          "name": "Septic tank risers",
+          "desc": "Risers for sale"
+        },
+        {
+          "name": "Porta potty rental"
+        },
+        {
+          "name": "Waste disposal"
+        },
+        {
+          "name": "Grease trap cleaning"
+        },
+        {
+          "name": "Cesspool pumping"
+        },
+        {
+          "name": "Septic tank inspections"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Sunday",
+      "time": "7:00 AM – 8:00 PM"
+    }
+  ]
+}

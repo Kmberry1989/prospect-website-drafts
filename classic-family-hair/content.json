@@ -1,0 +1,47 @@
+{
+  "business": {
+    "name": "Classic Family Hair",
+    "tagline": "A family shop — Courtney and Jess, two moms raising amazing kids.",
+    "phone": "(260) 569-1166",
+    "address": "1313 N Cass St, Wabash, IN 46992"
+  },
+  "announcement": "Hours may vary around family schedules — please call ahead.",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Haircuts"
+        },
+        {
+          "name": "Styling"
+        },
+        {
+          "name": "Coloring"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Thursday",
+      "time": "10:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Friday",
+      "time": "9:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "9:00 AM – 12:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Wabash, IN — Family Hair Salon"
+  }
+}

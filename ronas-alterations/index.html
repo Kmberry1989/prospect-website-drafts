@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rona's Alterations — Kokomo, IN — Tailoring & Clothing Repair</title>
+<meta name="description" content="Rona's Alterations in Kokomo, Indiana: hems, tapers, waist and sleeve alterations, mending and clothing repairs.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --ink:#24262b; --charcoal:#33363c; --champagne:#c8a24b; --champagne-soft:#f3e9d2; --paper:#fdfbf7; --linen:#f5f1e8; --muted:#6f6a5e; }
+  body { font-family: "Palatino Linotype", Palatino, Georgia, serif; background: var(--paper); color: var(--ink); line-height: 1.7; padding-bottom: 76px; }
+  .banner { background: var(--ink); color: var(--champagne-soft); text-align: center; padding: 0.8rem 1.2rem; font-style: italic; font-size: 1rem; display: none; }
+  header.hero { text-align: center; padding: 3.2rem 1.2rem 2.4rem; background: linear-gradient(180deg, var(--linen), var(--paper)); border-bottom: 1px solid var(--champagne); }
+  header .rule { width: 64px; height: 2px; background: var(--champagne); margin: 0 auto 1rem; }
+  header h1 { font-size: clamp(2rem, 8vw, 3rem); font-weight: 400; letter-spacing: 0.02em; }
+  header .tag { color: var(--muted); font-size: 1.05rem; margin-top: 0.5rem; font-style: italic; }
+  main { max-width: 680px; margin: 0 auto; padding: 0 1.4rem 3rem; }
+  section { margin: 2.4rem 0; }
+  h2 { font-weight: 400; font-size: 1.4rem; letter-spacing: 0.12em; text-transform: uppercase; text-align: center; color: var(--ink); margin-bottom: 1.1rem; }
+  h2::after { content: ""; display: block; width: 44px; height: 2px; background: var(--champagne); margin: 0.5rem auto 0; }
+  .special { border: 1px solid var(--champagne); background: var(--linen); padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .special b { display: block; font-size: 1.05rem; }
+  .special span { color: var(--muted); font-size: 0.95rem; }
+  ul.svc { list-style: none; }
+  ul.svc li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.7rem 0; border-bottom: 1px solid #e8e0cd; }
+  ul.svc .n { font-size: 1.12rem; }
+  ul.svc .d { font-size: 0.9rem; color: var(--muted); font-style: italic; text-align: right; }
+  table.hours { width: 100%; border-collapse: collapse; }
+  table.hours td { padding: 0.55rem 0; border-bottom: 1px solid #e8e0cd; }
+  table.hours td:last-child { text-align: right; font-style: italic; }
+  .contact { text-align: center; margin-top: 1.4rem; }
+  .contact .addr { color: var(--muted); margin-bottom: 1rem; }
+  .btn { display: block; text-decoration: none; text-align: center; padding: 1rem; font-size: 1.1rem; letter-spacing: 0.04em; min-height: 56px; margin-bottom: 0.7rem; }
+  .btn.call { background: var(--ink); color: var(--champagne-soft); }
+  .btn.dir { border: 1px solid var(--champagne); color: var(--ink); background: transparent; }
+  .btn.dir u, .btn.call u { text-decoration: none; }
+  footer { text-align: center; padding: 1.5rem 1rem 2rem; color: #a39d8d; font-size: 0.85rem; font-style: italic; }
+  .dock { position: fixed; left: 0; right: 0; bottom: 0; display: flex; background: var(--ink); z-index: 50; }
+  .dock a { flex: 1; text-align: center; color: var(--champagne-soft); text-decoration: none; padding: 1rem 0.5rem; min-height: 56px; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; letter-spacing: 0.04em; }
+  .dock a + a { border-left: 1px solid rgba(200,162,75,0.4); }
+  .loading { text-align: center; padding: 4rem 1rem; color: #a39d8d; font-style: italic; }
+</style>
+</head>
+<body>
+<div class="banner" id="banner"></div>
+<header class="hero">
+  <div class="rule"></div>
+  <h1 id="biz-name">…</h1>
+  <div class="tag" id="biz-tag"></div>
+</header>
+<main id="content"><div class="loading">Loading…</div></main>
+<footer>SiteKeeper-managed site</footer>
+<nav class="dock" aria-label="Quick actions">
+  <a id="dock-call" href="#">Call</a>
+  <a id="dock-dir" href="#">Directions</a>
+</nav>
+<script>
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    const b = c.business || {};
+    document.getElementById('biz-name').textContent = b.name || '';
+    document.getElementById('biz-tag').textContent = b.tagline || '';
+    const tel = 'tel:+1' + (b.phone || '').replace(/\D/g, '');
+    const maps = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(b.address || '');
+    document.getElementById('dock-call').href = tel;
+    document.getElementById('dock-dir').href = maps;
+    if (c.announcement) {
+      const bn = document.getElementById('banner');
+      bn.textContent = '“' + c.announcement + '”';
+      bn.style.display = 'block';
+    }
+    let h = '';
+    if (c.specials && c.specials.length) {
+      h += '<section><h2>Specials</h2>' + c.specials.map(s =>
+        '<div class="special"><b>' + esc(s.title) + '</b><span>' + esc(s.desc) + '</span></div>').join('') + '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      h += '<section><h2>' + esc(sec.section) + '</h2><ul class="svc">' + (sec.items || []).map(it =>
+        '<li><span class="n">' + esc(it.name) + '</span>' +
+        (it.desc ? '<span class="d">' + esc(it.desc) + '</span>' : '') + '</li>').join('') + '</ul></section>';
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section><h2>Hours</h2><table class="hours"><tbody>' + c.hours.map(x =>
+        '<tr><td>' + esc(x.days) + '</td><td>' + esc(x.time) + '</td></tr>').join('') + '</tbody></table></section>';
+    }
+    h += '<section class="contact"><div class="addr">' + esc(b.address || '') + '</div>' +
+      '<a class="btn call" href="' + esc(tel) + '">Call ' + esc(b.phone || '') + '</a>' +
+      '<a class="btn dir" href="' + esc(maps) + '">Get Directions</a></section>';
+    document.getElementById('content').innerHTML = h;
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">Could not load content. Please try again later.</div>'; });
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+</script>
+</body>
+</html>

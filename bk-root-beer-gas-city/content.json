@@ -1,0 +1,70 @@
+{
+  "business": {
+    "name": "B-K Root Beer",
+    "tagline": "No-frills old-school drive-in \u2014 the carhop comes to your car. Cash only, the way it's always been.",
+    "phone": "(765) 674-9651",
+    "address": "928 E Main St, Gas City, IN 46933"
+  },
+  "announcement": "Cash only \u2014 please plan accordingly.",
+  "specials": [
+    {
+      "title": "Root Beer",
+      "desc": "Regulars say it's really good \u2014 the reason to come."
+    },
+    {
+      "title": "Footlong \"Indian\"",
+      "desc": "With coney sauce \u2014 a house original."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Root Beer & Ice Cream",
+      "items": [
+        {
+          "name": "Home-Made Root Beer",
+          "desc": "\"Really good,\" say the regulars"
+        },
+        {
+          "name": "Ice Cream"
+        }
+      ]
+    },
+    {
+      "section": "Drive-In Food",
+      "items": [
+        {
+          "name": "Pork Tenderloin Sandwich"
+        },
+        {
+          "name": "Footlong \"Indian\"",
+          "desc": "With coney sauce"
+        },
+        {
+          "name": "Coney Dogs"
+        },
+        {
+          "name": "Hot Dogs"
+        },
+        {
+          "name": "Cheeseburgers"
+        },
+        {
+          "name": "Fries & Cheese Fries"
+        },
+        {
+          "name": "Onion Strings"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Mon \u2013 Sat",
+      "time": "11:00 AM \u2013 9:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "12:00 \u2013 8:00 PM"
+    }
+  ]
+}

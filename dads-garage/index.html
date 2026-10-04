@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#fdf8ef">
+<link rel="icon" href="data:,">
+<title>Dads Garage — Kokomo, IN | Honest Auto Repair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --paper: #fdf8ef;
+    --card: #ffffff;
+    --ink: #2e2a24;
+    --muted: #6f6455;
+    --navy: #1e3a5c;
+    --navy-deep: #152a44;
+    --gold: #d9a441;
+    --gold-soft: #f7ecd4;
+    --line: #e7dcc6;
+    --shadow: 0 10px 30px rgba(30, 58, 92, .10);
+  }
+  body { font-family: "Nunito Sans", system-ui, sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; font-size: 17px; }
+  a { color: inherit; }
+  .banner { background: var(--gold-soft); color: var(--navy-deep); text-align: center; padding: 0.75rem 1rem; font-weight: 700; border-bottom: 2px solid var(--gold); display: none; }
+  header { background: linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 100%); color: #fff; text-align: center; padding: 2.8rem 1.25rem 2.2rem; border-radius: 0 0 28px 28px; }
+  header .kicker { font-size: 0.82rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 0.6rem; }
+  header h1 { font-family: "Bitter", Georgia, serif; font-weight: 800; font-size: clamp(2.2rem, 8.5vw, 3.2rem); line-height: 1.05; }
+  header .tag { margin-top: 0.7rem; color: #d7e3f2; font-size: 1.05rem; max-width: 34ch; margin-inline: auto; }
+  .trust { display: flex; justify-content: center; gap: 0.6rem; flex-wrap: wrap; margin-top: 1.1rem; }
+  .trust span { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.25); border-radius: 999px; padding: 0.35rem 0.9rem; font-size: 0.85rem; font-weight: 600; }
+  .cta { display: grid; gap: 0.75rem; padding: 1.5rem 1.25rem 0; max-width: 560px; margin: 0 auto; }
+  .btn { display: flex; align-items: center; justify-content: center; gap: 0.55rem; min-height: 58px; padding: 0.85rem 1.4rem; border-radius: 16px; font-weight: 700; font-size: 1.12rem; text-decoration: none; box-shadow: var(--shadow); }
+  .btn.primary { background: var(--gold); color: #2b2008; }
+  .btn.secondary { background: var(--card); color: var(--navy); border: 2px solid var(--navy); }
+  .btn:active { transform: scale(.99); }
+  main { max-width: 720px; margin: 0 auto; padding: 1.6rem 1.25rem 2.5rem; }
+  section { margin-bottom: 2.2rem; }
+  h2 { font-family: "Bitter", Georgia, serif; font-weight: 800; font-size: 1.7rem; color: var(--navy); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.6rem; }
+  h2::before { content: ""; width: 10px; height: 1.6em; background: var(--gold); border-radius: 6px; }
+  .special { background: var(--gold-soft); border: 2px dashed var(--gold); border-radius: 16px; padding: 1rem 1.1rem; margin-bottom: 0.9rem; }
+  .special b { display: block; font-family: "Bitter", Georgia, serif; font-size: 1.15rem; color: var(--navy); }
+  .special span { color: var(--muted); font-size: 0.95rem; }
+  .svc-grid { display: grid; gap: 0.7rem; grid-template-columns: 1fr; }
+  @media (min-width: 560px) { .svc-grid { grid-template-columns: 1fr 1fr; } }
+  .svc { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 0.9rem 1rem; box-shadow: var(--shadow); }
+  .svc .n { font-weight: 700; color: var(--navy); }
+  .svc .n small { display: block; font-weight: 400; color: var(--muted); font-size: 0.88rem; }
+  .hours { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); }
+  .hours td { padding: 0.75rem 1.1rem; border-bottom: 1px solid var(--line); }
+  .hours tr:last-child td { border-bottom: none; }
+  .hours td:last-child { text-align: right; font-weight: 700; color: var(--navy); }
+  .visit { background: var(--navy); color: #eaf1f9; border-radius: 18px; padding: 1.4rem; }
+  .visit h2 { color: #fff; }
+  .visit h2::before { background: var(--gold); }
+  .visit p { margin-bottom: 0.5rem; color: #cdd9ea; }
+  .visit a { color: var(--gold); font-weight: 700; }
+  footer { text-align: center; padding: 1.6rem 1rem 2.4rem; color: var(--muted); font-size: 0.85rem; }
+  .loading { text-align: center; padding: 4rem 1rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="banner" id="banner"></div>
+<header>
+  <div class="kicker">Kokomo, Indiana</div>
+  <h1 id="biz-name">…</h1>
+  <p class="tag" id="biz-tag"></p>
+  <div class="trust"><span>Family-run</span><span>No upselling</span><span>Clean shop</span></div>
+</header>
+<div class="cta">
+  <a class="btn primary" id="call-btn" href="#">Call the Shop</a>
+  <a class="btn secondary" id="dir-btn" href="#" target="_blank" rel="noopener">Get Directions</a>
+</div>
+<main id="content"><div class="loading">Loading…</div></main>
+<footer><span id="foot-name"></span> · Content managed with SiteKeeper.</footer>
+<script>
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    const b = c.business || {};
+    document.title = b.name + ' — Kokomo, IN | Honest Auto Repair';
+    document.getElementById('biz-name').textContent = b.name;
+    document.getElementById('biz-tag').textContent = b.tagline || '';
+    document.getElementById('foot-name').textContent = b.name || '';
+    const banner = document.getElementById('banner');
+    if (c.announcement) { banner.textContent = c.announcement; banner.style.display = 'block'; }
+    const tel = 'tel:' + String(b.phone || '').replace(/\D/g, '');
+    const callBtn = document.getElementById('call-btn');
+    callBtn.href = tel;
+    callBtn.textContent = 'Call ' + (b.phone || 'the Shop');
+    const dirBtn = document.getElementById('dir-btn');
+    const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(b.address || b.name);
+    dirBtn.href = mapsUrl;
+    let h = '';
+    if (c.specials && c.specials.length) {
+      h += '<section><h2>Specials</h2>' + c.specials.map(s =>
+        '<div class="special"><b>' + esc(s.title) + '</b><span>' + esc(s.desc) + '</span></div>').join('') + '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      h += '<section><h2>' + esc(sec.section) + '</h2><div class="svc-grid">' + (sec.items || []).map(it =>
+        '<div class="svc"><div class="n">' + esc(it.name) +
+        (it.desc ? '<small>' + esc(it.desc) + '</small>' : '') + '</div></div>').join('') + '</div></section>';
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section><h2>Hours</h2><table class="hours">' + c.hours.map(x =>
+        '<tr><td>' + esc(x.days) + '</td><td>' + esc(x.time) + '</td></tr>').join('') + '</table></section>';
+    }
+    h += '<section class="visit"><h2>Visit Us</h2><p>' + esc(b.address || '') + '</p>' +
+      '<p>Phone: <a href="' + tel + '">' + esc(b.phone || '') + '</a></p>' +
+      '<p><a href="' + mapsUrl + '" target="_blank" rel="noopener">Open in Google Maps &#8599;</a></p></section>';
+    document.getElementById('content').innerHTML = h;
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">Could not load content.</div>'; });
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+</script>
+</body>
+</html>

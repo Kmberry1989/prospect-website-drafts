@@ -1,0 +1,47 @@
+{
+  "business": {
+    "name": "Kissane's Memorial Flowers",
+    "tagline": "Cemetery Decorations & Memorial Flowers \u2014 Marion, Indiana",
+    "phone": "(765) 664-1000",
+    "address": "1011 S Adams St, Marion, IN 46952"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Cemetery Decorations",
+      "items": [
+        {
+          "name": "Manufacturer",
+          "desc": "We manufacture cemetery decorations \u2014 durable artificial arrangements made to last."
+        },
+        {
+          "name": "Easel Sprays",
+          "desc": "Smaller and large sprays on easels."
+        },
+        {
+          "name": "Christmas Sprays",
+          "desc": "Large Christmas sprays."
+        },
+        {
+          "name": "Hanging Sprays",
+          "desc": "Hanging spray arrangements."
+        },
+        {
+          "name": "Bush Flowers",
+          "desc": "Bush flowers for graveside placement."
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday \u2013 Saturday",
+      "time": "10:00 AM \u2013 8:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ]
+}

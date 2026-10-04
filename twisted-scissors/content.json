@@ -1,0 +1,125 @@
+{
+  "business": {
+    "name": "Twisted Scissors",
+    "tagline": "Big city look with small town charm.",
+    "phone": "(260) 274-0091",
+    "address": "3 E Canal St, Wabash, IN 46992",
+    "facebook": "https://m.facebook.com/pg/TwistedScissorsWabash/"
+  },
+  "announcement": "Appointments required — book through the Facebook page or call.",
+  "specials": [
+    {
+      "title": "Twisted Scissors Super Deluxe Head Spa",
+      "desc": "Shampoo ritual, salt scalp scrub, hair mask with steam, mini facial, plus head, neck, shoulder, décolleté, hand, arm, and foot massage."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Hair Services",
+      "items": [
+        {
+          "name": "Family Haircuts"
+        },
+        {
+          "name": "Perms"
+        },
+        {
+          "name": "Color"
+        },
+        {
+          "name": "Highlights / Lowlights"
+        },
+        {
+          "name": "Balayage"
+        },
+        {
+          "name": "Ombre"
+        },
+        {
+          "name": "Color Melts"
+        },
+        {
+          "name": "Keratin Treatments"
+        }
+      ]
+    },
+    {
+      "section": "Esthetics",
+      "items": [
+        {
+          "name": "Facials"
+        },
+        {
+          "name": "Chemical Peels"
+        },
+        {
+          "name": "Facial & Body Waxing"
+        },
+        {
+          "name": "Aroma Touch Body Treatments"
+        },
+        {
+          "name": "Spray Tans"
+        }
+      ]
+    },
+    {
+      "section": "Nails",
+      "items": [
+        {
+          "name": "Powder Dip"
+        },
+        {
+          "name": "Gel & Regular Manicures"
+        },
+        {
+          "name": "Spa Pedicures"
+        },
+        {
+          "name": "Detox Pedicures"
+        },
+        {
+          "name": "Acrylic Nails"
+        },
+        {
+          "name": "Nail Art"
+        }
+      ]
+    },
+    {
+      "section": "Lashes",
+      "items": [
+        {
+          "name": "Classic Lashes"
+        },
+        {
+          "name": "Hybrid Lashes"
+        },
+        {
+          "name": "Volume Lashes"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Thursday",
+      "time": "9:00 AM – 7:00 PM"
+    },
+    {
+      "days": "Friday",
+      "time": "9:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "9:00 AM – 1:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Wabash, IN — Full-Service Salon"
+  }
+}

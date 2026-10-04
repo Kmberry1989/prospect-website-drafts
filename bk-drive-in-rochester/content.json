@@ -1,0 +1,50 @@
+{
+  "business": {
+    "name": "B & K Drive In",
+    "tagline": "Famous for our coney dogs, home-made rootbeer, hand-dipped milkshakes, and hand-breaded tenderloins.",
+    "phone": "(574) 223-2505",
+    "address": "1201 E 9th St, Rochester, IN 46975"
+  },
+  "announcement": "",
+  "specials": [
+    {
+      "title": "Root Beer in Frosty Glass Mugs",
+      "desc": "The way it's supposed to be served."
+    },
+    {
+      "title": "Pup Cups",
+      "desc": "Bring the dog \u2014 four-legged passengers get treated too."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Drive-In Favorites",
+      "items": [
+        {
+          "name": "Coney Dogs",
+          "desc": "Famous around here"
+        },
+        {
+          "name": "Home-Made Root Beer",
+          "desc": "Served in frosty glass mugs"
+        },
+        {
+          "name": "Hand-Dipped Milkshakes"
+        },
+        {
+          "name": "Hand-Breaded Tenderloins"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Tue \u2013 Sat",
+      "time": "11:00 AM \u2013 8:00 PM"
+    },
+    {
+      "days": "Sun \u2013 Mon",
+      "time": "Closed"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "business": {
+    "name": "Rock Solid Concrete",
+    "tagline": "Licensed, insured, and on time.",
+    "phone": "(765) 319-9749",
+    "address": "120 Kingston Rd, Kokomo, IN 46901"
+  },
+  "announcement": "",
+  "specials": [
+    {
+      "title": "Free estimates",
+      "desc": "Call (765) 319-9749 for a free estimate on your project."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Driveways"
+        },
+        {
+          "name": "Patios"
+        },
+        {
+          "name": "Sidewalks"
+        },
+        {
+          "name": "Foundations"
+        },
+        {
+          "name": "Custom concrete work",
+          "desc": "Residential and commercial"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Saturday",
+      "time": "9:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ]
+}

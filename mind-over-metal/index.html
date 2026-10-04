@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mind Over Metal LLC — Peru, IN — Welding, Fabrication & Repair</title>
+<meta name="description" content="Mind Over Metal LLC in Peru, Indiana: MIG and ARC welding, small fabrication and repair. Call or message with your needs.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --black:#101114; --panel:#1a1c21; --steel:#8f97a3; --spark:#ff8c1a; --spark-hot:#ffc266; --paper:#e8e9eb; }
+  body { font-family: "Courier New", Courier, monospace; background: var(--black); color: var(--paper); line-height: 1.65; padding-bottom: 76px; }
+  .banner { background: var(--spark); color: #14100a; text-align: center; padding: 0.7rem 1rem; font-weight: 700; font-size: 0.95rem; display: none; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  header.hero { text-align: center; padding: 3rem 1.2rem 2.2rem; background: radial-gradient(ellipse at 50% 120%, rgba(255,140,26,0.28), transparent 65%), var(--panel); border-bottom: 3px solid var(--spark); }
+  header .weld { font-size: 2.2rem; display: block; margin-bottom: 0.4rem; filter: drop-shadow(0 0 12px var(--spark)); }
+  header h1 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: clamp(1.9rem, 8vw, 2.9rem); letter-spacing: 0.03em; text-transform: uppercase; color: #fff; text-shadow: 0 0 22px rgba(255,140,26,0.55); }
+  header .tag { color: var(--spark-hot); font-size: 1rem; margin-top: 0.6rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 0 1.2rem 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  section { margin: 2rem 0; }
+  h2 { font-family: "Courier New", monospace; font-size: 1.2rem; color: var(--spark); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.9rem; padding-bottom: 0.35rem; border-bottom: 1px solid #3a3d44; }
+  .special { background: var(--panel); border-left: 4px solid var(--spark); padding: 0.9rem 1rem; margin-bottom: 0.8rem; border-radius: 0 8px 8px 0; }
+  .special b { display: block; }
+  .special span { color: #b9bdc6; font-size: 0.95rem; }
+  .svc { background: var(--panel); border: 1px solid #2c2f36; border-top: 3px solid var(--spark); border-radius: 0 0 8px 8px; padding: 0.85rem 1rem; margin-bottom: 0.7rem; }
+  .svc .n { font-weight: 800; font-size: 1.1rem; color: #fff; text-transform: uppercase; letter-spacing: 0.04em; }
+  .svc .d { font-size: 0.93rem; color: #b9bdc6; }
+  .hours-note { background: var(--panel); border: 1px dashed var(--spark); border-radius: 8px; padding: 1rem 1.1rem; font-size: 0.95rem; color: var(--spark-hot); text-align: center; }
+  .visit { background: var(--panel); border: 1px solid #2c2f36; border-radius: 8px; padding: 1rem 1.1rem; font-size: 0.95rem; text-align: center; color: #b9bdc6; }
+  .visit a { color: var(--spark); font-weight: 700; }
+  .review { background: var(--panel); border-left: 4px solid var(--spark); padding: 1rem 1.1rem; font-style: italic; color: #cfd3da; border-radius: 0 8px 8px 0; }
+  .review cite { display: block; margin-top: 0.6rem; font-style: normal; font-size: 0.85rem; color: var(--steel); }
+  .btn { display: block; text-align: center; text-decoration: none; padding: 1rem; border-radius: 8px; font-size: 1.15rem; min-height: 56px; margin-bottom: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; }
+  .btn.call { background: var(--spark); color: #14100a; box-shadow: 0 0 18px rgba(255,140,26,0.45); }
+  .btn.dir { background: transparent; color: var(--paper); border: 2px solid var(--steel); }
+  footer { text-align: center; padding: 1.5rem 1rem 2rem; color: #6d727c; font-size: 0.85rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  .dock { position: fixed; left: 0; right: 0; bottom: 0; display: flex; background: #0a0b0d; border-top: 1px solid #2c2f36; z-index: 50; }
+  .dock a { flex: 1; text-align: center; color: #fff; text-decoration: none; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; padding: 1rem 0.5rem; min-height: 56px; display: flex; align-items: center; justify-content: center; font-size: 1.02rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  .dock a:first-child { background: var(--spark); color: #14100a; }
+  .loading { text-align: center; padding: 4rem 1rem; color: #6d727c; }
+</style>
+</head>
+<body>
+<div class="banner" id="banner"></div>
+<header class="hero">
+  <span class="weld" aria-hidden="true">⚡</span>
+  <h1 id="biz-name">…</h1>
+  <div class="tag" id="biz-tag"></div>
+</header>
+<main id="content"><div class="loading">Loading…</div></main>
+<footer>SiteKeeper-managed site</footer>
+<nav class="dock" aria-label="Quick actions">
+  <a id="dock-call" href="#">⚡ Call</a>
+  <a id="dock-dir" href="#">Directions</a>
+</nav>
+<script>
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    const b = c.business || {};
+    document.getElementById('biz-name').textContent = b.name || '';
+    document.getElementById('biz-tag').textContent = b.tagline || '';
+    const tel = 'tel:+1' + (b.phone || '').replace(/\D/g, '');
+    const maps = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(b.address || '');
+    document.getElementById('dock-call').href = tel;
+    document.getElementById('dock-dir').href = maps;
+    if (c.announcement) {
+      const bn = document.getElementById('banner');
+      bn.textContent = c.announcement;
+      bn.style.display = 'block';
+    }
+    let h = '<section><a class="btn call" href="' + esc(tel) + '">Call ' + esc(b.phone || '') + '</a>' +
+      '<a class="btn dir" href="' + esc(maps) + '">Get Directions</a>' +
+      '<div class="visit">' + esc(b.address || '') + '</div></section>';
+    if (c.specials && c.specials.length) {
+      h += '<section><h2>Specials</h2>' + c.specials.map(s =>
+        '<div class="special"><b>' + esc(s.title) + '</b><span>' + esc(s.desc) + '</span></div>').join('') + '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      h += '<section><h2>' + esc(sec.section) + '</h2>' + (sec.items || []).map(it =>
+        '<div class="svc"><div class="n">' + esc(it.name) + '</div>' +
+        (it.desc ? '<div class="d">' + esc(it.desc) + '</div>' : '') + '</div>').join('') + '</section>';
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section><h2>Hours</h2><table class="hours"><tbody>' + c.hours.map(x =>
+        '<tr><td>' + esc(x.days) + '</td><td>' + esc(x.time) + '</td></tr>').join('') + '</tbody></table></section>';
+    } else {
+      h += '<section><div class="hours-note">Hours aren\u2019t published — call the shop and ask when to stop by.</div></section>';
+    }
+    h += '<section><div class="review">\u201cYoung man starting a business in a small town, does prestige work.\u201d<cite>— Customer review, 2018</cite></div></section>';
+    document.getElementById('content').innerHTML = h;
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">Could not load content. Please try again later.</div>'; });
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+</script>
+</body>
+</html>

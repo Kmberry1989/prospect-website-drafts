@@ -1,0 +1,47 @@
+{
+  "business": {
+    "name": "Sami's Shags N Wags",
+    "tagline": "Pet Grooming \u2014 Logansport, Indiana",
+    "phone": "(574) 727-0844",
+    "address": "3020 Valleyview Dr, Logansport, IN 46947"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Grooming Services",
+      "items": [
+        {
+          "name": "Full Grooming",
+          "desc": "Full grooming services \u2014 dogs leave looking and smelling amazing."
+        },
+        {
+          "name": "Nail Trims",
+          "desc": "Drop-in nail trims."
+        },
+        {
+          "name": "Finishing Touch",
+          "desc": "A cute bandana or tie after the groom."
+        },
+        {
+          "name": "Pricing",
+          "desc": "Fair pricing \u2014 call for a quote."
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday \u2013 Friday",
+      "time": "8:00 AM \u2013 5:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "8:00 AM \u2013 2:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ]
+}

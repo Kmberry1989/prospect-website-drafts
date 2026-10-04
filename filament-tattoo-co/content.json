@@ -1,0 +1,61 @@
+{
+  "business": {
+    "name": "Filament Tattoo Co.",
+    "tagline": "Tattoo & Piercing \u2014 Wabash, Indiana",
+    "phone": "(260) 274-0999",
+    "address": "36 E Canal St, Wabash, IN 46992"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Tattoos",
+      "items": [
+        {
+          "name": "Tattoo Appointments",
+          "desc": "Deposits are required for all tattoo appointments."
+        },
+        {
+          "name": "Rescheduling",
+          "desc": "48-hour notice required \u2014 late changes forfeit the deposit."
+        },
+        {
+          "name": "No-Shows",
+          "desc": "No-show, then rebook at 150% of the original price."
+        },
+        {
+          "name": "Resident Artists",
+          "desc": "Roger Price, Hope, Atom, and Sabrina."
+        }
+      ]
+    },
+    {
+      "section": "Piercing",
+      "items": [
+        {
+          "name": "Piercing",
+          "desc": "Ages 14 and up with consent \u2014 if a minor under 14 says no, the piercing stops."
+        },
+        {
+          "name": "What We Don't Pierce",
+          "desc": "No nipple or genital piercings."
+        }
+      ]
+    },
+    {
+      "section": "Design Guidance",
+      "items": [
+        {
+          "name": "Word + Picture Combos",
+          "desc": "The shop advises against word-and-picture combo designs."
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Current hours",
+      "time": "Call the shop to confirm \u2014 hours vary"
+    }
+  ]
+}

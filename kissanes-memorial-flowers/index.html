@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kissane's Memorial Flowers | Cemetery Decorations in Marion, IN</title>
+<meta name="description" content="Kissane's Memorial Flowers in Marion, IN — manufacturer of cemetery decorations: easel sprays, Christmas sprays, hanging sprays, bush flowers. Call (765) 664-1000.">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, "Times New Roman", serif; line-height: 1.65; color: #4a4438; background: #fbf8f1; }
+.banner { display: none; text-align: center; padding: 0.8rem 1rem; font-weight: 700; background: #7d8c6f; color: #fbf8f1; }
+.hero { text-align: center; padding: 3rem 1.2rem 2.2rem; background: linear-gradient(180deg, #eef0e4 0%, #fbf8f1 100%); border-bottom: 1px solid #d8d2bd; }
+.hero h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.1rem, 8vw, 3.2rem); color: #5d6b4f; line-height: 1.15; margin: 0.6rem 0 0.4rem; }
+.tag { font-size: 1.08rem; color: #8a7f66; font-style: italic; }
+.contact-bar { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; padding: 0 1.2rem; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; min-width: 160px; padding: 0.7rem 1.4rem; font-size: 1.05rem; font-weight: 700; text-decoration: none; border-radius: 999px; .btn.call { background: #7d8c6f; color: #fff; border: none; font-family: Georgia, serif; } .btn.dir { background: transparent; color: #5d6b4f; border: 2px solid #7d8c6f; font-family: Georgia, serif; } }
+.addr { text-align: center; padding: 0.9rem 1.2rem 0.4rem; color: #9a8f76; font-size: 0.98rem; }
+main { max-width: 760px; margin: 0 auto; padding: 1.6rem 1.2rem 3rem; }
+section { margin-bottom: 2.4rem; }
+section h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.5rem; color: #5d6b4f; margin-bottom: 0.9rem; font-style: italic; border-bottom: 1px solid #d8d2bd; padding-bottom: 0.35rem; }
+.special { background: #fffdf8; border: 1px solid #cfc7a8; border-radius: 4px; padding: 0.9rem 1.1rem; margin-bottom: 0.8rem; color: #4a4438; }
+.special b { display: block; font-size: 1.05rem; }
+.special span { font-size: 0.96rem; }
+.item { display: flex; justify-content: space-between; gap: 1rem; padding: 0.65rem 0; border-bottom: 1px dotted #d8d2bd; }
+.item .n { font-weight: 700; font-size: 1.02rem; }
+.item .n small { display: block; font-weight: 400; font-size: 0.9rem; color: #8a7f66; margin-top: 0.15rem; }
+.item .p { font-weight: 700; white-space: nowrap; color: #5d6b4f; }
+.hours { width: 100%; border-collapse: collapse; }
+.hours td { padding: 0.55rem 0; border-bottom: 1px dotted #d8d2bd; }
+.hours td:last-child { text-align: right; font-weight: 700; }
+footer { text-align: center; padding: 1.6rem 1.2rem 2.2rem; font-size: 0.88rem; color: #a89d82; border-top: 1px solid #d8d2bd; }
+.loading { text-align: center; padding: 4rem 1rem; }
+.badge-row { display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; margin-top: 0.9rem; }
+.badge { display: inline-block; padding: 0.35rem 0.9rem; font-size: 0.85rem; font-weight: 700; border-radius: 999px; background: transparent; border: 1.5px solid #7d8c6f; color: #5d6b4f; font-family: Georgia, serif; }
+.fb-link { display: inline-block; margin-top: 0.7rem; font-weight: 700; color: #5d6b4f; }
+.deco { margin-bottom: 0.4rem; }
+a:focus-visible, .btn:focus-visible { outline: 3px solid #7d8c6f; outline-offset: 2px; }
+
+</style>
+</head>
+<body>
+<div class="banner" id="banner" role="note"></div>
+<header class="hero">
+  <svg class="deco" width="54" height="54" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8 C80 30 86 62 50 92 C14 62 20 30 50 8 Z" fill="none" stroke="#7d8c6f" stroke-width="4"/><line x1="50" y1="20" x2="50" y2="82" stroke="#7d8c6f" stroke-width="3"/><line x1="50" y1="38" x2="66" y2="44" stroke="#7d8c6f" stroke-width="2.5"/><line x1="50" y1="52" x2="34" y2="58" stroke="#7d8c6f" stroke-width="2.5"/></svg>
+  <h1 id="biz-name">&hellip;</h1>
+  <p class="tag" id="biz-tag"></p>
+  <div class="badge-row"><span class="badge">24 years in business</span><span class="badge">BBB A+ rating</span><span class="badge">4.8 stars on Google</span></div>
+</header>
+<div class="contact-bar">
+  <a class="btn call" id="biz-phone" href="#">Call</a>
+  <a class="btn dir" id="biz-dir" href="#" target="_blank" rel="noopener">Get Directions</a>
+</div>
+<p class="addr" id="biz-addr"></p>
+
+<main id="content"><div class="loading">Loading&hellip;</div></main>
+<footer>
+  <p id="foot-name"></p>
+  <p>Content managed with SiteKeeper.</p>
+</footer>
+<script>
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    document.title = c.business.name + ' | ' + (c.business.tagline || '');
+    document.getElementById('biz-name').textContent = c.business.name;
+    document.getElementById('biz-tag').textContent = c.business.tagline || '';
+    document.getElementById('biz-addr').textContent = c.business.address || '';
+    document.getElementById('foot-name').textContent = c.business.name + ' — ' + (c.business.address || '');
+    var ph = document.getElementById('biz-phone');
+    ph.textContent = 'Call ' + (c.business.phone || '');
+    ph.href = 'tel:' + (c.business.phone || '').replace(/\D/g, '');
+    document.getElementById('biz-dir').href =
+      'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(c.business.address || '');
+    if (c.announcement) {
+      var b = document.getElementById('banner');
+      b.textContent = c.announcement;
+      b.style.display = 'block';
+    }
+    var h = '';
+    if (c.specials && c.specials.length) {
+      h += '<section aria-label="Specials"><h2>Specials</h2>' + c.specials.map(s =>
+        '<div class="special"><b>' + esc(s.title) + '</b><span>' + esc(s.desc) + '</span></div>').join('') + '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      h += '<section><h2>' + esc(sec.section) + '</h2>' + (sec.items || []).map(it =>
+        '<div class="item"><div class="n">' + esc(it.name) +
+        (it.desc ? '<small>' + esc(it.desc) + '</small>' : '') +
+        '</div>' + (it.price ? '<div class="p">' + esc(it.price) + '</div>' : '') + '</div>').join('') + '</section>';
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section><h2>Hours</h2><table class="hours"><tbody>' + c.hours.map(x =>
+        '<tr><td>' + esc(x.days) + '</td><td>' + esc(x.time) + '</td></tr>').join('') + '</tbody></table></section>';
+    }
+    document.getElementById('content').innerHTML = h;
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">Could not load content.</div>'; });
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "business": {
+    "name": "B&G Handyman Services",
+    "tagline": "Your neighbor for jobs big and small.",
+    "phone": "(574) 721-9783",
+    "address": "3131 George St, Logansport, IN 46947"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Handyman services",
+          "desc": "Everyday repairs, maintenance, and projects around your home — call to talk through your job."
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Friday",
+      "time": "8:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "8:00 AM – 4:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "8:00 AM – 5:00 PM"
+    }
+  ]
+}

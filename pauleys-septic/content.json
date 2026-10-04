@@ -1,0 +1,57 @@
+{
+  "business": {
+    "name": "Pauley's Sewer & Septic Services",
+    "tagline": "First-class septic services for Cass County.",
+    "phone": "(574) 753-4274",
+    "address": "2471 Burlington Ave, Logansport, IN 46947"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Septic tank pumping"
+        },
+        {
+          "name": "Septic tank installation & repair"
+        },
+        {
+          "name": "Sewer cleaning"
+        },
+        {
+          "name": "Drain cleaning"
+        },
+        {
+          "name": "Floor drains & down spouts"
+        },
+        {
+          "name": "Septic system construction"
+        },
+        {
+          "name": "Porta potty rental"
+        },
+        {
+          "name": "Waste disposal"
+        },
+        {
+          "name": "Grease trap cleaning"
+        },
+        {
+          "name": "Cesspool pumping"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Friday",
+      "time": "9:00 AM – 6:00 PM"
+    },
+    {
+      "days": "Saturday – Sunday",
+      "time": "Closed"
+    }
+  ]
+}

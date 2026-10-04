@@ -1,0 +1,56 @@
+{
+  "business": {
+    "name": "Tipton Nails",
+    "tagline": "Family-run — bring your ideas, they'll make improvements.",
+    "phone": "(765) 675-4230",
+    "address": "846 E Jefferson St, Tipton, IN 46072"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Nail Services",
+      "items": [
+        {
+          "name": "Classic Manicures"
+        },
+        {
+          "name": "Gel Manicures"
+        },
+        {
+          "name": "American / French Manicures"
+        },
+        {
+          "name": "Pedicures",
+          "desc": "Including elaborate spa pedis"
+        },
+        {
+          "name": "Acrylic Nails"
+        },
+        {
+          "name": "Nail Art"
+        },
+        {
+          "name": "Nail Take-Off"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Friday",
+      "time": "10:00 AM – 7:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "10:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Tipton, IN — Nail Salon"
+  }
+}

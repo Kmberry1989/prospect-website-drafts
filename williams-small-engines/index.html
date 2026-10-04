@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Williams Small Engines — Logansport, IN — Small Engine Repair</title>
+<meta name="description" content="Williams Small Engines in Logansport, Indiana: lawn mower and pressure washer repair, all small engines. Call ahead for fast local service.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --steel:#23262b; --steel-dark:#16181c; --hazard:#f5a623; --hazard-dark:#d98a0e; --concrete:#eceae4; --paper:#f7f6f2; --ink:#1d1f23; }
+  body { font-family: "Arial Narrow", Arial, Helvetica, sans-serif; background: var(--concrete); color: var(--ink); line-height: 1.6; padding-bottom: 76px; }
+  .banner { background: var(--hazard); color: var(--steel-dark); text-align: center; padding: 0.7rem 1rem; font-weight: 700; font-size: 0.95rem; display: none; }
+  header.hero { background: var(--steel); color: #fff; padding: 2.6rem 1.2rem 2rem; border-bottom: 8px solid var(--hazard); position: relative; }
+  header.hero::after { content: ""; display: block; height: 6px; margin-top: 1.4rem;
+    background: repeating-linear-gradient(45deg, var(--hazard), var(--hazard) 16px, var(--steel) 16px, var(--steel) 32px); }
+  header h1 { font-size: clamp(2rem, 9vw, 3rem); text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.05; font-weight: 900; }
+  header .tag { color: var(--hazard); font-weight: 700; font-size: 1.05rem; margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  main { max-width: 720px; margin: 0 auto; padding: 0 1.2rem 3rem; }
+  section { margin: 2rem 0; }
+  h2 { font-size: 1.4rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--steel); margin-bottom: 0.9rem; border-left: 6px solid var(--hazard); padding-left: 0.7rem; }
+  .special { background: var(--paper); border: 2px solid var(--hazard); border-radius: 6px; padding: 0.9rem 1rem; margin-bottom: 0.8rem; }
+  .special b { display: block; text-transform: uppercase; }
+  .special span { font-size: 0.95rem; color: #55504a; }
+  .svc { background: var(--paper); border-radius: 6px; padding: 0.85rem 1rem 0.85rem 1.1rem; margin-bottom: 0.7rem; border-left: 4px solid var(--steel); box-shadow: 0 2px 5px rgba(0,0,0,0.08); }
+  .svc .n { font-weight: 800; text-transform: uppercase; font-size: 1.05rem; letter-spacing: 0.02em; }
+  .svc .d { font-size: 0.93rem; color: #55504a; }
+  table.hours { width: 100%; border-collapse: collapse; background: var(--paper); border-radius: 6px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.08); }
+  table.hours td { padding: 0.6rem 1rem; border-bottom: 1px solid #ddd8cc; }
+  table.hours tr:last-child td { border-bottom: none; }
+  table.hours td:last-child { text-align: right; font-weight: 800; }
+  .visit { background: var(--steel); color: #fff; border-radius: 6px; padding: 1rem 1.1rem; font-size: 0.95rem; }
+  .visit a { color: var(--hazard); font-weight: 700; }
+  .btn { display: block; text-align: center; text-decoration: none; padding: 1rem; border-radius: 6px; font-size: 1.15rem; min-height: 56px; margin-bottom: 0.7rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.04em; }
+  .btn.call { background: var(--hazard); color: var(--steel-dark); }
+  .btn.dir { background: var(--steel); color: #fff; }
+  footer { text-align: center; padding: 1.5rem 1rem 2rem; color: #8a857c; font-size: 0.85rem; }
+  .dock { position: fixed; left: 0; right: 0; bottom: 0; display: flex; background: var(--steel-dark); z-index: 50; }
+  .dock a { flex: 1; text-align: center; color: #fff; text-decoration: none; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; padding: 1rem 0.5rem; min-height: 56px; display: flex; align-items: center; justify-content: center; font-size: 1.02rem; }
+  .dock a:first-child { background: var(--hazard); color: var(--steel-dark); }
+  .loading { text-align: center; padding: 4rem 1rem; color: #8a857c; }
+</style>
+</head>
+<body>
+<div class="banner" id="banner"></div>
+<header class="hero">
+  <h1 id="biz-name">…</h1>
+  <div class="tag" id="biz-tag"></div>
+</header>
+<main id="content"><div class="loading">Loading…</div></main>
+<footer>SiteKeeper-managed site</footer>
+<nav class="dock" aria-label="Quick actions">
+  <a id="dock-call" href="#">📞 Call Now</a>
+  <a id="dock-dir" href="#">Directions</a>
+</nav>
+<script>
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    const b = c.business || {};
+    document.getElementById('biz-name').textContent = b.name || '';
+    document.getElementById('biz-tag').textContent = b.tagline || '';
+    const tel = 'tel:+1' + (b.phone || '').replace(/\D/g, '');
+    const maps = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(b.address || '');
+    document.getElementById('dock-call').href = tel;
+    document.getElementById('dock-dir').href = maps;
+    if (c.announcement) {
+      const bn = document.getElementById('banner');
+      bn.textContent = c.announcement;
+      bn.style.display = 'block';
+    }
+    let h = '<section><a class="btn call" href="' + esc(tel) + '">Call ' + esc(b.phone || '') + '</a>' +
+      '<a class="btn dir" href="' + esc(maps) + '">Get Directions</a>' +
+      '<div class="visit">' + esc(b.address || '') + '</div></section>';
+    if (c.specials && c.specials.length) {
+      h += '<section><h2>Specials</h2>' + c.specials.map(s =>
+        '<div class="special"><b>' + esc(s.title) + '</b><span>' + esc(s.desc) + '</span></div>').join('') + '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      h += '<section><h2>' + esc(sec.section) + '</h2>' + (sec.items || []).map(it =>
+        '<div class="svc"><div class="n">' + esc(it.name) + '</div>' +
+        (it.desc ? '<div class="d">' + esc(it.desc) + '</div>' : '') + '</div>').join('') + '</section>';
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section><h2>Shop Hours</h2><table class="hours"><tbody>' + c.hours.map(x =>
+        '<tr><td>' + esc(x.days) + '</td><td>' + esc(x.time) + '</td></tr>').join('') + '</tbody></table></section>';
+    }
+    document.getElementById('content').innerHTML = h;
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">Could not load content. Please try again later.</div>'; });
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+  "business": {
+    "name": "Uptown Style",
+    "tagline": "Full-service salon with an antique feel, in downtown Wabash.",
+    "phone": "(260) 563-3000",
+    "address": "86 E Main St, Wabash, IN 46992"
+  },
+  "announcement": "Hours vary — please call ahead for today's hours.",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Salon Services",
+      "items": [
+        {
+          "name": "Hair Services"
+        },
+        {
+          "name": "Manicures"
+        },
+        {
+          "name": "Pedicures"
+        },
+        {
+          "name": "Acrylic Nails"
+        },
+        {
+          "name": "Gel Nails"
+        },
+        {
+          "name": "Facials"
+        },
+        {
+          "name": "Waxing"
+        },
+        {
+          "name": "Ear Candling"
+        },
+        {
+          "name": "Spray Tanning"
+        }
+      ]
+    },
+    {
+      "section": "In-House Practitioners",
+      "items": [
+        {
+          "name": "Body Logistics Massage",
+          "desc": "Deep tissue, lymphatic, tok sen"
+        },
+        {
+          "name": "Heart and Soul Therapeutic Massage"
+        },
+        {
+          "name": "Delaney's Designs",
+          "desc": "Nail tech"
+        }
+      ]
+    }
+  ],
+  "hours": [],
+  "meta": {
+    "townTrade": "Wabash, IN — Full-Service Salon"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "business": {
+    "name": "Hairtique and Fountain Blues",
+    "tagline": "Get your hair done, have a fountain coke.",
+    "phone": "(765) 473-6350",
+    "address": "24 S Broadway Ave, Peru, IN 46970"
+  },
+  "announcement": "Open early — 7:00 AM weekdays and Saturdays.",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Salon Services",
+      "items": [
+        {
+          "name": "Haircuts",
+          "desc": "For men, women, and children"
+        },
+        {
+          "name": "Color"
+        },
+        {
+          "name": "Perms"
+        }
+      ]
+    },
+    {
+      "section": "Fountain Blues Soda Fountain",
+      "items": [
+        {
+          "name": "Fountain Cokes",
+          "desc": "Old-fashioned, made to order"
+        },
+        {
+          "name": "Strawberry Vanilla Swirl"
+        },
+        {
+          "name": "Specialty Sundaes"
+        },
+        {
+          "name": "Homemade Desserts"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Friday",
+      "time": "7:00 AM – 6:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "7:00 AM – 1:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Peru, IN — Salon & Soda Fountain"
+  }
+}

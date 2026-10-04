@@ -1,0 +1,53 @@
+{
+  "business": {
+    "name": "Walt Moss Barber Shop",
+    "tagline": "Your hometown barber!",
+    "phone": "(765) 459-9752",
+    "address": "301 N Main St, Kokomo, IN 46901",
+    "facebook": "https://www.facebook.com/waltmossbarbershop/"
+  },
+  "announcement": "Appointments suggested — walk-ins welcome.",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Haircuts",
+          "desc": "Men and boys"
+        },
+        {
+          "name": "Beard Trim"
+        },
+        {
+          "name": "Straight Razor Neck Shave"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Wednesday",
+      "time": "8:00 AM – 5:30 PM"
+    },
+    {
+      "days": "Thursday",
+      "time": "9:00 AM – 5:30 PM"
+    },
+    {
+      "days": "Friday",
+      "time": "8:00 AM – 5:30 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "8:00 AM – 3:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Kokomo, IN — Barber Shop"
+  }
+}

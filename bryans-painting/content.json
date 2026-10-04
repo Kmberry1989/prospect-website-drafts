@@ -1,0 +1,45 @@
+{
+  "business": {
+    "name": "Bryan's Painting",
+    "tagline": "Interior & exterior painting, done with care.",
+    "phone": "(574) 664-2224",
+    "address": "6381 E County Road 500 N, Logansport, IN 46947"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Interior painting"
+        },
+        {
+          "name": "Exterior painting"
+        },
+        {
+          "name": "Residential & commercial"
+        },
+        {
+          "name": "Wood finishing"
+        },
+        {
+          "name": "House washing"
+        },
+        {
+          "name": "Faux painting"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Friday",
+      "time": "8:00 AM – 4:00 PM"
+    },
+    {
+      "days": "Saturday – Sunday",
+      "time": "Closed"
+    }
+  ]
+}

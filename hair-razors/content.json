@@ -1,0 +1,80 @@
+{
+  "business": {
+    "name": "Hair Razors",
+    "tagline": "Full service hair, nail & massage studio — walk-ins always welcome.",
+    "phone": "(765) 475-0355",
+    "address": "49 E 3rd St, Peru, IN 46970"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Hair Services",
+      "items": [
+        {
+          "name": "Haircuts"
+        },
+        {
+          "name": "Color"
+        },
+        {
+          "name": "Balayage",
+          "desc": "Including red balayage"
+        },
+        {
+          "name": "Highlights"
+        },
+        {
+          "name": "Extensions"
+        },
+        {
+          "name": "Hair Therapy"
+        }
+      ]
+    },
+    {
+      "section": "Nails & Massage",
+      "items": [
+        {
+          "name": "Nail Services"
+        },
+        {
+          "name": "Pedicures"
+        },
+        {
+          "name": "Massage"
+        }
+      ]
+    },
+    {
+      "section": "Good to Know",
+      "items": [
+        {
+          "name": "Online Booking",
+          "desc": "Book online — ask when you call"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday",
+      "time": "Closed"
+    },
+    {
+      "days": "Tuesday – Friday",
+      "time": "9:00 AM – 6:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "8:00 AM – 2:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Peru, IN — Full-Service Salon"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "business": {
+    "name": "Hair Heaven",
+    "tagline": "Down-to-earth cuts at down-to-earth prices.",
+    "phone": "(765) 473-3759",
+    "address": "226 W Canal St, Peru, IN 46970"
+  },
+  "announcement": "Parking in the alley.",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Haircut",
+          "desc": "Advertised at $13 on their listing — call to confirm",
+          "price": "$13"
+        },
+        {
+          "name": "Prom Up-Dos"
+        },
+        {
+          "name": "Shampoo Sets"
+        },
+        {
+          "name": "Color"
+        },
+        {
+          "name": "Eyebrow / Lip Wax"
+        },
+        {
+          "name": "Makeup"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday",
+      "time": "Closed"
+    },
+    {
+      "days": "Tuesday – Friday",
+      "time": "9:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "9:00 AM – 2:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Peru, IN — Hair Salon"
+  }
+}

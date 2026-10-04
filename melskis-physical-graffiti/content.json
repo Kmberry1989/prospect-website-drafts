@@ -1,0 +1,52 @@
+{
+  "business": {
+    "name": "Melski's Physical Graffiti",
+    "tagline": "Custom Tattoos & Cover-Ups \u2014 Logansport, Indiana",
+    "phone": "(574) 992-8176",
+    "address": "723 W Market St, Logansport, IN 46947"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Custom Tattoos",
+      "items": [
+        {
+          "name": "Custom Designs",
+          "desc": "Designed with you, by Melanie \u2014 she specializes in characters and people."
+        },
+        {
+          "name": "Cover-Ups",
+          "desc": "Cover-up specialty \u2014 a Virgin Mary cover-up is on display in the shop."
+        },
+        {
+          "name": "Pricing",
+          "desc": "Based on design \u2014 call or text to book."
+        }
+      ]
+    },
+    {
+      "section": "Piercing",
+      "items": [
+        {
+          "name": "Piercing Appointments",
+          "desc": "Piercing is now handled from Jennie's own shop location \u2014 (765) 398-3889."
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Tuesday \u2013 Friday",
+      "time": "11:00 AM \u2013 5:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "11:00 AM \u2013 6:00 PM"
+    },
+    {
+      "days": "Sunday & Monday",
+      "time": "Closed"
+    }
+  ]
+}

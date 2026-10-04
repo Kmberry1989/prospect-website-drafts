@@ -1,0 +1,108 @@
+{
+  "business": {
+    "name": "Dillinger's",
+    "tagline": "John Dillinger robbed the old police station \u2014 just out our back door \u2014 in 1933.",
+    "phone": "(765) 460-5398",
+    "address": "61 S Broadway Ave, Peru, IN 46970"
+  },
+  "announcement": "",
+  "specials": [
+    {
+      "title": "Broasted Chicken",
+      "desc": "Our Wednesday night special."
+    },
+    {
+      "title": "Prime Rib",
+      "desc": "A weekend special \u2014 steaks cut fresh in-house."
+    },
+    {
+      "title": "The Dillinger Burger",
+      "desc": "Half-pound, house-ground \u2014 the namesake of the joint."
+    }
+  ],
+  "menu": [
+    {
+      "section": "House Specialties",
+      "items": [
+        {
+          "name": "The Dillinger Burger",
+          "desc": "Half-pound, house-ground \u2014 the namesake of the joint"
+        },
+        {
+          "name": "Steak Melt"
+        },
+        {
+          "name": "Broasted Chicken",
+          "desc": "Wednesday night special"
+        },
+        {
+          "name": "Chicken Fried Chicken"
+        },
+        {
+          "name": "Prime Rib",
+          "desc": "Weekend special \u2014 steaks cut fresh in-house"
+        },
+        {
+          "name": "Breaded Tenderloin"
+        },
+        {
+          "name": "Wings",
+          "desc": "Folks call them the best wings around"
+        },
+        {
+          "name": "Billy Club Wrap"
+        },
+        {
+          "name": "Tommy Gun"
+        },
+        {
+          "name": "Silent Shot"
+        }
+      ]
+    },
+    {
+      "section": "Sides",
+      "items": [
+        {
+          "name": "Onion Rings"
+        },
+        {
+          "name": "Pickle Fries"
+        },
+        {
+          "name": "Jack Rabbit Rolls"
+        }
+      ]
+    },
+    {
+      "section": "Good to Know",
+      "items": [
+        {
+          "name": "Full Bar",
+          "desc": "Beer, cocktails & more"
+        },
+        {
+          "name": "Pool Tables"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Wed \u2013 Thu",
+      "time": "11:00 AM \u2013 2:00 PM & 4:00 \u2013 9:00 PM"
+    },
+    {
+      "days": "Friday",
+      "time": "11:00 AM \u2013 2:00 PM & 4:00 \u2013 10:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "11:00 AM \u2013 10:00 PM"
+    },
+    {
+      "days": "Sun \u2013 Tue",
+      "time": "Closed"
+    }
+  ]
+}

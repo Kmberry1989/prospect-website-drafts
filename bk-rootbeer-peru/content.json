@@ -1,0 +1,76 @@
+{
+  "business": {
+    "name": "B&K Rootbeer",
+    "tagline": "Old-school carhop root beer \u2014 park, wait for the carhop, or walk right up.",
+    "phone": "(765) 469-3477",
+    "address": "258\u2013272 S Broadway Ave, Peru, IN 46970"
+  },
+  "announcement": "Seasonal stand \u2014 we usually wrap up around October 1. Call (765) 469-3477 before visiting to make sure we're open.",
+  "specials": [
+    {
+      "title": "Root Beer To-Go",
+      "desc": "Take it home by the 32 oz, quart, half-gallon, or gallon."
+    },
+    {
+      "title": "Pose with the Elephant!",
+      "desc": "Our famous elephant statue is the photo op \u2014 don't skip it."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Root Beer",
+      "items": [
+        {
+          "name": "Home-Made Root Beer",
+          "desc": "Served ice-cold"
+        },
+        {
+          "name": "Root Beer To-Go",
+          "desc": "32 oz, quart, half-gallon, or gallon"
+        },
+        {
+          "name": "Shakes"
+        },
+        {
+          "name": "Sundaes"
+        }
+      ]
+    },
+    {
+      "section": "Dogs & Baskets",
+      "items": [
+        {
+          "name": "Spanish Nacho Cheese Dog"
+        },
+        {
+          "name": "Coney Dogs",
+          "desc": "Kraut, cheese, or slaw dogs"
+        },
+        {
+          "name": "Corn Dogs"
+        },
+        {
+          "name": "Chicken Basket"
+        },
+        {
+          "name": "Grilled Cheese Basket"
+        },
+        {
+          "name": "Mozzarella Sticks"
+        },
+        {
+          "name": "Jalape\u00f1o Poppers"
+        },
+        {
+          "name": "Fries & Tots"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday \u2013 Sunday",
+      "time": "10:30 AM \u2013 7:00 PM"
+    }
+  ]
+}

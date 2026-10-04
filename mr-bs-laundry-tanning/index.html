@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr. B's Laundry and Tanning | Laundromat & Tanning in Peru, IN</title>
+<meta name="description" content="Mr. B's Laundry and Tanning in Peru, IN — self-service laundry, drop-off laundry, and tanning. Open daily. Call (765) 473-6915.">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.65; color: #123b4a; background: #f2fafc; }
+.banner { display: none; text-align: center; padding: 0.8rem 1rem; font-weight: 700; background: #f5a623; color: #123b4a; }
+.hero { text-align: center; padding: 3rem 1.2rem 2.2rem; background: linear-gradient(180deg, #bfe9f2 0%, #f2fafc 100%); border-bottom: 4px solid #1fa3b8; }
+.hero h1 { font-family: "Segoe UI", Verdana, sans-serif; font-size: clamp(2.1rem, 8vw, 3.2rem); color: #0d6e80; line-height: 1.15; margin: 0.6rem 0 0.4rem; }
+.tag { font-size: 1.08rem; color: #3b6b78; font-weight: 600; }
+.contact-bar { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; padding: 0 1.2rem; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; min-width: 160px; padding: 0.7rem 1.4rem; font-size: 1.05rem; font-weight: 700; text-decoration: none; border-radius: 10px; .btn.call { background: #1fa3b8; color: #fff; border: none; } .btn.dir { background: #fff; color: #0d6e80; border: 2px solid #1fa3b8; } }
+.addr { text-align: center; padding: 0.9rem 1.2rem 0.4rem; color: #5a7d8a; font-size: 0.98rem; }
+main { max-width: 760px; margin: 0 auto; padding: 1.6rem 1.2rem 3rem; }
+section { margin-bottom: 2.4rem; }
+section h2 { font-family: "Segoe UI", Verdana, sans-serif; font-size: 1.5rem; color: #0d6e80; margin-bottom: 0.9rem; border-bottom: 3px solid #bfe9f2; padding-bottom: 0.3rem; }
+.special { background: #fff; border-left: 5px solid #f5a623; border-radius: 0 10px 10px 0; padding: 0.85rem 1rem; margin-bottom: 0.8rem; box-shadow: 0 2px 8px rgba(18,59,74,0.08); color: #123b4a; }
+.special b { display: block; font-size: 1.05rem; }
+.special span { font-size: 0.96rem; }
+.item { display: flex; justify-content: space-between; gap: 1rem; padding: 0.65rem 0; border-bottom: 1px solid #d8ecf1; background: #fff; border-radius: 10px; padding-left: 0.9rem; padding-right: 0.9rem; margin-bottom: 0.35rem; box-shadow: 0 1px 3px rgba(18,59,74,0.05); }
+.item .n { font-weight: 700; font-size: 1.02rem; }
+.item .n small { display: block; font-weight: 400; font-size: 0.9rem; color: #5a7d8a; margin-top: 0.15rem; }
+.item .p { font-weight: 700; white-space: nowrap; color: #0d6e80; }
+.hours { width: 100%; border-collapse: collapse; }
+.hours td { padding: 0.55rem 0; border-bottom: 1px dotted #d8ecf1; }
+.hours td:last-child { text-align: right; font-weight: 700; }
+footer { text-align: center; padding: 1.6rem 1.2rem 2.2rem; font-size: 0.88rem; color: #7fa3ae; border-top: 3px solid #1fa3b8; }
+.loading { text-align: center; padding: 4rem 1rem; }
+.badge-row { display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; margin-top: 0.9rem; }
+.badge { display: inline-block; padding: 0.35rem 0.9rem; font-size: 0.85rem; font-weight: 700; border-radius: 999px; background: #f5a623; color: #123b4a; }
+.fb-link { display: inline-block; margin-top: 0.7rem; font-weight: 700; color: #0d6e80; }
+.deco { margin-bottom: 0.4rem; }
+a:focus-visible, .btn:focus-visible { outline: 3px solid #1fa3b8; outline-offset: 2px; }
+
+</style>
+</head>
+<body>
+<div class="banner" id="banner" role="note"></div>
+<header class="hero">
+  <svg class="deco" width="140" height="34" viewBox="0 0 140 34" aria-hidden="true"><path d="M0 20 Q 17 6 35 20 T 70 20 T 105 20 T 140 20" fill="none" stroke="#1fa3b8" stroke-width="4" stroke-linecap="round"/><path d="M0 28 Q 17 16 35 28 T 70 28 T 105 28 T 140 28" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" opacity="0.7"/></svg>
+  <h1 id="biz-name">&hellip;</h1>
+  <p class="tag" id="biz-tag"></p>
+  <div class="badge-row"><span class="badge">Do laundry while you tan</span><span class="badge">Established 2000</span><span class="badge">4.8 stars on Google</span></div>
+</header>
+<div class="contact-bar">
+  <a class="btn call" id="biz-phone" href="#">Call</a>
+  <a class="btn dir" id="biz-dir" href="#" target="_blank" rel="noopener">Get Directions</a>
+</div>
+<p class="addr" id="biz-addr"></p>
+
+<main id="content"><div class="loading">Loading&hellip;</div></main>
+<footer>
+  <p id="foot-name"></p>
+  <p>Content managed with SiteKeeper.</p>
+</footer>
+<script>
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    document.title = c.business.name + ' | ' + (c.business.tagline || '');
+    document.getElementById('biz-name').textContent = c.business.name;
+    document.getElementById('biz-tag').textContent = c.business.tagline || '';
+    document.getElementById('biz-addr').textContent = c.business.address || '';
+    document.getElementById('foot-name').textContent = c.business.name + ' — ' + (c.business.address || '');
+    var ph = document.getElementById('biz-phone');
+    ph.textContent = 'Call ' + (c.business.phone || '');
+    ph.href = 'tel:' + (c.business.phone || '').replace(/\D/g, '');
+    document.getElementById('biz-dir').href =
+      'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(c.business.address || '');
+    if (c.announcement) {
+      var b = document.getElementById('banner');
+      b.textContent = c.announcement;
+      b.style.display = 'block';
+    }
+    var h = '';
+    if (c.specials && c.specials.length) {
+      h += '<section aria-label="Specials"><h2>Specials</h2>' + c.specials.map(s =>
+        '<div class="special"><b>' + esc(s.title) + '</b><span>' + esc(s.desc) + '</span></div>').join('') + '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      h += '<section><h2>' + esc(sec.section) + '</h2>' + (sec.items || []).map(it =>
+        '<div class="item"><div class="n">' + esc(it.name) +
+        (it.desc ? '<small>' + esc(it.desc) + '</small>' : '') +
+        '</div>' + (it.price ? '<div class="p">' + esc(it.price) + '</div>' : '') + '</div>').join('') + '</section>';
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section><h2>Hours</h2><table class="hours"><tbody>' + c.hours.map(x =>
+        '<tr><td>' + esc(x.days) + '</td><td>' + esc(x.time) + '</td></tr>').join('') + '</tbody></table></section>';
+    }
+    document.getElementById('content').innerHTML = h;
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">Could not load content.</div>'; });
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+</script>
+</body>
+</html>

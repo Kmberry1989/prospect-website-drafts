@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D and M Small Engine Repair — Sharpsville, IN — Small Engine Repair</title>
+<meta name="description" content="D and M Small Engine Repair in Sharpsville, Indiana: full-service repair for Stihl, Echo, Briggs & Stratton, Kohler, Kawasaki, Honda and more. New parts and equipment sales.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --barn:#7c2e1d; --barn-dark:#5d2113; --field:#3e5c3a; --field-dark:#2e452c; --wheat:#f4ecd8; --paper:#fffdf6; --ink:#2f2a22; }
+  body { font-family: Verdana, Geneva, sans-serif; background: var(--wheat); color: var(--ink); line-height: 1.65; padding-bottom: 76px; }
+  .banner { background: var(--field-dark); color: #fff; text-align: center; padding: 0.7rem 1rem; font-weight: 700; font-size: 0.95rem; display: none; }
+  header.hero { background: linear-gradient(160deg, var(--barn-dark), var(--barn)); color: #fff; text-align: center; padding: 2.8rem 1.2rem 2rem; }
+  header .sign { display: inline-block; background: var(--wheat); color: var(--barn-dark); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.4rem 1.1rem; border-radius: 4px; margin-bottom: 0.9rem; border: 2px solid var(--barn-dark); box-shadow: 3px 3px 0 rgba(0,0,0,0.25); }
+  header h1 { font-size: clamp(1.9rem, 7.5vw, 2.7rem); line-height: 1.12; }
+  header .tag { color: #f0dcae; font-size: 1.02rem; margin-top: 0.5rem; }
+  main { max-width: 720px; margin: 0 auto; padding: 0 1.2rem 3rem; }
+  section { margin: 2rem 0; }
+  h2 { font-size: 1.3rem; color: var(--barn-dark); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.9rem; padding-bottom: 0.35rem; border-bottom: 3px solid var(--field); }
+  .special { background: var(--paper); border: 2px solid var(--field); border-radius: 8px; padding: 0.9rem 1rem; margin-bottom: 0.8rem; }
+  .special b { display: block; }
+  .special span { font-size: 0.95rem; color: #6b5f4b; }
+  .brandgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.6rem; margin-bottom: 1rem; }
+  .brandgrid .chip { background: var(--field-dark); color: #fff; text-align: center; padding: 0.65rem 0.4rem; border-radius: 6px; font-weight: 700; font-size: 0.95rem; }
+  .svc { background: var(--paper); border: 1px solid #ddd0b4; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 0.7rem; }
+  .svc .n { font-weight: 700; font-size: 1.05rem; color: var(--barn-dark); }
+  .svc .d { font-size: 0.93rem; color: #6b5f4b; }
+  table.hours { width: 100%; border-collapse: collapse; background: var(--paper); border: 1px solid #ddd0b4; border-radius: 8px; overflow: hidden; }
+  table.hours td { padding: 0.6rem 1rem; border-bottom: 1px dashed #ddd0b4; }
+  table.hours tr:last-child td { border-bottom: none; }
+  table.hours td:last-child { text-align: right; font-weight: 700; }
+  .visit { background: var(--paper); border: 1px solid #ddd0b4; border-radius: 8px; padding: 1rem 1.1rem; font-size: 0.95rem; text-align: center; }
+  .visit a { color: var(--barn); font-weight: 700; }
+  .btn { display: block; text-align: center; text-decoration: none; padding: 1rem; border-radius: 8px; font-size: 1.1rem; min-height: 56px; margin-bottom: 0.7rem; font-weight: 700; }
+  .btn.call { background: var(--barn); color: #fff; }
+  .btn.dir { background: var(--field-dark); color: #fff; }
+  footer { text-align: center; padding: 1.5rem 1rem 2rem; color: #9a8c6e; font-size: 0.85rem; }
+  .dock { position: fixed; left: 0; right: 0; bottom: 0; display: flex; background: var(--barn-dark); z-index: 50; }
+  .dock a { flex: 1; text-align: center; color: #fff; text-decoration: none; font-weight: 700; padding: 1rem 0.5rem; min-height: 56px; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; }
+  .dock a + a { border-left: 1px solid rgba(255,255,255,0.25); }
+  .loading { text-align: center; padding: 4rem 1rem; color: #9a8c6e; }
+</style>
+</head>
+<body>
+<div class="banner" id="banner"></div>
+<header class="hero">
+  <div class="sign">Sharpsville, Indiana</div>
+  <h1 id="biz-name">…</h1>
+  <div class="tag" id="biz-tag"></div>
+</header>
+<main id="content"><div class="loading">Loading…</div></main>
+<footer>SiteKeeper-managed site</footer>
+<nav class="dock" aria-label="Quick actions">
+  <a id="dock-call" href="#">📞 Call</a>
+  <a id="dock-dir" href="#">🧭 Directions</a>
+</nav>
+<script>
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    const b = c.business || {};
+    document.getElementById('biz-name').textContent = b.name || '';
+    document.getElementById('biz-tag').textContent = b.tagline || '';
+    const tel = 'tel:+1' + (b.phone || '').replace(/\D/g, '');
+    const maps = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(b.address || '');
+    document.getElementById('dock-call').href = tel;
+    document.getElementById('dock-dir').href = maps;
+    if (c.announcement) {
+      const bn = document.getElementById('banner');
+      bn.textContent = c.announcement;
+      bn.style.display = 'block';
+    }
+    let h = '<section><a class="btn call" href="' + esc(tel) + '">Call ' + esc(b.phone || '') + '</a>' +
+      '<a class="btn dir" href="' + esc(maps) + '">Get Directions</a>' +
+      '<div class="visit">' + esc(b.address || '') + '</div></section>';
+    if (c.specials && c.specials.length) {
+      h += '<section><h2>Specials</h2>' + c.specials.map(s =>
+        '<div class="special"><b>' + esc(s.title) + '</b><span>' + esc(s.desc) + '</span></div>').join('') + '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      const items = sec.items || [];
+      const chips = items.filter(it => !it.desc);
+      const rows = items.filter(it => it.desc);
+      h += '<section><h2>' + esc(sec.section) + '</h2>';
+      if (chips.length) {
+        h += '<div class="brandgrid">' + chips.map(it => '<div class="chip">' + esc(it.name) + '</div>').join('') + '</div>';
+      }
+      h += rows.map(it =>
+        '<div class="svc"><div class="n">' + esc(it.name) + '</div>' +
+        '<div class="d">' + esc(it.desc) + '</div></div>').join('') + '</section>';
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section><h2>Shop Hours</h2><table class="hours"><tbody>' + c.hours.map(x =>
+        '<tr><td>' + esc(x.days) + '</td><td>' + esc(x.time) + '</td></tr>').join('') + '</tbody></table></section>';
+    }
+    document.getElementById('content').innerHTML = h;
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">Could not load content. Please try again later.</div>'; });
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+</script>
+</body>
+</html>

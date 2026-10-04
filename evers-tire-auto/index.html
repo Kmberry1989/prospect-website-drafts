@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#24482f">
+<link rel="icon" href="data:,">
+<title>Evers Tire and Auto Service — Rochester, IN | Tires &amp; Auto Repair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --pine: #24482f;
+    --pine-deep: #1a3623;
+    --cream: #fbf7ec;
+    --card: #ffffff;
+    --ink: #262b25;
+    --muted: #68705f;
+    --sand: #e8dcc0;
+    --gold: #c98f2d;
+    --line: #e2d8bd;
+  }
+  body { font-family: "Source Sans 3", system-ui, sans-serif; background: var(--cream); color: var(--ink); line-height: 1.6; font-size: 17px; }
+  a { color: inherit; }
+  .banner { background: var(--gold); color: #2a1f06; text-align: center; padding: 0.75rem 1rem; font-weight: 700; display: none; }
+  header { background: var(--pine); color: #f5efdd; text-align: center; padding: 3rem 1.25rem 2.4rem; clip-path: ellipse(130% 100% at 50% 0%); }
+  header .kicker { font-size: 0.8rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--sand); font-weight: 600; margin-bottom: 0.7rem; }
+  header h1 { font-family: "Rokkitt", Georgia, serif; font-weight: 800; font-size: clamp(2rem, 8vw, 3rem); line-height: 1.08; max-width: 20ch; margin-inline: auto; }
+  header .tag { margin-top: 0.8rem; color: #d9cfb2; font-size: 1.05rem; font-style: italic; }
+  header .rating { margin-top: 0.9rem; display: inline-flex; align-items: center; gap: 0.45rem; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.25); padding: 0.4rem 1rem; border-radius: 999px; font-weight: 600; font-size: 0.92rem; }
+  header .rating .stars { color: var(--gold); letter-spacing: 0.1em; }
+  .cta { display: grid; gap: 0.7rem; max-width: 520px; margin: -0.6rem auto 0; padding: 1.6rem 1.25rem 0; }
+  .btn { display: flex; align-items: center; justify-content: center; gap: 0.55rem; min-height: 58px; padding: 0.85rem 1.4rem; border-radius: 999px; font-weight: 700; font-size: 1.1rem; text-decoration: none; }
+  .btn.primary { background: var(--pine); color: #fff; box-shadow: 0 10px 24px rgba(36,72,47,.3); }
+  .btn.secondary { background: var(--card); color: var(--pine); border: 2px solid var(--pine); }
+  .btn:active { transform: scale(.99); }
+  main { max-width: 720px; margin: 0 auto; padding: 1.8rem 1.25rem 2.5rem; }
+  section { margin-bottom: 2.4rem; }
+  h2 { font-family: "Rokkitt", Georgia, serif; font-weight: 700; font-size: 1.7rem; color: var(--pine); margin-bottom: 1rem; text-align: center; }
+  h2::after { content: ""; display: block; width: 64px; height: 4px; background: var(--gold); border-radius: 2px; margin: 0.5rem auto 0; }
+  .special { background: var(--card); border: 2px dashed var(--gold); border-radius: 14px; padding: 1rem 1.1rem; margin-bottom: 0.9rem; }
+  .special b { display: block; font-family: "Rokkitt", Georgia, serif; font-size: 1.2rem; color: var(--pine); }
+  .special span { color: var(--muted); font-size: 0.95rem; }
+  .svc { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1rem 1.15rem; margin-bottom: 0.75rem; box-shadow: 0 3px 10px rgba(36,72,47,.06); }
+  .svc .n { font-weight: 700; font-size: 1.08rem; color: var(--pine-deep); }
+  .svc .n small { display: block; font-weight: 400; color: var(--muted); font-size: 0.9rem; }
+  .hours { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 14px; overflow: hidden; border: 1px solid var(--line); }
+  .hours td { padding: 0.8rem 1.15rem; border-bottom: 1px solid var(--line); }
+  .hours tr:last-child td { border-bottom: none; }
+  .hours td:last-child { text-align: right; font-weight: 700; color: var(--pine); }
+  .visit { text-align: center; background: var(--pine-deep); color: #e9e0c9; border-radius: 16px; padding: 1.5rem; }
+  .visit p { margin-bottom: 0.5rem; }
+  .visit a { color: var(--gold); font-weight: 700; }
+  footer { text-align: center; padding: 1.6rem 1rem 2.6rem; color: var(--muted); font-size: 0.85rem; }
+  .loading { text-align: center; padding: 4rem 1rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="banner" id="banner"></div>
+<header>
+  <div class="kicker">Rochester, Indiana</div>
+  <h1 id="biz-name">…</h1>
+  <p class="tag" id="biz-tag"></p>
+  <div class="rating" id="biz-rating" style="display:none"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span id="rating-text"></span></div>
+</header>
+<div class="cta">
+  <a class="btn primary" id="call-btn" href="#">&#9742; Call Evers</a>
+  <a class="btn secondary" id="dir-btn" href="#" target="_blank" rel="noopener">Get Directions</a>
+</div>
+<main id="content"><div class="loading">Loading…</div></main>
+<footer><span id="foot-name"></span> · Content managed with SiteKeeper.</footer>
+<script>
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    const b = c.business || {};
+    document.title = b.name + ' — Rochester, IN | Tires & Auto Repair';
+    document.getElementById('biz-name').textContent = b.name;
+    document.getElementById('biz-tag').textContent = b.tagline || '';
+    document.getElementById('foot-name').textContent = b.name || '';
+    if (b.rating) {
+      document.getElementById('biz-rating').style.display = 'inline-flex';
+      document.getElementById('rating-text').textContent = b.rating;
+    }
+    const banner = document.getElementById('banner');
+    if (c.announcement) { banner.textContent = c.announcement; banner.style.display = 'block'; }
+    const tel = 'tel:' + String(b.phone || '').replace(/\D/g, '');
+    const callBtn = document.getElementById('call-btn');
+    callBtn.href = tel;
+    callBtn.innerHTML = '&#9742; Call ' + esc(b.phone || 'Us');
+    const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(b.address || b.name);
+    document.getElementById('dir-btn').href = mapsUrl;
+    let h = '';
+    if (c.specials && c.specials.length) {
+      h += '<section><h2>Specials</h2>' + c.specials.map(s =>
+        '<div class="special"><b>' + esc(s.title) + '</b><span>' + esc(s.desc) + '</span></div>').join('') + '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      h += '<section><h2>' + esc(sec.section) + '</h2>' + (sec.items || []).map(it =>
+        '<div class="svc"><div class="n">' + esc(it.name) +
+        (it.desc ? '<small>' + esc(it.desc) + '</small>' : '') + '</div></div>').join('') + '</section>';
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section><h2>Hours</h2><table class="hours">' + c.hours.map(x =>
+        '<tr><td>' + esc(x.days) + '</td><td>' + esc(x.time) + '</td></tr>').join('') + '</table></section>';
+    }
+    h += '<section><h2>Find Us</h2><div class="visit"><p>' + esc(b.address || '') + '</p>' +
+      '<p>Phone: <a href="' + tel + '">' + esc(b.phone || '') + '</a></p>' +
+      '<p><a href="' + mapsUrl + '" target="_blank" rel="noopener">Open in Google Maps &#8599;</a></p></div></section>';
+    document.getElementById('content').innerHTML = h;
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">Could not load content.</div>'; });
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+{
+  "business": {
+    "name": "South Peru Hair Boutique & Skin Care Center",
+    "tagline": "One of Peru's oldest salons — still current and cutting edge.",
+    "phone": "(765) 472-4412",
+    "address": "266 E Spring St, Peru, IN 46970"
+  },
+  "announcement": "Appointments or walk-ins — group, wedding, and prom party rates available.",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Hair Services",
+      "items": [
+        {
+          "name": "Cuts"
+        },
+        {
+          "name": "Color"
+        },
+        {
+          "name": "Foil & Corrective Color"
+        },
+        {
+          "name": "Perms"
+        }
+      ]
+    },
+    {
+      "section": "Spa Services",
+      "items": [
+        {
+          "name": "Facials"
+        },
+        {
+          "name": "Manicures"
+        },
+        {
+          "name": "Pedicures"
+        },
+        {
+          "name": "Body Waxing"
+        },
+        {
+          "name": "Massage"
+        },
+        {
+          "name": "Hot Stone Massage"
+        },
+        {
+          "name": "Makeup",
+          "desc": "Including wedding and prom"
+        },
+        {
+          "name": "Body Wraps"
+        },
+        {
+          "name": "Ear Candling"
+        },
+        {
+          "name": "Epidermabrasion"
+        }
+      ]
+    },
+    {
+      "section": "Good to Know",
+      "items": [
+        {
+          "name": "Skin-Care Specialists",
+          "desc": "Two full-time licensed skin-care specialists"
+        },
+        {
+          "name": "Products",
+          "desc": "Dermalogica"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday",
+      "time": "Closed"
+    },
+    {
+      "days": "Tuesday – Friday",
+      "time": "9:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "9:00 AM – 1:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Peru, IN — Salon & Day Spa"
+  }
+}

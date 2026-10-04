@@ -1,0 +1,40 @@
+{
+  "business": {
+    "name": "Denny's Heating & Cooling Inc",
+    "tagline": "Complete heating & cooling from a third-generation family business.",
+    "phone": "(574) 753-6718",
+    "address": "1823 Massachusetts Ave, Logansport, IN 46947"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Furnace installation & repair"
+        },
+        {
+          "name": "Central air conditioning"
+        },
+        {
+          "name": "Ductwork"
+        },
+        {
+          "name": "Complete HVAC service",
+          "desc": "Heating and cooling for your home"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Friday",
+      "time": "8:00 AM – 4:00 PM"
+    },
+    {
+      "days": "Saturday – Sunday",
+      "time": "Closed"
+    }
+  ]
+}

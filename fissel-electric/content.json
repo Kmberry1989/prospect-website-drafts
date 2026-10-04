@@ -1,0 +1,49 @@
+{
+  "business": {
+    "name": "Fissel Electric Services Inc",
+    "tagline": "Electrical done right — since 1988.",
+    "phone": "(574) 722-5694",
+    "address": "128 Tacoma Ave, Logansport, IN 46947"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Services",
+      "items": [
+        {
+          "name": "Circuit breaker installation & repair"
+        },
+        {
+          "name": "Accent lighting installation"
+        },
+        {
+          "name": "EV charging station installation"
+        },
+        {
+          "name": "Backup generator installation"
+        },
+        {
+          "name": "Appliance circuit installation"
+        },
+        {
+          "name": "Electrical emergency work"
+        },
+        {
+          "name": "Residential & commercial",
+          "desc": "Full-service electrical contractor"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Friday",
+      "time": "9:00 AM – 6:00 PM"
+    },
+    {
+      "days": "Saturday – Sunday",
+      "time": "Closed"
+    }
+  ]
+}

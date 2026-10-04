@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#123524">
+<link rel="icon" href="data:,">
+<title>Jarrell's Auto Repair — Kokomo, IN | Full-Service Auto Repair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --green: #123524;
+    --green-deep: #0c2419;
+    --brass: #c9a227;
+    --brass-soft: #f4ead0;
+    --cream: #faf6ec;
+    --ink: #26251f;
+    --muted: #6b675c;
+    --card: #ffffff;
+    --line: #e3d9bf;
+  }
+  body { font-family: "Inter", system-ui, sans-serif; background: var(--cream); color: var(--ink); line-height: 1.6; font-size: 17px; }
+  a { color: inherit; }
+  .rule { height: 5px; background: var(--brass); }
+  .banner { background: var(--brass-soft); color: var(--green-deep); text-align: center; padding: 0.75rem 1rem; font-weight: 600; border-bottom: 3px double var(--brass); display: none; }
+  header { background: var(--green); color: #f2ecdc; text-align: center; padding: 2.6rem 1.25rem 2.4rem; position: relative; overflow: hidden; }
+  header::after { content: ""; position: absolute; inset: auto -20% -40px -20%; height: 90px; background: var(--cream); transform: rotate(-2deg); }
+  header .kicker { font-size: 0.8rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--brass); font-weight: 600; margin-bottom: 0.7rem; }
+  header h1 { font-family: "Zilla Slab", Georgia, serif; font-weight: 700; font-size: clamp(2.1rem, 8vw, 3rem); line-height: 1.08; position: relative; z-index: 1; }
+  header .tag { margin-top: 0.8rem; color: #d9d2bd; font-size: 1.05rem; position: relative; z-index: 1; }
+  header .since { display: inline-block; margin-top: 1rem; border: 1px solid var(--brass); color: var(--brass); border-radius: 999px; padding: 0.35rem 1rem; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; position: relative; z-index: 1; }
+  .cta { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; padding: 1.8rem 1.25rem 0; position: relative; z-index: 2; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 0.8rem 1.5rem; border-radius: 10px; font-weight: 700; font-size: 1.08rem; text-decoration: none; }
+  .btn.primary { background: var(--green); color: #fff; box-shadow: 0 8px 20px rgba(18,53,36,.28); }
+  .btn.alt { background: transparent; color: var(--green); border: 2px solid var(--green); }
+  .btn:active { transform: translateY(1px); }
+  main { max-width: 740px; margin: 0 auto; padding: 1.8rem 1.25rem 2.5rem; }
+  section { margin-bottom: 2.4rem; }
+  h2 { font-family: "Zilla Slab", Georgia, serif; font-weight: 700; font-size: 1.65rem; color: var(--green); margin-bottom: 1rem; }
+  h2 .u { display: block; width: 52px; height: 4px; background: var(--brass); margin-top: 0.35rem; border-radius: 2px; }
+  .special { background: var(--card); border: 1px solid var(--line); border-top: 4px solid var(--brass); border-radius: 0 0 10px 10px; padding: 1rem 1.1rem; margin-bottom: 0.9rem; box-shadow: 0 4px 14px rgba(18,53,36,.07); }
+  .special b { display: block; font-family: "Zilla Slab", Georgia, serif; font-size: 1.2rem; color: var(--green); }
+  .special span { color: var(--muted); font-size: 0.95rem; }
+  .svc { display: flex; gap: 0.8rem; padding: 0.85rem 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+  .svc:last-child { border-bottom: none; }
+  .svc .tick { color: var(--brass); font-weight: 700; font-size: 1.1rem; flex: none; }
+  .svc .n { font-weight: 600; font-size: 1.05rem; }
+  .svc .n small { display: block; font-weight: 400; color: var(--muted); font-size: 0.9rem; }
+  .hours-card { background: var(--green); color: #eee7d3; border-radius: 14px; padding: 1.4rem; }
+  .hours-card h2 { color: #fff; }
+  .hours-card h2 .u { background: var(--brass); }
+  .hours { width: 100%; border-collapse: collapse; }
+  .hours td { padding: 0.6rem 0; border-bottom: 1px solid rgba(201,162,39,.3); }
+  .hours tr:last-child td { border-bottom: none; }
+  .hours td:last-child { text-align: right; font-weight: 600; color: var(--brass); }
+  .visit { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1.3rem; }
+  .visit p { margin-bottom: 0.5rem; color: var(--muted); }
+  .visit a { color: var(--green); font-weight: 700; }
+  footer { text-align: center; padding: 1.6rem 1rem 2.4rem; color: var(--muted); font-size: 0.85rem; border-top: 3px double var(--brass); }
+  .loading { text-align: center; padding: 4rem 1rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="rule" aria-hidden="true"></div>
+<div class="banner" id="banner"></div>
+<header>
+  <div class="kicker">Kokomo, Indiana</div>
+  <h1 id="biz-name">…</h1>
+  <p class="tag" id="biz-tag"></p>
+  <span class="since">Est. 51+ years of service</span>
+</header>
+<div class="cta">
+  <a class="btn primary" id="call-btn" href="#">Call to Schedule</a>
+  <a class="btn alt" id="dir-btn" href="#" target="_blank" rel="noopener">Get Directions</a>
+</div>
+<main id="content"><div class="loading">Loading…</div></main>
+<footer><span id="foot-name"></span> · Content managed with SiteKeeper.</footer>
+<div class="rule" aria-hidden="true"></div>
+<script>
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    const b = c.business || {};
+    document.title = b.name + ' — Kokomo, IN | Full-Service Auto Repair';
+    document.getElementById('biz-name').textContent = b.name;
+    document.getElementById('biz-tag').textContent = b.tagline || '';
+    document.getElementById('foot-name').textContent = b.name || '';
+    const banner = document.getElementById('banner');
+    if (c.announcement) { banner.textContent = c.announcement; banner.style.display = 'block'; }
+    const tel = 'tel:' + String(b.phone || '').replace(/\D/g, '');
+    const callBtn = document.getElementById('call-btn');
+    callBtn.href = tel;
+    callBtn.textContent = 'Call ' + (b.phone || 'to Schedule');
+    const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(b.address || b.name);
+    document.getElementById('dir-btn').href = mapsUrl;
+    let h = '';
+    if (c.specials && c.specials.length) {
+      h += '<section><h2>Specials<span class="u"></span></h2>' + c.specials.map(s =>
+        '<div class="special"><b>' + esc(s.title) + '</b><span>' + esc(s.desc) + '</span></div>').join('') + '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      h += '<section><h2>' + esc(sec.section) + '<span class="u"></span></h2>' + (sec.items || []).map(it =>
+        '<div class="svc"><span class="tick" aria-hidden="true">&#10003;</span><div class="n">' + esc(it.name) +
+        (it.desc ? '<small>' + esc(it.desc) + '</small>' : '') + '</div></div>').join('') + '</section>';
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section><div class="hours-card"><h2>Hours<span class="u"></span></h2><table class="hours">' + c.hours.map(x =>
+        '<tr><td>' + esc(x.days) + '</td><td>' + esc(x.time) + '</td></tr>').join('') + '</table></div></section>';
+    }
+    h += '<section><h2>Find Us<span class="u"></span></h2><div class="visit"><p>' + esc(b.address || '') + '</p>' +
+      '<p>Phone: <a href="' + tel + '">' + esc(b.phone || '') + '</a></p>' +
+      '<p><a href="' + mapsUrl + '" target="_blank" rel="noopener">Open in Google Maps &#8599;</a></p></div></section>';
+    document.getElementById('content').innerHTML = h;
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">Could not load content.</div>'; });
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+</script>
+</body>
+</html>

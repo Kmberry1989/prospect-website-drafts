@@ -1,0 +1,92 @@
+{
+  "business": {
+    "name": "Cone Palace",
+    "tagline": "We love serving Kokomo delicious food and treats \u2014 a Kokomo landmark since 1966.",
+    "phone": "(765) 453-4470",
+    "address": "55 County Rd West 300 S, Kokomo, IN 46902"
+  },
+  "announcement": "",
+  "specials": [
+    {
+      "title": "Pumpkin Cheesecake Arctic Swirl",
+      "desc": "The fall favorite is in the lineup \u2014 our famous blended treat."
+    },
+    {
+      "title": "Arctic Swirl Flavors",
+      "desc": "Puppy Chow and Strawberry Cheesecake, plus soft serve, shakes, flavored Cokes, and slushis."
+    },
+    {
+      "title": "Famous Coney Dogs",
+      "desc": "Drive-thru, outdoor patio, or dine-in \u2014 no delivery."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Ice Cream & Treats",
+      "items": [
+        {
+          "name": "Arctic Swirl",
+          "desc": "Our famous blended treat \u2014 Pumpkin Cheesecake, Puppy Chow, Strawberry Cheesecake",
+          "price": "$5.99"
+        },
+        {
+          "name": "Soft Serve"
+        },
+        {
+          "name": "Shakes"
+        },
+        {
+          "name": "Flavored Cokes"
+        },
+        {
+          "name": "Slushis"
+        }
+      ],
+      "note": "Menu prices were last published in January 2023 \u2014 today's prices may differ."
+    },
+    {
+      "section": "Grill & Fryer",
+      "items": [
+        {
+          "name": "Coney Dogs",
+          "desc": "A Kokomo favorite"
+        },
+        {
+          "name": "Chili Dog",
+          "desc": "$2.99"
+        },
+        {
+          "name": "Hamburger",
+          "desc": "$2.99"
+        },
+        {
+          "name": "Double Cheeseburger",
+          "desc": "$5.99"
+        },
+        {
+          "name": "Breaded Tenderloin"
+        },
+        {
+          "name": "Corn Dogs"
+        },
+        {
+          "name": "Onion Rings"
+        },
+        {
+          "name": "Fries"
+        }
+      ],
+      "note": "Menu prices were last published in January 2023 \u2014 today's prices may differ."
+    }
+  ],
+  "hours": [
+    {
+      "days": "Sun\u2013Thu",
+      "time": "9:30 AM \u2013 10:30 PM"
+    },
+    {
+      "days": "Fri\u2013Sat",
+      "time": "9:30 AM \u2013 11:00 PM"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tark's Pizza — Galveston, IN | Independent Pizza Shop</title>
+<style>
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Arial Black', 'Helvetica Neue', Arial, sans-serif; color: #1c1c1c; background: #fffdf8; line-height: 1.6; }
+.banner { background: #d62828; color: #ffffff; text-align: center; padding: 0.85rem 1rem; font-weight: 700; font-size: 1rem; display: none; }
+.masthead { padding: 2.6rem 1.2rem 2rem; text-align: center; background: repeating-conic-gradient(#d62828 0 25%, #fffdf8 0 50%) 0 0/56px 56px, #fffdf8; border-bottom: 8px solid #1a7a3a; }
+.masthead h1 { font-size: clamp(2rem, 9vw, 3.2rem); line-height: 1.05; color:#ffffff; background:#1c1c1c; display:inline-block; padding: 0.2rem 1.2rem; transform: rotate(-2deg); letter-spacing: 1px; }
+.tag { margin-top: 0.5rem; font-size: 1.05rem; color:#1c1c1c; font-family: Verdana, sans-serif; font-weight: bold; margin-top: 1rem; }
+.contact { text-align: center; padding: 1.4rem 1.2rem;  }
+.addr { margin-top: 0.8rem; font-size: 0.95rem; color: #6a5a4a; }
+.btn { display: inline-block; min-height: 44px; line-height: 44px; padding: 0 1.6rem; margin: 0.25rem; border-radius: 999px; font-weight: 800; text-decoration: none; font-size: 1.05rem; border: 3px solid #1c1c1c; box-shadow: 4px 4px 0 #1a7a3a; }
+.call { background: #d62828; color: #ffffff; }
+.dir { background: transparent; color: #d62828; border: 2px solid #d62828; }
+main { max-width: 760px; margin: 0 auto; padding: 0.5rem 1.2rem 3rem; }
+section { margin-bottom: 2.4rem; }
+.sec-title { font-size: 1.5rem; margin-bottom: 0.9rem; padding-bottom: 0.35rem; color:#d62828; border-bottom: 4px solid #1a7a3a; text-transform: uppercase; letter-spacing: 1px; }
+.special { background: #ffffff; border-radius: 10px; padding: 0.9rem 1.1rem; margin-bottom: 0.8rem; border: 3px solid #1c1c1c; border-radius: 4px; box-shadow: 4px 4px 0 #d62828; }
+.special h3 { font-size: 1.1rem; margin-bottom: 0.2rem; }
+.special p { font-size: 0.95rem; color: #6a5a4a; }
+.item { display: flex; justify-content: space-between; gap: 1rem; padding: 0.65rem 0; border-bottom: 2px dotted #e8dcc8; }
+.item-name { font-size: 1.05rem; font-weight: 700; }
+.item-desc { font-size: 0.9rem; color: #6a5a4a; }
+.item-price { font-weight: 800; white-space: nowrap; color: #d62828; }
+.menu-note { font-size: 0.85rem; color: #6a5a4a; font-style: italic; margin-bottom: 0.6rem; }
+.hours { width: 100%; border-collapse: collapse; }
+.hours td { padding: 0.55rem 0; border-bottom: 1px dotted #e8dcc8; }
+.hours td:last-child { text-align: right; font-weight: 700; }
+.loading { text-align: center; padding: 4rem 1rem; color: #6a5a4a; }
+footer { text-align: center; padding: 1.6rem 1rem 2.2rem; font-size: 0.85rem; color: #6a5a4a; border-top: 8px solid #1a7a3a; }
+
+</style>
+</head>
+<body>
+<div class="banner" id="banner" role="note"></div>
+<header class="masthead">
+  <div class="masthead-inner">
+    <h1 id="biz-name">&hellip;</h1>
+    <p class="tag" id="biz-tag"></p>
+  </div>
+</header>
+<div class="contact" id="contact">
+  <a class="btn call" id="biz-phone" href="#">Call</a>
+  <a class="btn dir" id="biz-dir" href="#" target="_blank" rel="noopener">Directions</a>
+  <p class="addr" id="biz-addr"></p>
+</div>
+<main id="content"><p class="loading">Loading&hellip;</p></main>
+<footer>Family-run pizza shop · Takeout · No delivery</footer>
+<script>
+fetch('content.json', { cache: 'no-store' })
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(c => {
+    document.title = c.business.name + ' — ' + "Galveston, IN" + ' | ' + "Independent Pizza Shop";
+    document.getElementById('biz-name').textContent = c.business.name;
+    document.getElementById('biz-tag').textContent = c.business.tagline || '';
+    document.getElementById('biz-addr').textContent = c.business.address || '';
+    var digits = (c.business.phone || '').replace(/\D/g, '');
+    var ph = document.getElementById('biz-phone');
+    ph.textContent = 'Call ' + (c.business.phone || '');
+    ph.href = 'tel:' + digits;
+    document.getElementById('biz-dir').href =
+      'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(c.business.name + ' ' + (c.business.address || ''));
+    if (c.announcement) {
+      var b = document.getElementById('banner');
+      b.textContent = c.announcement;
+      b.style.display = 'block';
+    }
+    var h = '';
+    if (c.specials && c.specials.length) {
+      h += '<section aria-label="Specials"><h2 class="sec-title">Specials</h2>' +
+        c.specials.map(s =>
+          '<article class="special"><h3>' + esc(s.title) + '</h3><p>' + esc(s.desc) + '</p></article>').join('') +
+        '</section>';
+    }
+    (c.menu || []).forEach(sec => {
+      h += '<section aria-label="' + esc(sec.section) + '"><h2 class="sec-title">' + esc(sec.section) + '</h2>';
+      if (sec.note) h += '<p class="menu-note">' + esc(sec.note) + '</p>';
+      h += (sec.items || []).map(it =>
+        '<div class="item"><div class="item-main"><h3 class="item-name">' + esc(it.name) + '</h3>' +
+        (it.desc ? '<p class="item-desc">' + esc(it.desc) + '</p>' : '') + '</div>' +
+        (it.price ? '<div class="item-price">' + esc(it.price) + '</div>' : '') +
+        '</div>').join('') + '</section>';
+    });
+    if (c.hours && c.hours.length) {
+      h += '<section aria-label="Hours"><h2 class="sec-title">Hours</h2><table class="hours">' +
+        c.hours.map(x => '<tr><td>' + esc(x.days) + '</td><td>' + esc(x.time) + '</td></tr>').join('') +
+        '</table></section>';
+    }
+    document.getElementById('content').innerHTML = h || '<p class="loading">Menu coming soon — call us!</p>';
+  })
+  .catch(() => { document.getElementById('content').innerHTML = '<p class="loading">Could not load content.</p>'; });
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+</script>
+</body>
+</html>

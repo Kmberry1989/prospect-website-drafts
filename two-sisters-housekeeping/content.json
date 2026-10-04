@@ -1,0 +1,59 @@
+{
+  "business": {
+    "name": "Two Sisters Housekeeping Service",
+    "tagline": "A cleaner home, handled with care.",
+    "phone": "(765) 553-0008",
+    "address": "1304 Darby St, Kokomo, IN 46902"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Cleaning Services",
+      "items": [
+        {
+          "name": "House Cleaning",
+          "desc": "Floors, bathrooms, dusting, kitchens"
+        },
+        {
+          "name": "Standard Cleaning"
+        },
+        {
+          "name": "Move-Related Cleans"
+        },
+        {
+          "name": "Interior & Exterior Window Cleaning"
+        },
+        {
+          "name": "General Housekeeping"
+        }
+      ]
+    },
+    {
+      "section": "Good to Know",
+      "items": [
+        {
+          "name": "Payment",
+          "desc": "Cash and credit cards accepted"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Friday",
+      "time": "9:00 AM – 6:30 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "9:00 AM – 3:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "meta": {
+    "townTrade": "Kokomo, IN — House Cleaning"
+  }
+}

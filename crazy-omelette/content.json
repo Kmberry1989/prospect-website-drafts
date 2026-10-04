@@ -1,0 +1,81 @@
+{
+  "business": {
+    "name": "Crazy Omelette",
+    "tagline": "Mom & Pop diner \u2014 famous for our big, fluffy omelettes and our everyday-regulars welcome.",
+    "phone": "(765) 408-0726",
+    "address": "122 Sweetland Ave, Tipton, IN 46072"
+  },
+  "announcement": "",
+  "specials": [
+    {
+      "title": "Dinner Hours Wed\u2013Sat",
+      "desc": "We're open until 8 PM Wednesday through Saturday \u2014 steak with a baked potato gets the praise."
+    },
+    {
+      "title": "Fluffy Omelettes",
+      "desc": "Tex-Mex, veggie, and more \u2014 minis available."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Omelettes",
+      "items": [
+        {
+          "name": "Tex-Mex Omelet",
+          "desc": "A house favorite"
+        },
+        {
+          "name": "Veggie Omelet",
+          "desc": "Fluffy \u2014 mini available"
+        },
+        {
+          "name": "Build Your Own",
+          "desc": "Ask what's fresh today"
+        }
+      ]
+    },
+    {
+      "section": "Breakfast",
+      "items": [
+        {
+          "name": "Big Breakfast Plates"
+        },
+        {
+          "name": "Cottage Cheese",
+          "desc": "A regulars' favorite side"
+        }
+      ]
+    },
+    {
+      "section": "Lunch & Dinner",
+      "items": [
+        {
+          "name": "Breaded Pork Tenderloin Sandwich"
+        },
+        {
+          "name": "Steak with Baked Potato",
+          "desc": "Dinner Wed\u2013Sat \u2014 highly praised"
+        },
+        {
+          "name": "Fish Dinners"
+        },
+        {
+          "name": "Baked Potato"
+        },
+        {
+          "name": "Slaw"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Sun \u2013 Tue",
+      "time": "6:00 AM \u2013 3:00 PM"
+    },
+    {
+      "days": "Wed \u2013 Sat",
+      "time": "6:00 AM \u2013 8:00 PM"
+    }
+  ]
+}

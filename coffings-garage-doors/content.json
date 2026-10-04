@@ -1,0 +1,62 @@
+{
+  "business": {
+    "name": "Coffing's Ro-Way Door Sales & Service Inc",
+    "tagline": "Overhead doors done right — since 1963.",
+    "phone": "(574) 753-8557",
+    "address": "1112 E County Road 200 N, Logansport, IN 46947"
+  },
+  "announcement": "",
+  "specials": [
+    {
+      "title": "Free estimates",
+      "desc": "Free estimates on garage doors and openers."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Garage Doors",
+      "items": [
+        {
+          "name": "Residential garage doors"
+        },
+        {
+          "name": "Commercial garage doors"
+        },
+        {
+          "name": "Overhead, sectional, roller, wood & barn doors",
+          "desc": "Doors up to 30 ft wide"
+        },
+        {
+          "name": "Electric operators & radio controls"
+        }
+      ]
+    },
+    {
+      "section": "Service & Repair",
+      "items": [
+        {
+          "name": "Garage door repair",
+          "desc": "We service all brands of doors and operators"
+        },
+        {
+          "name": "Dock levelers & seals",
+          "desc": "Dock equipment sales & service"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Friday",
+      "time": "8:00 AM – 7:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "8:00 AM – 12:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "business": {
+    "name": "Dick's Drive-In",
+    "tagline": "We never cook our food ahead \u2014 everything is cooked to order. Classic drive-in with a Tex-Mex streak.",
+    "phone": "(574) 223-3087",
+    "address": "184 N Main St, Rochester, IN 46975"
+  },
+  "announcement": "Closed for the 2026 season \u2014 our last day was October 2. See you next spring!",
+  "specials": [
+    {
+      "title": "Spanish Dogs \u2014 $1.89",
+      "desc": "The famous ones, on special."
+    },
+    {
+      "title": "Burrito \u2014 $6.00",
+      "desc": "Daily specials posted on our Facebook page."
+    },
+    {
+      "title": "Taco Salad \u2014 $8.00",
+      "desc": "Daily specials posted on our Facebook page."
+    },
+    {
+      "title": "Double Cheeseburger \u2014 $6.00",
+      "desc": "Make it a double-double for $7.50."
+    },
+    {
+      "title": "Big Al Triple \u2014 $9.50",
+      "desc": "For the serious appetite."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Cooked to Order",
+      "items": [
+        {
+          "name": "Spanish Dogs",
+          "desc": "The famous ones"
+        },
+        {
+          "name": "Tacos"
+        },
+        {
+          "name": "Burritos"
+        },
+        {
+          "name": "Taco Salads"
+        },
+        {
+          "name": "Double Cheeseburger"
+        },
+        {
+          "name": "Big Al Triple"
+        },
+        {
+          "name": "Breaded Tenderloin"
+        },
+        {
+          "name": "Hot Fries"
+        },
+        {
+          "name": "Nacho Chips"
+        }
+      ]
+    }
+  ],
+  "hours": []
+}

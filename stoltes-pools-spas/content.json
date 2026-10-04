@@ -1,0 +1,84 @@
+{
+  "business": {
+    "name": "Stolte's Pools-Spas & Services",
+    "tagline": "Take a Vacation Every Day — with a pool or spa from Stolte's.",
+    "phone": "(574) 753-8694",
+    "address": "905 E Main St, Logansport, IN 46947"
+  },
+  "announcement": "",
+  "specials": [
+    {
+      "title": "Free water analysis",
+      "desc": "Free in-store water analysis, plus test kits and chemical delivery."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Pools, Spas & More",
+      "items": [
+        {
+          "name": "FOXXX® vinyl-liner pools",
+          "desc": "In-ground and above-ground"
+        },
+        {
+          "name": "Spas & hot tubs"
+        },
+        {
+          "name": "Saunas"
+        },
+        {
+          "name": "Pool & spa combos"
+        },
+        {
+          "name": "Slides & diving boards"
+        },
+        {
+          "name": "Underwater & landscape lighting"
+        },
+        {
+          "name": "Heat Siphon® pool heat pumps"
+        },
+        {
+          "name": "Safety covers",
+          "desc": "Mesh, solid, and automatic safety covers"
+        }
+      ]
+    },
+    {
+      "section": "Service & Supplies",
+      "items": [
+        {
+          "name": "Pool openings, closings & winterizing"
+        },
+        {
+          "name": "Pump repair"
+        },
+        {
+          "name": "Pool chemicals",
+          "desc": "Baquacil, Baqua Spa, Bromine"
+        },
+        {
+          "name": "Pool cleaners",
+          "desc": "Aquabot, Baracuda & Polaris"
+        },
+        {
+          "name": "Financing available"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday – Friday",
+      "time": "9:00 AM – 5:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "9:00 AM – 12:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ]
+}

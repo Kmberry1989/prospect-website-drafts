@@ -1,0 +1,56 @@
+{
+  "business": {
+    "name": "Fatt Matt's Tatts",
+    "tagline": "The Cover-Up Specialist \u2014 Logansport, Indiana",
+    "phone": "(574) 230-3535",
+    "address": "1416 Balsam St, Logansport, IN 46947"
+  },
+  "announcement": "",
+  "specials": [],
+  "menu": [
+    {
+      "section": "Tattoos",
+      "items": [
+        {
+          "name": "Cover-Ups",
+          "desc": "The cover-up specialty \u2014 21 years of tattooing."
+        },
+        {
+          "name": "Custom Tattoos",
+          "desc": "Appointment only. Custom drawings require a deposit."
+        },
+        {
+          "name": "Piercings",
+          "desc": "We do not do piercings."
+        },
+        {
+          "name": "Clean & Code-Compliant",
+          "desc": "Clean and sterile \u2014 permits and health-inspection documentation displayed on premises."
+        },
+        {
+          "name": "Supplies",
+          "desc": "Top-quality inks, cartridges, and aftercare products."
+        }
+      ]
+    },
+    {
+      "section": "Payment",
+      "items": [
+        {
+          "name": "Accepted",
+          "desc": "Cash, CashApp, Venmo, Facebook Pay, and credit/debit cards (4% card fee)."
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday \u2013 Saturday",
+      "time": "9:00 AM \u2013 9:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "business": {
+    "name": "Sycamore Drive-In",
+    "tagline": "Step back in time \u2014 family-owned frozen custard stand since 1948, under the old sycamore tree.",
+    "phone": "(574) 753-7265",
+    "address": "316 20th St, Logansport, IN 46947"
+  },
+  "announcement": "",
+  "specials": [
+    {
+      "title": "Flavor of the Day",
+      "desc": "Our custard is made fresh daily \u2014 ask what's spinning today."
+    },
+    {
+      "title": "Lemon Ice Cream & Butterfinger Bubba",
+      "desc": "Custard-shop favorites alongside chocolate malts and hot turtle sundaes."
+    },
+    {
+      "title": "Car-Hop Service",
+      "desc": "Pull in, order from your car, and eat under the old sycamore tree out front."
+    }
+  ],
+  "menu": [
+    {
+      "section": "Frozen Custard",
+      "items": [
+        {
+          "name": "Flavor of the Day",
+          "desc": "Made fresh daily \u2014 ask what's spinning"
+        },
+        {
+          "name": "Lemon Ice Cream"
+        },
+        {
+          "name": "Butterfinger Bubba"
+        }
+      ]
+    },
+    {
+      "section": "Shakes, Malts & Sundaes",
+      "items": [
+        {
+          "name": "Chocolate Malts"
+        },
+        {
+          "name": "Shakes"
+        },
+        {
+          "name": "Hot Turtle Sundae"
+        },
+        {
+          "name": "Hot Strawberry Sundae"
+        }
+      ]
+    },
+    {
+      "section": "Drive-In Classics",
+      "items": [
+        {
+          "name": "Spanish Hot Dogs"
+        },
+        {
+          "name": "Hot Ham & Cheese"
+        },
+        {
+          "name": "Sloppy Joes"
+        },
+        {
+          "name": "Boba",
+          "desc": "Recently added"
+        }
+      ]
+    }
+  ],
+  "hours": [
+    {
+      "days": "Monday \u2013 Sunday",
+      "time": "11:00 AM \u2013 9:00 PM"
+    }
+  ]
+}
