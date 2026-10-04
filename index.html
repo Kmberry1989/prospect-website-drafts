@@ -28,6 +28,8 @@
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
   .card { background: #161d2e; border: 1px solid #26314a; border-radius: 12px; padding: 1.1rem 1.2rem; transition: border-color 0.15s; }
   .card.is-closed { border-color: #2f7d4f; box-shadow: 0 0 0 1px #2f7d4f; }
+  .card.is-no { opacity: .5; }
+  .card.is-no .name::after { content: ' — said no'; color: #c0392b; font-weight: normal; }
   .card .name { font-weight: 700; font-size: 1.05rem; margin-bottom: 0.25rem; }
   .card .meta { color: #9aa5b8; font-size: 0.85rem; line-height: 1.45; }
   .card .phone { margin-top: 0.6rem; }
@@ -264,7 +266,7 @@ function initFirebase(){
 }
 function save(){ saveLocal(); scheduleCloudSave(); }
 
-const STAGES = [['called','Called'],['pitched','Pitched'],['closed','Closed']];
+const STAGES = [['called','Called'],['pitched','Pitched'],['closed','Closed'],['no','Said no']];
 function escAttr(s){ return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;'); }
 function renderCards(){
   for (const g of ['kokomo','nonlocal']){
@@ -275,6 +277,7 @@ function renderCards(){
       card.className = 'card';
       card.dataset.id = b.id;
       if (store.checks[b.id] && store.checks[b.id].closed) card.classList.add('is-closed');
+      if (store.checks[b.id] && store.checks[b.id].no) card.classList.add('is-no');
       card.innerHTML =
         '<div class="name"></div>'+
         '<div class="meta">'+b.meta+'</div>'+
@@ -294,6 +297,7 @@ function renderCards(){
           store.checks[b.id] = store.checks[b.id] || {};
           store.checks[b.id][k] = inp.checked;
           card.classList.toggle('is-closed', !!store.checks[b.id].closed);
+          card.classList.toggle('is-no', !!store.checks[b.id].no);
           save(); renderStats();
         });
       });
@@ -302,10 +306,10 @@ function renderCards(){
   }
 }
 function renderStats(){
-  let c=0,p=0,w=0;
-  BUSINESSES.forEach(b=>{ const s=store.checks[b.id]||{}; if(s.called)c++; if(s.pitched)p++; if(s.closed)w++; });
+  let c=0,p=0,w=0,n=0;
+  BUSINESSES.forEach(b=>{ const s=store.checks[b.id]||{}; if(s.called)c++; if(s.pitched)p++; if(s.closed)w++; if(s.no)n++; });
   document.getElementById('stats').innerHTML =
-    '<span class="stat"><b>'+c+'</b> called</span><span class="stat"><b>'+p+'</b> pitched</span><span class="stat"><b>'+w+'</b> closed</span>';
+    '<span class="stat"><b>'+c+'</b> called</span><span class="stat"><b>'+p+'</b> pitched</span><span class="stat"><b>'+w+'</b> closed</span><span class="stat"><b>'+n+'</b> said no</span>';
 }
 
 /* calendar */
