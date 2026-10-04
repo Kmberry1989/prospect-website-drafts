@@ -16,6 +16,12 @@ figcaption {
 /* Long words never break layouts on narrow screens */
 p, li, h1, h2, h3 { overflow-wrap: break-word; }
 
+/* Header logos: consistent, scalable, never oversized on phones */
+.biz-logo { max-height: 104px; width: auto; max-width: 72%; }
+@media (max-width: 720px) {
+  .biz-logo { max-height: 80px; }
+}
+
 /* Motion respects the visitor */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }

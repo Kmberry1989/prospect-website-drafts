@@ -59,7 +59,24 @@ Design both modes at creation; the packs add the baseline:
   of 79 without any — the packs now cover the baseline, and new builds get
   real art direction per mode.
 
-## 4. The gate
+## 4. Logos — readability & scalability
+
+- Real logos always win. Generated marks are starting points shown to the owner as options, never presented as the business's identity.
+- Logo prompts (`research/logo-prompts-*.md`) bake in the constraints: flat vector-style, simple bold silhouette readable at 32px, 1–2 solid colors, no fine text, no gradients, no photorealism, never copying an existing brand.
+- Header standard: `.biz-logo { max-height: 104px; width: auto; max-width: 72%; }`, 80px on mobile, always with alt text. Low-res sources (<300px) are never displayed above native size — the owner is asked for a high-res file at onboarding.
+- Profile photos are not logos: flagged in the logo scan, replaced with a real mark.
+- The logo scan (`research/logo-scan-*.md`) runs on existing logos before finish: source dimensions, aspect ratio, alt text, display size vs native size.
+
+## 5. Navigation — the judgment
+
+These are single-page local business sites. The standard is:
+
+- **No hamburgers, no multi-page nav.** A slim sticky mini-nav (Pack D) slides in after scrolling past the hero: business name left, anchor links to the page's own sections center, tap-to-call right. On mobile the links collapse away (the sticky bottom call bar already covers actions).
+- Pages that already have a real `<nav>` keep it — the mini-nav only builds where none exists, and only when the page has 2+ labeled sections.
+- Anchor targets get `scroll-margin-top` so the fixed bar never covers a heading.
+- At creation: every section gets an `aria-label` or clear `h2` — that's what the mini-nav reads.
+
+## 6. The gate
 
 1. Build the site.
 2. Run the contrast scanner (light + dark). Fix every failure — no exceptions,
