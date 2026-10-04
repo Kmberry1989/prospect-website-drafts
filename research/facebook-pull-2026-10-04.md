@@ -29,3 +29,11 @@ Brand presentation notes:
 - Hometown: chalkboard specials signs, warm customer thank-you graphics
 - Barlow's: client work showcases (fades), barber-themed art, community sports promos
 - Roann: portrait engraving on wood (girl, couple), name signs ("Ryleigh Sue" rainbow)
+
+## Batch 2 — logged-in download (2026-10-04, 11:35 UTC)
+11 of 12 requested photos downloaded and visually verified, saved to assets/:
+- El Patron: birria-taco.jpg, street-tacos.jpg. MARGARITAS NOT DOWNLOADED — the matching thumbnail in the Photos grid links to the wrong photo (opens Smirnoff bottles, fbid=696771006260743); thumbnail appears mislinked.
+- Barlow's: fade-cut.jpg, barber-at-work.jpg, curly-cut.jpg, cover-logo.jpg (logo on t-shirt + NEW PRICES list, 31 Jul 2025).
+- Tate's: snowflake-ornaments.jpg, frames-keepsake-box.jpg, gift-boxes.jpg, cover-logo.jpg ("TATE'S ENGRAVING — PERSONALIZED GIFTS & LASER ENGRAVING", 15 Aug 2022).
+- Hometown: saturday-specials-chalkboard.jpg (8 Feb 2025), club-sandwiches.jpg ("BLT Club!!!", 19 Mar 2025).
+Corrections to earlier notes: Tate's snowflake ornaments are Star Wars-themed, brown/gold wood (no green visible); the keepsake box is heart-shaped, not round.
