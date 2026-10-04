@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#111315" />
+  <link rel="icon" href="data:," />
+  <title>Denning Automotive | Auto Repair &amp; 24-Hour Towing</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --ink: #17191b;
+      --ink-soft: #30353a;
+      --paper: #f4f1e9;
+      --paper-2: #ffffff;
+      --line: #cfcac0;
+      --muted: #5b6166;
+      --signal: #ffd31f;
+      --signal-ink: #161616;
+      --alert: #d92d20;
+      --alert-deep: #a91c14;
+      --steel: #727980;
+      --white: #ffffff;
+      --shadow: 0 18px 45px rgba(14, 16, 18, .16);
+      --content: 1180px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f5f2e9;
+        --ink-soft: #d8d9d6;
+        --paper: #121416;
+        --paper-2: #1c2023;
+        --line: #3a4146;
+        --muted: #aeb4b8;
+        --signal: #ffd31f;
+        --signal-ink: #161616;
+        --alert: #f04438;
+        --alert-deep: #ba261e;
+        --steel: #9ba2a8;
+        --white: #ffffff;
+        --shadow: 0 20px 50px rgba(0, 0, 0, .34);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .wrap { width: min(calc(100% - 40px), var(--content)); margin-inline: auto; }
+
+    .topline {
+      background: #0e1012;
+      color: #fff;
+      border-bottom: 5px solid var(--signal);
+    }
+    .topline-inner {
+      min-height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      font-size: .84rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+    }
+    .draft-badge {
+      color: #d7dadd;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .top-phone { text-decoration: none; white-space: nowrap; }
+    .top-phone:hover { color: var(--signal); }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      background:
+        linear-gradient(105deg, rgba(11, 13, 15, .98) 0%, rgba(18, 21, 24, .95) 49%, rgba(18, 21, 24, .76) 100%),
+        repeating-linear-gradient(135deg, transparent 0 22px, rgba(255,255,255,.025) 22px 24px);
+      color: var(--white);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: auto -10% -130px 38%;
+      height: 320px;
+      background: var(--signal);
+      transform: rotate(-7deg);
+      opacity: .94;
+    }
+    .hero-grid {
+      min-height: 620px;
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      align-items: center;
+      gap: 40px;
+      padding-block: 72px 82px;
+    }
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--signal);
+      font-size: .88rem;
+      font-weight: 900;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+    .kicker::before { content: ""; width: 36px; height: 5px; background: currentColor; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      max-width: 780px;
+      margin: 18px 0 22px;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: clamp(4.1rem, 7.5vw, 7.2rem);
+      line-height: .86;
+      letter-spacing: .012em;
+      text-transform: uppercase;
+      text-wrap: balance;
+    }
+    .hero-sub {
+      max-width: 650px;
+      margin-bottom: 32px;
+      color: #e8e9e7;
+      font-size: clamp(1.18rem, 2vw, 1.55rem);
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .hero-actions { display: flex; align-items: stretch; flex-wrap: wrap; gap: 13px; }
+    .emergency-btn, .secondary-btn {
+      min-height: 62px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 15px 24px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 950;
+      letter-spacing: .035em;
+      text-transform: uppercase;
+      transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+    }
+    .emergency-btn {
+      background: var(--alert);
+      color: #fff;
+      box-shadow: 8px 8px 0 var(--signal);
+    }
+    .emergency-btn:hover { background: var(--alert-deep); transform: translateY(-2px); }
+    .emergency-btn:focus-visible, .secondary-btn:focus-visible, .phone-link:focus-visible { outline: 4px solid var(--signal); outline-offset: 4px; }
+    .secondary-btn { border: 2px solid #fff; color: #fff; }
+    .secondary-btn:hover { background: #fff; color: #111; }
+    .phone-icon { width: 22px; height: 22px; flex: 0 0 auto; }
+
+    .tow-graphic {
+      position: relative;
+      align-self: end;
+      margin-bottom: -24px;
+      filter: drop-shadow(0 22px 18px rgba(0,0,0,.34));
+    }
+    .tow-graphic svg { width: 100%; height: auto; display: block; }
+    .dispatch-card {
+      position: absolute;
+      right: 2%;
+      top: -28px;
+      width: 190px;
+      padding: 16px 18px;
+      background: #fff;
+      color: #111;
+      border-top: 8px solid var(--alert);
+      box-shadow: 10px 10px 0 rgba(0,0,0,.25);
+      transform: rotate(2deg);
+    }
+    .dispatch-card strong { display: block; font-size: 1.1rem; line-height: 1.1; text-transform: uppercase; }
+    .dispatch-card span { display: block; margin-top: 7px; color: #464b4f; font-size: .78rem; font-weight: 800; }
+
+    .service-strip { background: var(--signal); color: var(--signal-ink); border-block: 1px solid rgba(0,0,0,.15); }
+    .service-strip .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .quick-fact {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 22px;
+      border-right: 1px solid rgba(0,0,0,.22);
+      font-size: .9rem;
+      font-weight: 900;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+    .quick-fact:first-child { border-left: 1px solid rgba(0,0,0,.22); }
+    .quick-fact svg { width: 28px; height: 28px; flex: 0 0 auto; }
+
+    section { padding-block: 88px; }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 28px;
+      margin-bottom: 42px;
+    }
+    .section-head h2, .about-copy h2, .visit-copy h2 {
+      margin: 0;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: clamp(2.7rem, 5vw, 4.6rem);
+      line-height: .98;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+    .section-head p { max-width: 510px; margin: 0; color: var(--muted); font-size: 1.03rem; font-weight: 650; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+    .service {
+      position: relative;
+      min-height: 238px;
+      padding: 28px;
+      overflow: hidden;
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 0 rgba(103, 108, 112, .12);
+    }
+    .service:nth-child(1), .service:nth-child(2) { grid-column: span 6; }
+    .service:nth-child(n+3) { grid-column: span 4; }
+    .service-number {
+      position: absolute;
+      right: 16px;
+      top: -22px;
+      color: color-mix(in srgb, var(--line), transparent 45%);
+      font-family: Impact, sans-serif;
+      font-size: 7rem;
+      line-height: 1;
+    }
+    .service-icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 28px;
+      background: var(--signal);
+      color: #111;
+    }
+    .service-icon svg { width: 26px; height: 26px; }
+    .service h3 { position: relative; margin-bottom: 9px; font-size: 1.22rem; line-height: 1.2; text-transform: uppercase; }
+    .service p { position: relative; margin: 0; color: var(--muted); font-size: .96rem; }
+    .service.emergency-service { background: #181b1e; color: #fff; border-color: #181b1e; }
+    .service.emergency-service p { color: #cdd0d2; }
+    .service.emergency-service .service-number { color: rgba(255,255,255,.07); }
+
+    .about { background: #171a1d; color: #fff; overflow: hidden; }
+    .about-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 72px; align-items: center; }
+    .garage-mark {
+      position: relative;
+      min-height: 390px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px),
+        #23272b;
+      background-size: 24px 24px;
+      border: 1px solid #3a4045;
+    }
+    .garage-mark::before, .garage-mark::after { content: ""; position: absolute; background: var(--signal); }
+    .garage-mark::before { width: 70%; height: 16px; transform: rotate(-22deg); }
+    .garage-mark::after { width: 16px; height: 70%; transform: rotate(-22deg); }
+    .garage-ring {
+      position: relative;
+      z-index: 1;
+      width: 190px;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border: 24px solid #101214;
+      border-radius: 50%;
+      background: #31363b;
+      box-shadow: inset 0 0 0 10px #777f85, 0 0 0 2px #687077;
+    }
+    .garage-ring svg { width: 80px; color: #fff; }
+    .about-copy .kicker { margin-bottom: 18px; }
+    .about-copy p { max-width: 620px; margin: 24px 0 0; color: #cdd0d2; font-size: 1.08rem; }
+    .about-list { display: grid; gap: 13px; margin-top: 30px; }
+    .about-list div { display: flex; gap: 12px; align-items: center; font-weight: 850; }
+    .check { width: 22px; height: 22px; display: grid; place-items: center; background: var(--signal); color: #111; font-size: .88rem; font-weight: 950; }
+    .customer-voice {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      margin-top: 52px;
+      background: #3a4045;
+      border: 1px solid #3a4045;
+    }
+    .customer-quote { margin: 0; padding: 26px; background: #202428; }
+    .customer-quote p { margin: 0; color: #fff; font-size: 1rem; font-weight: 800; line-height: 1.45; }
+    .customer-quote p::before { content: "“"; color: var(--signal); font-family: Georgia, serif; font-size: 2rem; line-height: 0; vertical-align: -.25em; margin-right: 4px; }
+    .customer-quote p::after { content: "”"; color: var(--signal); font-family: Georgia, serif; }
+
+    .visit { padding-bottom: 130px; }
+    .visit-grid { display: grid; grid-template-columns: 1fr 1fr; box-shadow: var(--shadow); }
+    .visit-copy { padding: 54px; background: var(--paper-2); border: 1px solid var(--line); }
+    .visit-copy > p { max-width: 520px; margin: 20px 0 34px; color: var(--muted); }
+    .info-row { display: grid; grid-template-columns: 92px 1fr; gap: 20px; padding-block: 18px; border-top: 1px solid var(--line); }
+    .info-row:last-child { border-bottom: 1px solid var(--line); }
+    .info-label { font-size: .77rem; font-weight: 950; letter-spacing: .1em; text-transform: uppercase; }
+    .info-value { font-size: 1.05rem; font-weight: 750; }
+    .visit-cta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 54px;
+      background: var(--signal);
+      color: #111;
+    }
+    .visit-cta .mini { font-weight: 900; text-transform: uppercase; letter-spacing: .09em; font-size: .78rem; }
+    .visit-cta .big-phone {
+      margin: 12px 0 24px;
+      color: #111;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      line-height: .95;
+      text-decoration: none;
+    }
+    .visit-cta p { max-width: 430px; margin: 0; font-weight: 750; }
+
+    footer { background: #0d0f11; color: #fff; }
+    .footer-main { min-height: 180px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .footer-main strong { display: block; font-family: Impact, sans-serif; font-size: 2rem; letter-spacing: .04em; text-transform: uppercase; }
+    .footer-main p { margin: 4px 0 0; color: #b9bec1; }
+    .phone-link { color: var(--signal); font-size: clamp(1.4rem, 3vw, 2.2rem); font-weight: 950; text-decoration: none; }
+    .mobile-emergency { display: none; }
+
+    @media (max-width: 860px) {
+      .hero-grid { min-height: 0; grid-template-columns: 1fr; padding-block: 58px 70px; }
+      .hero-copy { position: relative; z-index: 2; }
+      .tow-graphic { width: min(560px, 90%); justify-self: center; margin: -22px 0 -52px; }
+      .dispatch-card { top: -8px; }
+      .service-strip .wrap { grid-template-columns: 1fr 1fr; }
+      .quick-fact:nth-child(3) { border-left: 1px solid rgba(0,0,0,.22); }
+      .quick-fact { border-bottom: 1px solid rgba(0,0,0,.22); }
+      .section-head { display: block; }
+      .section-head p { margin-top: 18px; }
+      .service:nth-child(n) { grid-column: span 6; }
+      .service:nth-child(5) { grid-column: span 12; }
+      .about-grid, .visit-grid { grid-template-columns: 1fr; }
+      .about-grid { gap: 44px; }
+      .customer-voice { grid-template-columns: 1fr; }
+      .garage-mark { min-height: 300px; }
+      .footer-main { align-items: flex-start; flex-direction: column; justify-content: center; }
+    }
+
+    @media (max-width: 560px) {
+      body { padding-bottom: calc(80px + env(safe-area-inset-bottom)); }
+      .wrap { width: calc(100% - 28px); max-width: var(--content); }
+      .topline-inner { min-height: 40px; font-size: .74rem; }
+      .topline-inner > * { min-width: 0; }
+      .top-phone { display: none; }
+      .draft-badge { margin-left: auto; }
+      .hero-grid { padding-block: 44px 36px; gap: 28px; min-width: 0; }
+      .hero-copy { min-width: 0; }
+      .kicker { max-width: 100%; font-size: .76rem; letter-spacing: .075em; }
+      .kicker::before { width: 28px; flex: 0 0 28px; }
+      h1 { max-width: 100%; font-size: clamp(2.8rem, 13vw, 3.5rem); }
+      .hero-sub { max-width: 100%; font-size: 1.02rem; }
+      .hero-actions { display: grid; width: 100%; min-width: 0; }
+      .hero-actions > a { width: 100%; min-width: 0; white-space: normal; text-align: center; }
+      .emergency-btn { min-height: 72px; padding-inline: 14px; font-size: .95rem; box-shadow: 6px 6px 0 var(--signal); }
+      .secondary-btn { min-height: 56px; }
+      .tow-graphic { width: 110%; margin: -12px -5% -28px; }
+      .dispatch-card { display: none; }
+      .service-strip .wrap { grid-template-columns: 1fr 1fr; width: 100%; }
+      .quick-fact { min-height: 74px; padding: 14px; font-size: .73rem; border-left: 0 !important; }
+      .quick-fact:nth-child(odd) { border-right: 1px solid rgba(0,0,0,.22); }
+      .quick-fact:nth-child(even) { border-right: 0; }
+      .quick-fact svg { width: 23px; height: 23px; }
+      section { padding-block: 66px; }
+      .section-head { margin-bottom: 30px; }
+      .services-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+      .service:nth-child(n) { grid-column: auto; min-height: 0; padding: 23px; }
+      .service-icon { margin-bottom: 20px; }
+      .service-number { font-size: 5.7rem; }
+      .about-grid { gap: 35px; }
+      .garage-mark { min-height: 260px; }
+      .garage-ring { width: 150px; border-width: 18px; }
+      .visit { padding-bottom: 74px; }
+      .visit-copy, .visit-cta { padding: 34px 25px; }
+      .info-row { grid-template-columns: 1fr; gap: 6px; }
+      .visit-cta .big-phone { font-size: 3.15rem; }
+      .footer-main { min-height: 200px; }
+      .mobile-emergency {
+        position: fixed;
+        z-index: 30;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-height: calc(72px + env(safe-area-inset-bottom));
+        display: grid;
+        grid-template-columns: 54px 1fr;
+        align-items: center;
+        gap: 11px;
+        padding: 10px 18px calc(10px + env(safe-area-inset-bottom));
+        background: var(--alert);
+        color: #fff;
+        border-top: 5px solid var(--signal);
+        text-decoration: none;
+        box-shadow: 0 -12px 28px rgba(0,0,0,.28);
+      }
+      .mobile-emergency .icon-box { width: 48px; height: 48px; display: grid; place-items: center; background: #fff; color: var(--alert); }
+      .mobile-emergency svg { width: 25px; height: 25px; }
+      .mobile-emergency span { display: block; font-size: .73rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+      .mobile-emergency strong { display: block; font-size: 1.04rem; line-height: 1.12; text-transform: uppercase; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topline">
+    <div class="wrap topline-inner">
+      <span>Mattoon, Illinois · Auto repair &amp; towing</span>
+      <span class="draft-badge">Concept draft</span>
+      <a class="top-phone" href="tel:+12172348365">(217) 234-8365</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="kicker">One shop. One number. Help when you need it.</span>
+          <h1 id="hero-title">Denning<br>Automotive</h1>
+          <p class="hero-sub">“We are your 1 stop shop for auto repair and service. We provide 24 hour towing.”</p>
+          <div class="hero-actions">
+            <a class="emergency-btn" href="tel:+12172348365" aria-label="Call Denning Automotive now for 24-hour towing">
+              <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.9z"/></svg>
+              24-HR Towing — Call Now
+            </a>
+            <a class="secondary-btn" href="#services">See services</a>
+          </div>
+        </div>
+
+        <div class="tow-graphic" aria-hidden="true">
+          <div class="dispatch-card"><strong>Roadside trouble?</strong><span>One call gets help moving.</span></div>
+          <svg viewBox="0 0 640 430" role="img">
+            <path d="M68 316h484l30 34H42z" fill="#16191c" opacity=".45"/>
+            <path d="M374 107h20v203h-20z" fill="#dfe3e5" transform="rotate(-17 384 208)"/>
+            <path d="M368 100h114l12 23H371z" fill="#ffd31f"/>
+            <path d="M475 120l61 118" fill="none" stroke="#dfe3e5" stroke-width="8"/>
+            <path d="M537 236v38c0 16-11 26-27 26h-12" fill="none" stroke="#dfe3e5" stroke-width="6"/>
+            <path d="M497 291h30v26h-30z" fill="#d92d20"/>
+            <path d="M121 197h247l66 72v73H74v-85z" fill="#f5f6f5"/>
+            <path d="M265 197h100l64 70H265z" fill="#ffd31f"/>
+            <path d="M281 210h75l40 44H281z" fill="#26323a"/>
+            <path d="M92 214h145v77H92z" fill="#d92d20"/>
+            <path d="M110 230h107v12H110zm0 24h86v10h-86z" fill="#fff" opacity=".92"/>
+            <path d="M74 289h360v54H74z" fill="#ffd31f"/>
+            <path d="M81 306h343v11H81z" fill="#111" opacity=".22"/>
+            <path d="M61 321h406v32H61z" fill="#24292d"/>
+            <path d="M78 286H48v34h34z" fill="#f5f6f5"/>
+            <path d="M434 283h30l32 41h-62z" fill="#f5f6f5"/>
+            <circle cx="154" cy="348" r="48" fill="#111315"/><circle cx="154" cy="348" r="22" fill="#8b949a"/><circle cx="398" cy="348" r="48" fill="#111315"/><circle cx="398" cy="348" r="22" fill="#8b949a"/>
+            <path d="M39 348h472" stroke="#fff" stroke-width="3" opacity=".18"/>
+            <path d="M445 137h19l11 20h-20z" fill="#d92d20"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="service-strip" aria-label="Service highlights">
+      <div class="wrap">
+        <div class="quick-fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>24-hour towing</div>
+        <div class="quick-fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5-5L3.5 7.5l5 5 6.2-6.2z"/><path d="m8.5 12.5 8.8 8.8a2.4 2.4 0 0 0 3.4-3.4L12 9.2"/></svg>Auto repair &amp; service</div>
+        <div class="quick-fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 2v4M17 2v4M4 8h16v12H4z"/><path d="M8 12h8M8 16h5"/></svg>Mon–Fri · 8–5</div>
+        <div class="quick-fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 16h12M8 16l-2 4m10-4 2 4M9 6l3-3 3 3v6H9z"/></svg>Mowers &amp; small equipment</div>
+      </div>
+    </div>
+
+    <section id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="services-title">The work<br>we do</h2>
+          <p>Cars, trucks, mowers, and the problems that leave you stuck. Call Tom and Doug and tell them what’s going on.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service emergency-service">
+            <span class="service-number">01</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 16V9h11l4 4h3v3"/><path d="M14 9V5h5l2 4"/><circle cx="7" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg></div>
+            <h3>24-hour emergency towing</h3>
+            <p>Broken down? Call day or night. We’ll come get you and help figure out what comes next.</p>
+          </article>
+          <article class="service">
+            <span class="service-number">02</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 4h16v12H4z"/><path d="M8 20h8M12 16v4M7 10h2l1-3 2 6 2-4 1 1h2"/></svg></div>
+            <h3>Engine diagnostics &amp; breakdown repair</h3>
+            <p>We diagnose the real problem before recommending the repair — including fast, same-day help when the job allows.</p>
+          </article>
+          <article class="service">
+            <span class="service-number">03</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 10-13h-7z"/></svg></div>
+            <h3>Auto electrical systems</h3>
+            <p>Electrical system service and repair for starting, charging, wiring, and hard-to-track problems.</p>
+          </article>
+          <article class="service">
+            <span class="service-number">04</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v5m0 6v5M4 12h5m6 0h5"/></svg></div>
+            <h3>Transmissions &amp; clutches</h3>
+            <p>Service and repair for shifting, slipping, clutch trouble, and drivetrain concerns.</p>
+          </article>
+          <article class="service">
+            <span class="service-number">05</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 2s6 7 6 12a6 6 0 0 1-12 0c0-5 6-12 6-12z"/></svg></div>
+            <h3>Oil changes</h3>
+            <p>Routine oil and filter service to keep your vehicle maintained and ready for the road.</p>
+          </article>
+          <article class="service">
+            <span class="service-number">06</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 14h16l-2-6H6z"/><path d="M6 14v4m12-4v4M7 18h2m6 0h2"/></svg></div>
+            <h3>Toyota repair</h3>
+            <p>Repair and service for Toyota cars, trucks, and SUVs from a local shop that knows the work.</p>
+          </article>
+          <article class="service">
+            <span class="service-number">07</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 5h16v12H4z"/><path d="m8 21 2-4h4l2 4M8 10l2 2 5-5"/></svg></div>
+            <h3>Used-vehicle purchase advice</h3>
+            <p>Get a mechanic’s opinion before you buy, so you can make the decision with better information.</p>
+          </article>
+          <article class="service">
+            <span class="service-number">08</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 15h14M7 15l-2 5m12-5 2 5M9 6h6l2 9H7z"/><path d="M12 3v3"/></svg></div>
+            <h3>Small equipment &amp; mower repair</h3>
+            <p>Bring in the mower or small equipment that won’t start, run right, or stay running.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="about-grid">
+          <div class="garage-mark" aria-hidden="true">
+            <div class="garage-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7h-3V4h-2v3H9V4H7v3H4v13h16z"/><path d="M8 12h8M8 16h5"/></svg></div>
+          </div>
+          <div class="about-copy">
+            <span class="kicker">Plain talk. The right repair.</span>
+            <h2 id="about-title">A small-town shop that gets the job done.</h2>
+            <p>Tom and Doug have earned loyal customers by diagnosing the problem before selling the repair. One customer came in expecting to need a new engine; Denning found the real problem and fixed it correctly, quickly, and without the unnecessary expense.</p>
+            <div class="about-list" aria-label="What to expect">
+              <div><span class="check" aria-hidden="true">✓</span>First-name mechanics who listen</div>
+              <div><span class="check" aria-hidden="true">✓</span>Practical, cost-efficient repairs</div>
+              <div><span class="check" aria-hidden="true">✓</span>Same-day rescues when the job allows</div>
+            </div>
+          </div>
+        </div>
+        <div class="customer-voice" aria-label="Customer comments">
+          <blockquote class="customer-quote"><p>Tom and doug awesome people to work with</p></blockquote>
+          <blockquote class="customer-quote"><p>Best service! Best prices! Friendly and Honest! That's why we go there!</p></blockquote>
+          <blockquote class="customer-quote"><p>They get the job done at an affordable price.</p></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" aria-labelledby="visit-title">
+      <div class="wrap visit-grid">
+        <div class="visit-copy">
+          <h2 id="visit-title">Find the shop</h2>
+          <p>Need a tow right now? Call anytime. For repair and service, the shop is open weekdays.</p>
+          <div class="info-row">
+            <span class="info-label">Address</span>
+            <span class="info-value">2005 Lake Land Blvd<br>Mattoon, IL</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Towing</span>
+            <span class="info-value">Available 24 hours</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Shop hours</span>
+            <span class="info-value">Monday–Friday · 8 AM–5 PM<br>Closed Saturday &amp; Sunday</span>
+          </div>
+        </div>
+        <div class="visit-cta">
+          <span class="mini">Call Denning Automotive</span>
+          <a class="big-phone" href="tel:+12172348365">217-234-8365</a>
+          <p>Tell us where you are and what your vehicle is doing. We’ll help you identify the next step.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-main">
+      <div>
+        <strong>Denning Automotive</strong>
+        <p>2005 Lake Land Blvd · Mattoon, IL</p>
+      </div>
+      <a class="phone-link" href="tel:+12172348365">(217) 234-8365</a>
+    </div>
+  </footer>
+
+  <a class="mobile-emergency" href="tel:+12172348365" aria-label="Call Denning Automotive for 24-hour towing">
+    <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.9z"/></svg></span>
+    <span><span>24-hour towing</span><strong>Tap to call (217) 234-8365</strong></span>
+  </a>
+</body>
+</html>

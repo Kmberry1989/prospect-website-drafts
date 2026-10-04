@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:," />
+  <title>Ben's Small Engine Repair | Kokomo, Indiana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --paper: #f3f0e8;
+      --surface: #fffdf7;
+      --ink: #17201f;
+      --muted: #52605d;
+      --line: #b9b6aa;
+      --steel: #263332;
+      --orange: #d5541f;
+      --orange-dark: #963816;
+      --lime: #d7e4a0;
+      --shadow: 0 18px 45px rgba(26, 33, 32, .13);
+      --radius: 8px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #111716;
+        --surface: #1b2321;
+        --ink: #f4f0e5;
+        --muted: #b5c0bc;
+        --line: #47524f;
+        --steel: #0b100f;
+        --orange: #f06c32;
+        --orange-dark: #ca4b1c;
+        --lime: #4b5a2c;
+        --shadow: 0 18px 45px rgba(0, 0, 0, .28);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Source Sans 3", sans-serif;
+      font-size: 18px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    button, input, select, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .shell { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
+    .concept {
+      position: absolute;
+      right: max(20px, calc((100vw - 1180px) / 2));
+      top: 18px;
+      z-index: 4;
+      padding: 6px 10px;
+      border: 1px solid rgba(255,255,255,.3);
+      color: #f6f3e9;
+      background: rgba(12,18,17,.72);
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 700px;
+      overflow: hidden;
+      color: #fffaf0;
+      background:
+        linear-gradient(102deg, rgba(8,13,12,.98) 0 49%, rgba(8,13,12,.75) 70%, rgba(8,13,12,.88)),
+        repeating-linear-gradient(115deg, #26332f 0 2px, #1a2421 2px 7px);
+      border-bottom: 7px solid var(--orange);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: .22;
+      pointer-events: none;
+      background-image: radial-gradient(circle at 1px 1px, #fff 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(90deg, transparent, #000);
+    }
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      min-height: 700px;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 50px;
+      align-items: center;
+      padding: 100px 0 72px;
+    }
+    .kicker {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 16px;
+      color: #f3b08f;
+      font-weight: 700;
+    }
+    .kicker::before { content: ""; width: 38px; height: 4px; background: var(--orange); }
+    h1, h2, h3 { font-family: "Barlow Condensed", sans-serif; line-height: .98; margin: 0; }
+    h1 { max-width: 720px; font-size: clamp(58px, 8.3vw, 116px); letter-spacing: -.025em; text-transform: uppercase; }
+    .hero-copy { max-width: 620px; margin: 24px 0 32px; color: #d8dfdc; font-size: clamp(20px, 2vw, 25px); }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 54px;
+      padding: 13px 22px;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .btn-primary { color: #fff; background: var(--orange); box-shadow: 5px 5px 0 #67230d; }
+    .btn-primary:hover { background: #e66028; }
+    .btn-secondary { color: #fff; border-color: #83908c; background: transparent; }
+    .btn svg { width: 20px; height: 20px; flex: none; }
+    .hero-note { margin: 16px 0 0; color: #b9c4c0; font-size: 15px; }
+
+    .machine-art { position: relative; align-self: end; min-height: 520px; display: grid; place-items: end center; }
+    .machine-art::before {
+      content: "";
+      position: absolute;
+      width: 88%; aspect-ratio: 1;
+      right: -10%; bottom: -8%;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 50%;
+      box-shadow: 0 0 0 42px rgba(255,255,255,.025), 0 0 0 90px rgba(255,255,255,.018);
+    }
+    .machine-art svg { position: relative; width: min(100%, 560px); height: auto; filter: drop-shadow(0 28px 26px rgba(0,0,0,.46)); }
+
+    .quick-strip { background: var(--steel); color: #eef1ec; }
+    .quick-grid { min-height: 108px; display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; }
+    .quick-item { padding: 18px 28px; display: flex; align-items: center; gap: 14px; border-right: 1px solid #53615d; }
+    .quick-item:last-child { border: 0; }
+    .quick-item svg { width: 28px; height: 28px; color: #f07840; flex: none; }
+    .quick-item strong { display: block; font-family: "Barlow Condensed"; font-size: 21px; line-height: 1.1; }
+    .quick-item span { color: #bec8c4; font-size: 15px; }
+
+    section { padding: 96px 0; }
+    .section-head { display: grid; grid-template-columns: .75fr 1fr; gap: 70px; align-items: end; margin-bottom: 42px; }
+    .section-head h2 { font-size: clamp(48px, 6vw, 76px); text-transform: uppercase; letter-spacing: -.02em; }
+    .section-head p { margin: 0; max-width: 620px; color: var(--muted); font-size: 20px; }
+    .rule { width: 60px; height: 6px; margin-bottom: 18px; background: var(--orange); }
+
+    .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 2px solid var(--ink); }
+    .service {
+      display: grid;
+      grid-template-columns: 68px 1fr;
+      gap: 20px;
+      padding: 34px 30px 34px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .service:nth-child(odd) { border-right: 1px solid var(--line); }
+    .service:nth-child(even) { padding-left: 34px; }
+    .service-icon {
+      width: 58px; height: 58px; display: grid; place-items: center;
+      color: var(--orange); background: color-mix(in srgb, var(--orange) 12%, transparent);
+      border-radius: 50%;
+    }
+    .service-icon svg { width: 28px; height: 28px; }
+    .service h3 { font-size: 30px; text-transform: uppercase; }
+    .service p { margin: 8px 0 0; color: var(--muted); }
+
+    .seasonal { position: relative; background: var(--surface); overflow: hidden; }
+    .seasonal::before {
+      content: ""; position: absolute; inset: 0 auto 0 0; width: 36%; opacity: .08;
+      background: repeating-linear-gradient(-45deg, var(--ink) 0 2px, transparent 2px 14px);
+    }
+    .season-grid { position: relative; display: grid; grid-template-columns: .8fr 1.2fr; gap: 72px; align-items: start; }
+    .season-copy h2 { font-size: clamp(50px, 6vw, 78px); text-transform: uppercase; }
+    .season-copy > p { color: var(--muted); font-size: 20px; }
+    .season-list { margin: 34px 0 0; display: grid; gap: 22px; }
+    .season-row { display: grid; grid-template-columns: 54px 1fr; gap: 16px; align-items: start; }
+    .season-num { font: 800 34px/1 "Barlow Condensed"; color: var(--orange); }
+    .season-row strong { display: block; font-family: "Barlow Condensed"; font-size: 24px; text-transform: uppercase; }
+    .season-row p { margin: 3px 0 0; color: var(--muted); }
+
+    .request-card { padding: 34px; color: #f6f4ea; background: var(--steel); box-shadow: var(--shadow); border-top: 7px solid var(--orange); }
+    .request-card h3 { font-size: 38px; text-transform: uppercase; }
+    .request-card > p { margin: 8px 0 26px; color: #bec8c4; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    label { display: block; color: #e7ece8; font-weight: 700; font-size: 15px; }
+    label.full { grid-column: 1 / -1; }
+    input, select, textarea {
+      width: 100%; margin-top: 6px; border: 1px solid #65716d; border-radius: 3px;
+      padding: 12px 13px; color: #fff; background: #17201e; outline: none;
+    }
+    input:focus, select:focus, textarea:focus { border-color: #f07a40; box-shadow: 0 0 0 3px rgba(240,122,64,.2); }
+    textarea { min-height: 98px; resize: vertical; }
+    .request-card .btn { width: 100%; margin-top: 18px; border: 0; }
+    .form-note { margin: 10px 0 0; color: #9eaaa6; font-size: 14px; }
+    .request-result { display: none; margin-top: 16px; padding: 16px; background: #0d1412; border: 1px solid #5a6864; }
+    .request-result.visible { display: block; }
+    .request-result p { margin: 0 0 12px; color: #dce3df; }
+    .request-result .btn { margin: 0; color: #fff; background: var(--orange); }
+
+    .about-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 80px; align-items: center; }
+    .about-copy h2 { font-size: clamp(50px, 6vw, 78px); text-transform: uppercase; }
+    .about-copy p { color: var(--muted); font-size: 21px; }
+    .shop-mark {
+      min-height: 330px; padding: 40px; display: flex; flex-direction: column; justify-content: flex-end;
+      color: #fff; background:
+        linear-gradient(rgba(12,18,17,.2), rgba(12,18,17,.72)),
+        repeating-linear-gradient(100deg, #55625e 0 12px, #45514e 12px 24px);
+      border: 14px solid var(--steel); box-shadow: var(--shadow);
+    }
+    .shop-mark span { width: fit-content; padding: 7px 10px; color: #241910; background: #edc06d; font: 700 15px/1 "Source Sans 3"; transform: rotate(-2deg); }
+    .shop-mark strong { margin-top: 15px; font: 800 45px/.95 "Barlow Condensed"; text-transform: uppercase; }
+
+    .location { padding-top: 0; }
+    .location-card { display: grid; grid-template-columns: 1fr .8fr; color: #f7f4e9; background: var(--steel); }
+    .location-main { padding: 58px; }
+    .location-main h2 { font-size: clamp(48px, 6vw, 72px); text-transform: uppercase; }
+    address { margin: 24px 0 0; font-style: normal; font-size: 25px; font-weight: 700; }
+    .location-main p { margin: 8px 0 0; color: #bcc7c2; }
+    .hours { padding: 58px; color: var(--ink); background: var(--lime); }
+    .hours h3 { font-size: 34px; text-transform: uppercase; }
+    .hours p { margin: 14px 0 24px; }
+    .hours a { font-weight: 800; color: var(--ink); text-underline-offset: 4px; }
+
+    footer { color: #f2eee5; background: #0d1211; padding: 44px 0 calc(44px + env(safe-area-inset-bottom)); }
+    .footer-grid { display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center; }
+    .footer-call { font: 800 clamp(35px, 6vw, 64px)/1 "Barlow Condensed"; text-decoration: none; }
+    .footer-call:hover { color: #f17a40; }
+    footer p { margin: 8px 0 0; color: #aeb9b5; }
+    .footer-side { text-align: right; }
+    .footer-side strong { display: block; }
+    .footer-side span { color: #aeb9b5; }
+
+    @media (max-width: 800px) {
+      .shell { width: min(100% - 28px, 640px); }
+      .concept { right: 14px; top: 12px; }
+      .hero, .hero-grid { min-height: auto; }
+      .hero-grid { grid-template-columns: 1fr; gap: 12px; padding: 92px 0 28px; }
+      h1 { font-size: clamp(56px, 18vw, 82px); }
+      .hero-copy { font-size: 20px; margin: 18px 0 24px; }
+      .machine-art { min-height: 265px; max-height: 330px; overflow: hidden; }
+      .machine-art svg { width: 390px; transform: translateY(42px); }
+      .quick-grid { grid-template-columns: 1fr; padding: 8px 0; }
+      .quick-item { border-right: 0; border-bottom: 1px solid #53615d; padding: 14px 4px; }
+      .quick-item:last-child { border-bottom: 0; }
+      section { padding: 68px 0; }
+      .section-head, .season-grid, .about-grid, .location-card { grid-template-columns: 1fr; gap: 30px; }
+      .section-head { margin-bottom: 28px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .service, .service:nth-child(even) { padding: 28px 0; border-right: 0; }
+      .season-copy > p, .section-head p, .about-copy p { font-size: 18px; }
+      .request-card { padding: 26px 20px; margin-inline: -4px; }
+      .form-grid { grid-template-columns: 1fr; }
+      label.full { grid-column: auto; }
+      .shop-mark { min-height: 260px; }
+      .location-main, .hours { padding: 38px 28px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-side { text-align: left; }
+    }
+    @media (max-width: 430px) {
+      .actions { display: grid; }
+      .btn { width: 100%; }
+      .service { grid-template-columns: 52px 1fr; gap: 14px; }
+      .service-icon { width: 46px; height: 46px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <div class="concept">Concept draft</div>
+
+  <header class="hero">
+    <div class="shell hero-grid">
+      <div>
+        <p class="kicker">Small-engine service in Kokomo</p>
+        <h1>Ben's Small Engine Repair</h1>
+        <p class="hero-copy">Practical service for the machines you count on—from the first mow of spring to the first snow of winter.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="tel:+17654598997" aria-label="Call Ben's Small Engine Repair at 765-459-8997">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 3H4.8C3.8 3 3 3.8 3 4.8 3 13.7 10.3 21 19.2 21c1 0 1.8-.8 1.8-1.8V17l-4.8-1.1-1.2 2a15.9 15.9 0 0 1-8.9-8.9l2-1.2L7 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Call (765) 459-8997
+          </a>
+          <a class="btn btn-secondary" href="#request">Request a tune-up</a>
+        </div>
+        <p class="hero-note">906 S Market St · Kokomo, Indiana</p>
+      </div>
+
+      <div class="machine-art" aria-hidden="true">
+        <svg viewBox="0 0 620 560" role="img">
+          <defs>
+            <linearGradient id="deck" x1="0" x2="1"><stop offset="0" stop-color="#a93612"/><stop offset=".5" stop-color="#ed672d"/><stop offset="1" stop-color="#a63815"/></linearGradient>
+            <linearGradient id="metal" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#87918d"/><stop offset=".5" stop-color="#d9ded9"/><stop offset="1" stop-color="#697570"/></linearGradient>
+          </defs>
+          <path d="M376 345 493 92" stroke="#cfd6d1" stroke-width="18" stroke-linecap="round"/>
+          <path d="M482 99h83v42h-24v-18h-59" fill="none" stroke="#e6ebe6" stroke-width="16" stroke-linejoin="round"/>
+          <path d="M398 344 505 105" stroke="#3d4945" stroke-width="8"/>
+          <circle cx="421" cy="431" r="73" fill="#111817" stroke="#606a66" stroke-width="15"/>
+          <circle cx="421" cy="431" r="29" fill="#84908b"/><circle cx="187" cy="445" r="54" fill="#111817" stroke="#606a66" stroke-width="13"/>
+          <circle cx="187" cy="445" r="20" fill="#84908b"/>
+          <path d="M115 377c17-34 58-60 116-63h182c53 0 93 39 101 88l-15 23H126c-29 0-36-25-11-48Z" fill="url(#deck)" stroke="#6d260d" stroke-width="8"/>
+          <path d="M231 314h149l-15-104H251l-20 104Z" fill="#232c2a" stroke="#0b100f" stroke-width="8"/>
+          <path d="M265 223h92l13 72H246l19-72Z" fill="url(#metal)"/>
+          <rect x="275" y="182" width="72" height="32" rx="5" fill="#151d1b"/><rect x="288" y="164" width="47" height="20" rx="4" fill="#d6dbd6"/>
+          <path d="M118 374H69v25h44" fill="none" stroke="#cfd5d1" stroke-width="13" stroke-linejoin="round"/>
+          <path d="M176 340h73M397 337h43" stroke="#f29864" stroke-width="7" stroke-linecap="round"/>
+          <path d="M278 250h39M278 269h52" stroke="#6e7975" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <div class="quick-strip">
+    <div class="shell quick-grid">
+      <div class="quick-item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M21 11a8.7 8.7 0 0 1-9 9 8.7 8.7 0 0 1-9-9 8.7 8.7 0 0 1 9-9v9h9Z" stroke="currentColor" stroke-width="2"/><path d="M15 3a7 7 0 0 1 6 6h-6V3Z" stroke="currentColor" stroke-width="2"/></svg>
+        <div><strong>Mowers</strong><span>Seasonal tune-ups & service</span></div>
+      </div>
+      <div class="quick-item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="m12 2 1.5 4.5L18 5l-1.5 4.5L21 11l-4.5 1.5L18 17l-4.5-1.5L12 20l-1.5-4.5L6 17l1.5-4.5L3 11l4.5-1.5L6 5l4.5 1.5L12 2Z" stroke="currentColor" stroke-width="1.8"/></svg>
+        <div><strong>Snowblowers</strong><span>Ready before winter hits</span></div>
+      </div>
+      <div class="quick-item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a4 4 0 0 0-5-5L12 3.6 3.6 12l-2.3-.3a4 4 0 0 0 5 5l8.4-8.4 2.3 2.3 2-2-2.3-2.3-2 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m14 14 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <div><strong>Diagnostics</strong><span>Find the problem, plan the fix</span></div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section id="services">
+      <div class="shell">
+        <div class="section-head">
+          <div><div class="rule"></div><h2>Shop Services</h2></div>
+          <p>Routine maintenance and practical troubleshooting for mowers, snowblowers, trimmers, and other common small-engine equipment.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14h14l2 4H7l-3-4Zm3 0 2-6h7l2 6M11 8V5h4v3" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8" cy="19" r="2" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="19" r="2" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div><h3>Mower tune-ups</h3><p>Season-start maintenance to help push and riding mowers run cleaner and more reliably.</p></div>
+          </article>
+          <article class="service">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 15h14l2 4H6l-2-4Zm4 0V8h8v7M12 8V4m-3 2 3-2 3 2" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m18 9 3-2m-3 5 4-1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div><h3>Snowblower service</h3><p>Preseason checks and service before the forecast turns into a driveway full of work.</p></div>
+          </article>
+          <article class="service">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 18 20 4l1 4L7 20l-4-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 15 4 4" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div><h3>Blade sharpening</h3><p>A sharper cutting edge for cleaner-looking grass and less strain on mower equipment.</p></div>
+          </article>
+          <article class="service">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <div><h3>Small-engine diagnostics</h3><p>Troubleshooting hard starts, rough running, loss of power, and other common issues in trimmers and small-engine equipment.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seasonal" id="request">
+      <div class="shell season-grid">
+        <div class="season-copy">
+          <div class="rule"></div>
+          <h2>Ready for the season?</h2>
+          <p>Get ahead of the rush. Request service before you need the machine every weekend—or before the first storm.</p>
+          <div class="season-list">
+            <div class="season-row"><div class="season-num">01</div><div><strong>Spring mower prep</strong><p>Start the mowing season with maintenance already handled.</p></div></div>
+            <div class="season-row"><div class="season-num">02</div><div><strong>Fall snowblower prep</strong><p>Check winter equipment before the temperature drops.</p></div></div>
+          </div>
+        </div>
+
+        <form class="request-card" id="tuneForm">
+          <h3>Start a tune-up request</h3>
+          <p>Fill in the basics, then send the request by text. Ben's can confirm availability directly.</p>
+          <div class="form-grid">
+            <label>Your name<input id="name" name="name" aria-label="Your name" autocomplete="name" required></label>
+            <label>Best callback number<input id="phone" name="phone" type="tel" aria-label="Best callback number" autocomplete="tel" required></label>
+            <label>Equipment<select id="equipment" name="equipment" aria-label="Equipment" required><option value="">Choose one</option><option>Push mower</option><option>Riding mower</option><option>Snowblower</option><option>Trimmer</option><option>Other small engine</option></select></label>
+            <label>Service needed<select id="service" name="service" aria-label="Service needed" required><option value="">Choose one</option><option>Tune-up</option><option>Blade sharpening</option><option>Diagnostics</option><option>Seasonal prep</option><option>Not sure yet</option></select></label>
+            <label class="full">What is the machine doing?<textarea id="details" name="details" aria-label="What is the machine doing?" placeholder="Brand/model, symptoms, or anything helpful"></textarea></label>
+          </div>
+          <button class="btn btn-primary" type="submit">Prepare text request</button>
+          <p class="form-note">This does not book automatically. Your phone's messaging app will open so you can review and send.</p>
+          <div class="request-result" id="requestResult" aria-live="polite">
+            <p>Your request is ready. Tap below to open it in your messaging app.</p>
+            <a class="btn" id="smsLink" href="sms:+17654598997">Text request to Ben's</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div class="shell about-grid">
+        <div class="about-copy">
+          <div class="rule"></div>
+          <h2>Keep good equipment working.</h2>
+          <p>Ben's Small Engine Repair serves Kokomo with straightforward maintenance and repair for mowers, snowblowers, trimmers, and the machines that keep lawns and driveways in shape.</p>
+          <p>Not sure what service you need? Call the shop and describe what the equipment is doing.</p>
+          <a class="btn btn-primary" href="tel:+17654598997">Talk to the shop</a>
+        </div>
+        <div class="shop-mark" aria-label="Workshop-inspired graphic">
+          <span>REPAIR · TUNE · SHARPEN</span>
+          <strong>Built for work.<br>Serviced to last.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="location">
+      <div class="shell location-card">
+        <div class="location-main">
+          <div class="rule"></div>
+          <h2>Find the shop</h2>
+          <address>906 S Market St<br>Kokomo, IN</address>
+          <p>Call before heading over to confirm current hours and service availability.</p>
+        </div>
+        <div class="hours">
+          <h3>Hours & drop-off</h3>
+          <p>Current business hours were not provided for this concept. Call ahead for today's hours and drop-off details.</p>
+          <a href="tel:+17654598997">(765) 459-8997</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div>
+        <a class="footer-call" href="tel:+17654598997">(765) 459-8997</a>
+        <p>Call for service questions, current hours, and availability.</p>
+      </div>
+      <div class="footer-side"><strong>Ben's Small Engine Repair</strong><span>906 S Market St · Kokomo, IN</span></div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var form = document.getElementById('tuneForm');
+      var result = document.getElementById('requestResult');
+      var smsLink = document.getElementById('smsLink');
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+        var name = document.getElementById('name').value.trim();
+        var phone = document.getElementById('phone').value.trim();
+        var equipment = document.getElementById('equipment').value;
+        var service = document.getElementById('service').value;
+        var details = document.getElementById('details').value.trim() || 'No additional details provided.';
+        var message = "Hi Ben's Small Engine Repair — I'd like to request service.\n\nName: " + name + "\nCallback: " + phone + "\nEquipment: " + equipment + "\nService: " + service + "\nDetails: " + details;
+        var separator = /iPad|iPhone|iPod/.test(navigator.userAgent) ? '&' : '?';
+        smsLink.href = 'sms:+17654598997' + separator + 'body=' + encodeURIComponent(message);
+        result.classList.add('visible');
+        smsLink.focus();
+      });
+    }());
+  </script>
+</body>
+</html>
