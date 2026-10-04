@@ -7,7 +7,7 @@
 <style>
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Comic Sans MS', 'Chalkboard SE', 'Segoe UI', sans-serif; color: #5b3a4a; background: #fff9fb; line-height: 1.6; }
+body { font-family: 'Trebuchet MS', Verdana, 'Segoe UI', sans-serif; color: #5b3a4a; background: #fff9fb; line-height: 1.6; }
 .banner { background: #b83a6a; color: #ffffff; text-align: center; padding: 0.85rem 1rem; font-weight: 700; font-size: 1rem; display: none; }
 .masthead { padding: 2.6rem 1.2rem 2rem; text-align: center; background: linear-gradient(180deg, #ffd9e8 0, #fff9fb 100%); }
 .masthead h1 { font-size: clamp(2rem, 9vw, 3.2rem); line-height: 1.05; color:#b83a6a; text-shadow: 2px 2px 0 #ffe08a; }
@@ -51,6 +51,15 @@ footer { text-align: center; padding: 1.6rem 1rem 2.2rem; font-size: 0.85rem; co
 [class*="banner"] h1, [class*="banner"] h2, [class*="banner"] h3, [class*="banner"] p,
 figcaption {
   text-shadow: 0 1px 3px rgba(0,0,0,.55), 0 2px 14px rgba(0,0,0,.35);
+}
+
+/* Headlines, titles, and subtitles always carry a legibility shadow, so
+   they survive stripes, patterns, and busy backgrounds — never bare text
+   on a busy surface. Site-specific headline shadows still win. */
+h1, h2, h3, h4, h5, h6,
+.sub, .subtitle, .tagline, .kicker,
+.section-title, .sec-title, .sec-head {
+  text-shadow: 0 1px 2px rgba(0,0,0,.30), 0 1px 10px rgba(0,0,0,.20);
 }
 
 /* Long words never break layouts on narrow screens */

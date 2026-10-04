@@ -96,3 +96,18 @@ These are single-page local business sites. The standard is:
    no "it's just a caption".
 3. Screenshot at 390px and 1280px. Read every word. Tap every CTA.
 4. Only then is it finished.
+
+## 7. Typography — never jokey, always legible
+
+- **Banned:** Comic Sans MS and anything in its family — Chalkboard SE, Marker
+  Felt, Kristen ITC, Bradley Hand, Segoe Print, Lucida Handwriting, Papyrus,
+  Curlz MT, Jokerman, Ravie, Harlow Solid, and similar novelty/casual fonts.
+  Friendly tone comes from color and copy, never the typeface. Safe friendly
+  stacks: `"Trebuchet MS", Verdana, sans-serif` or system stacks.
+- **Text over stripes, patterns, or busy backgrounds** always gets an outline
+  (`-webkit-text-stroke`) or shadow (`text-shadow`) — no bare text on a busy
+  surface, ever.
+- **Titles, subtitles, headers, and headlines always carry the effect.**
+  Pack A applies a legibility shadow to every `h1`–`h6`, `.sub`, `.subtitle`,
+  `.tagline`, `.kicker`, and section-title class on every site; site-specific
+  headline shadows override it where the design calls for something stronger.

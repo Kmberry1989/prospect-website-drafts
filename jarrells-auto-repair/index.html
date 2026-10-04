@@ -80,6 +80,15 @@ figcaption {
   text-shadow: 0 1px 3px rgba(0,0,0,.55), 0 2px 14px rgba(0,0,0,.35);
 }
 
+/* Headlines, titles, and subtitles always carry a legibility shadow, so
+   they survive stripes, patterns, and busy backgrounds — never bare text
+   on a busy surface. Site-specific headline shadows still win. */
+h1, h2, h3, h4, h5, h6,
+.sub, .subtitle, .tagline, .kicker,
+.section-title, .sec-title, .sec-head {
+  text-shadow: 0 1px 2px rgba(0,0,0,.30), 0 1px 10px rgba(0,0,0,.20);
+}
+
 /* Long words never break layouts on narrow screens */
 p, li, h1, h2, h3 { overflow-wrap: break-word; }
 
