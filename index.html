@@ -73,6 +73,10 @@
   .day-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
   .day-form input[type="text"] { flex: 2 1 200px; background: #0f1420; border: 1px solid #26314a; border-radius: 8px; color: #e8ecf4; font: inherit; font-size: 0.88rem; padding: 0.5rem 0.6rem; }
   .day-form select, .day-form input[type="time"] { background: #0f1420; border: 1px solid #26314a; border-radius: 8px; color: #e8ecf4; font: inherit; font-size: 0.88rem; padding: 0.5rem 0.6rem; }
+  .gcal-link { font-size: 0.8rem; font-weight: 600; color: #6ea8fe; text-decoration: none; margin-left: 0.6rem; }
+  .gcal-link:hover { text-decoration: underline; }
+  .day-panel li .gcal-add { margin-left: 0.4rem; font-size: 0.76rem; color: #6ea8fe; text-decoration: none; white-space: nowrap; }
+  .day-panel li .gcal-add:hover { text-decoration: underline; }
   .day-form button { background: #2f6fed; border: none; border-radius: 8px; color: #fff; font: inherit; font-weight: 600; padding: 0.5rem 1.1rem; cursor: pointer; }
   .day-form button:hover { background: #3d7ef5; }
   footer { margin-top: 2.5rem; color: #5c6578; font-size: 0.8rem; }
@@ -179,13 +183,7 @@ body.locking #lock-signin, body.locking .lock-title, body.locking .lock-sub{opac
   <div class="stats" id="stats"></div>
   <p class="privacy" id="sync-note">Sign in to sync your pipeline across devices. Otherwise everything is saved only in this browser.</p>
 
-  <h2>Kokomo area</h2>
-  <div class="grid" id="grid-kokomo"></div>
-
-  <h2>Non-local</h2>
-  <div class="grid" id="grid-nonlocal"></div>
-
-  <h2>Meeting calendar</h2>
+  <h2>Meeting calendar <a class="gcal-link" href="https://calendar.google.com" target="_blank" rel="noopener">Open Google Calendar ↗</a></h2>
   <div class="cal-wrap">
     <div class="cal-head">
       <button id="cal-prev" aria-label="Previous month">←</button>
@@ -204,6 +202,12 @@ body.locking #lock-signin, body.locking .lock-title, body.locking .lock-sub{opac
       </div>
     </div>
   </div>
+
+  <h2>Kokomo area</h2>
+  <div class="grid" id="grid-kokomo"></div>
+
+  <h2>Non-local</h2>
+  <div class="grid" id="grid-nonlocal"></div>
 
   <footer>Concepts prepared October 2026. Details shown are from public listings and verified business pages.</footer>
 </div>
@@ -453,6 +457,23 @@ const MONTHS = ['January','February','March','April','May','June','July','August
 const pad = n => String(n).padStart(2,'0');
 const dkey = d => d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
 function meetingsOn(key){ return store.meetings.filter(m=>m.date===key).sort((a,b)=>(a.time||'').localeCompare(b.time||'')); }
+function gcalUrl(mtg){
+  const biz = mtg.biz ? (BUSINESSES.find(x=>x.id===mtg.biz)||{}).name : '';
+  const title = mtg.text + (biz ? ' — ' + biz : '');
+  let dates;
+  if (mtg.time){
+    const [h,mi] = mtg.time.split(':').map(Number);
+    const start = new Date(mtg.date+'T00:00:00'); start.setHours(h,mi,0,0);
+    const end = new Date(start.getTime() + 3600000);
+    const f = d=>d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0')+'T'+String(d.getHours()).padStart(2,'0')+String(d.getMinutes()).padStart(2,'0')+'00';
+    dates = f(start)+'/'+f(end);
+  } else {
+    const d = new Date(mtg.date+'T00:00:00');
+    const f = x=>x.getFullYear()+String(x.getMonth()+1).padStart(2,'0')+String(x.getDate()).padStart(2,'0');
+    dates = f(d)+'/'+f(new Date(d.getTime()+86400000));
+  }
+  return 'https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(title)+'&dates='+dates+'&details='+encodeURIComponent('Added from the prospect tracker.');
+}
 function renderCal(){
   document.getElementById('cal-title').textContent = MONTHS[vm]+' '+vy;
   const grid = document.getElementById('cal-grid');
@@ -492,6 +513,8 @@ function renderDay(){
     const del=document.createElement('button'); del.textContent='×'; del.setAttribute('aria-label','Delete meeting');
     del.addEventListener('click', ()=>{ store.meetings = store.meetings.filter(m=>m!==mtg); save(); renderCal(); renderDay(); });
     li.appendChild(del);
+    const gc=document.createElement('a'); gc.href=gcalUrl(mtg); gc.target='_blank'; gc.rel='noopener'; gc.className='gcal-add'; gc.textContent='Add to Google Calendar';
+    li.appendChild(gc);
     ul.appendChild(li);
   });
 }
@@ -519,7 +542,7 @@ function resetLock(){
   document.getElementById('lock-denied').hidden = true;
   document.getElementById('lock-signin').style.display = '';
   const sub = document.getElementById('lock-sub');
-  sub.innerHTML = 'This sales pipeline belongs to Kyle Berry.<br>Sign in with Google to peek inside.';
+  sub.innerHTML = 'Sign in with Google to peek inside.';
   const pl = document.getElementById('padlock');
   pl.classList.remove('deny'); void pl.offsetWidth;
 }
