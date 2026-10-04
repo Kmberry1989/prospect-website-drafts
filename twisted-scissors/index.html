@@ -35,6 +35,13 @@ h2::before{content:'';width:10px;height:10px;border-radius:50%;background:#0e7e7
 .hrow span:last-child{font-weight:700}
 footer{text-align:center;padding:1.6rem;color:#62807b;font-size:.85rem}
 .loading{text-align:center;padding:4rem 1rem;color:#62807b}
+
+.biz-logo{display:block;margin:0 auto .7rem;max-height:104px;width:auto;max-width:72%;border-radius:10px}
+.hero-photo{display:block;margin:0 auto 1rem;max-height:230px;width:auto;max-width:88%;border-radius:12px}
+.photos{max-width:760px;margin:0 auto 2.4rem;padding:0 1.2rem}
+.photos h2{font-size:1.35rem;margin-bottom:.8rem}
+.photo-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.6rem}
+.photo-strip img{width:100%;height:165px;object-fit:cover;border-radius:10px;display:block}
 </style>
 </head>
 <body>
@@ -51,6 +58,13 @@ footer{text-align:center;padding:1.6rem;color:#62807b;font-size:.85rem}
 <a class="fb" id="fb-link" href="#">Facebook</a>
 </div>
 <main id="content"><div class="loading">Loading…</div></main>
+
+<section class="photos" aria-label="Our work">
+<h2>Our work</h2>
+<div class="photo-strip">
+<img src="../assets/twisted-scissors/twisted-scissors-profile.jpg" alt="Twisted Scissors salon" loading="lazy"><img src="../assets/twisted-scissors/twisted-scissors-1.jpg" alt="Hair styling work at Twisted Scissors" loading="lazy"><img src="../assets/twisted-scissors/twisted-scissors-2.jpg" alt="Nail work at Twisted Scissors" loading="lazy"><img src="../assets/twisted-scissors/twisted-scissors-3.jpg" alt="Salon work at Twisted Scissors" loading="lazy">
+</div>
+</section>
 <footer><span id="foot-name"></span><br><span id="foot-addr"></span></footer>
 <script>
 

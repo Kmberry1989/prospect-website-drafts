@@ -33,12 +33,21 @@ h2{color:#3a2b23;font-size:1.25rem;letter-spacing:.08em;text-transform:uppercase
 .info{text-align:center;padding:0 1.2rem 1rem;color:#776c5c}
 footer{text-align:center;padding:1.6rem;color:#776c5c;font-size:.85rem;border-top:1px solid #ddd2ba}
 .loading{text-align:center;padding:4rem 1rem;color:#776c5c}
+
+.biz-logo{display:block;margin:0 auto .7rem;max-height:104px;width:auto;max-width:72%;border-radius:10px}
+.hero-photo{display:block;margin:0 auto 1rem;max-height:230px;width:auto;max-width:88%;border-radius:12px}
+.photos{max-width:760px;margin:0 auto 2.4rem;padding:0 1.2rem}
+.photos h2{font-size:1.35rem;margin-bottom:.8rem}
+.photo-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.6rem}
+.photo-strip img{width:100%;height:165px;object-fit:cover;border-radius:10px;display:block}
 </style>
 </head>
 <body>
 <div class="pole"></div>
 <div class="banner" id="banner"></div>
 <header>
+<img class="biz-logo" src="../assets/mens-classic-cuts/mens-classic-cuts-logo.jpg" alt="Men's Classic Cuts logo">
+
 <div class="kicker" id="kicker">Barber Shop</div>
 <h1 id="biz-name">…</h1>
 <div class="tag" id="biz-tag"></div>
@@ -51,6 +60,13 @@ footer{text-align:center;padding:1.6rem;color:#776c5c;font-size:.85rem;border-to
 </div>
 <main id="content"><div class="loading">Loading…</div></main>
 <div class="pole"></div>
+
+<section class="photos" aria-label="The shop">
+<h2>The shop</h2>
+<div class="photo-strip">
+<img src="../assets/mens-classic-cuts/mens-classic-cuts-1.jpg" alt="Customer repping a Men’s Classic Cuts shirt" loading="lazy">
+</div>
+</section>
 <footer><span id="foot-name"></span><br><span id="foot-addr"></span></footer>
 <script>
 

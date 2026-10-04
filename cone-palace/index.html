@@ -34,12 +34,21 @@ section { margin-bottom: 2.4rem; }
 .loading { text-align: center; padding: 4rem 1rem; color: #7a4a2b; }
 footer { text-align: center; padding: 1.6rem 1rem 2.2rem; font-size: 0.85rem; color: #7a4a2b; border-top: 3px solid #c1272d; }
 
+
+.biz-logo{display:block;margin:0 auto .7rem;max-height:104px;width:auto;max-width:72%;border-radius:10px}
+.hero-photo{display:block;margin:0 auto 1rem;max-height:230px;width:auto;max-width:88%;border-radius:12px}
+.photos{max-width:760px;margin:0 auto 2.4rem;padding:0 1.2rem}
+.photos h2{font-size:1.35rem;margin-bottom:.8rem}
+.photo-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.6rem}
+.photo-strip img{width:100%;height:165px;object-fit:cover;border-radius:10px;display:block}
 </style>
 </head>
 <body>
 <div class="banner" id="banner" role="note"></div>
 <header class="masthead">
   <div class="masthead-inner">
+<img class="biz-logo" src="../assets/cone-palace/cone-palace-logo.jpeg" alt="Cone Palace logo">
+
     <h1 id="biz-name">&hellip;</h1>
     <p class="tag" id="biz-tag"></p>
   </div>
@@ -50,6 +59,13 @@ footer { text-align: center; padding: 1.6rem 1rem 2.2rem; font-size: 0.85rem; co
   <p class="addr" id="biz-addr"></p>
 </div>
 <main id="content"><p class="loading">Loading&hellip;</p></main>
+
+<section class="photos" aria-label="From the counter">
+<h2 class="sec-title">From the counter</h2>
+<div class="photo-strip">
+<img src="../assets/cone-palace/cone-palace-1.jpeg" alt="Frozen treat served at the Cone Palace counter" loading="lazy"><img src="../assets/cone-palace/cone-palace-2.jpeg" alt="Dessert from the Cone Palace menu" loading="lazy"><img src="../assets/cone-palace/cone-palace-3.jpeg" alt="Ice cream treat at Cone Palace" loading="lazy">
+</div>
+</section>
 <footer>Serving Kokomo since 1966 · Drive-thru, patio & dine-in</footer>
 <script>
 fetch('content.json', { cache: 'no-store' })
