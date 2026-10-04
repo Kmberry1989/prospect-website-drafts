@@ -1,0 +1,21 @@
+/* Pack C — desktop/mobile differentiation (injected into every concept site) */
+
+/* Mobile: roomy tap targets on anything that looks like a call-to-action */
+@media (max-width: 720px) {
+  .btn, .button, a[class*="btn"], a[class*="button"], button {
+    min-height: 48px;
+  }
+  /* Sticky tap-to-call bar (created by pack-reveal.js); mobile only */
+  .kb-callbar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    display: flex; align-items: center; justify-content: center; gap: .5rem;
+    padding: 1rem 1rem calc(1rem + env(safe-area-inset-bottom));
+    font: 700 1.05rem/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    text-decoration: none; color: #fff; background: #1d7a3d;
+    box-shadow: 0 -4px 18px rgba(0,0,0,.25);
+  }
+  body.kb-has-callbar { padding-bottom: 76px; }
+}
+@media (min-width: 721px) {
+  .kb-callbar { display: none; }
+}

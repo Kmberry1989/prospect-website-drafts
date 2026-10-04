@@ -1,0 +1,10 @@
+/* Pack B — scrollytelling reveal (injected into every concept site) */
+/* Hidden states only apply when JS is running (html.js), so no-JS visitors see everything. */
+html.js .rv { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+html.js .rv.in { opacity: 1; transform: none; }
+/* Specials / offers get a little extra pop */
+html.js .rv-pop { opacity: 0; transform: translateY(26px) scale(.96); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
+html.js .rv-pop.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html.js .rv, html.js .rv-pop { opacity: 1; transform: none; transition: none; }
+}

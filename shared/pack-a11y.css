@@ -1,0 +1,22 @@
+/* Pack A — accessibility guardrails (injected into every concept site) */
+
+/* Visible keyboard focus everywhere */
+:focus-visible { outline: 3px solid #4d9fff; outline-offset: 2px; border-radius: 4px; }
+
+/* Text over imagery: scrim shadow so words survive any background.
+   Applied to reading text only — buttons keep their designed surfaces. */
+.hero h1, .hero h2, .hero h3, .hero p, .hero li,
+[class*="hero"] h1, [class*="hero"] h2, [class*="hero"] h3, [class*="hero"] p, [class*="hero"] li,
+.banner h1, .banner h2, .banner h3, .banner p,
+[class*="banner"] h1, [class*="banner"] h2, [class*="banner"] h3, [class*="banner"] p,
+figcaption {
+  text-shadow: 0 1px 3px rgba(0,0,0,.55), 0 2px 14px rgba(0,0,0,.35);
+}
+
+/* Long words never break layouts on narrow screens */
+p, li, h1, h2, h3 { overflow-wrap: break-word; }
+
+/* Motion respects the visitor */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

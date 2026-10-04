@@ -23,6 +23,66 @@
     @media(max-width:760px){.shell{width:min(100% - 34px,1180px)}.concept{top:14px;right:14px}.hero{min-height:720px;background-position:61% center}.hero::after{background:linear-gradient(0deg,rgba(10,14,11,.94) 0%,rgba(10,14,11,.62) 62%,rgba(10,14,11,.18) 100%)}.hero-inner{padding:180px 17px 48px;margin-left:0}.hero-mark{font-size:.72rem}h1{font-size:clamp(4rem,21vw,6.2rem)}.hero-copy{font-size:1rem}.button-row .btn{flex:1 1 100%}section{padding:76px 0}.section-intro,.request-grid{grid-template-columns:1fr;gap:25px}.section-intro{margin-bottom:34px}.service-grid{display:block}.service{min-height:auto;padding:28px 0;grid-template-columns:52px 1fr;border-right:0!important}.service:nth-child(even){padding-left:0}.service-icon{width:46px;height:46px}.gallery{padding-top:0}.gallery-head{align-items:start;flex-direction:column;gap:10px}.gallery-grid{grid-template-columns:1fr}.gallery-item,.gallery-item:nth-child(2){min-height:360px}.about-wrap{grid-template-columns:1fr}.about-copy{padding:72px 24px 55px}.about-note{padding:36px 24px 70px;border-left:0;border-top:1px solid color-mix(in srgb,var(--forest-ink) 22%,transparent)}.request-copy{position:static}.form-card{padding:24px 18px}.fields-2{grid-template-columns:1fr}.visit-grid{grid-template-columns:1fr}.visit-block{padding:34px 24px;min-height:0}.visit-block+.visit-block{border-left:0;border-top:1px solid var(--rule)}.footer-grid{grid-template-columns:1fr}.footer-contact{text-align:left}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
+<!--kb-packs-->
+<style>
+/* Kyle Berry site enhancement packs: a11y + reveal + responsive */
+/* Pack A — accessibility guardrails (injected into every concept site) */
+
+/* Visible keyboard focus everywhere */
+:focus-visible { outline: 3px solid #4d9fff; outline-offset: 2px; border-radius: 4px; }
+
+/* Text over imagery: scrim shadow so words survive any background.
+   Applied to reading text only — buttons keep their designed surfaces. */
+.hero h1, .hero h2, .hero h3, .hero p, .hero li,
+[class*="hero"] h1, [class*="hero"] h2, [class*="hero"] h3, [class*="hero"] p, [class*="hero"] li,
+.banner h1, .banner h2, .banner h3, .banner p,
+[class*="banner"] h1, [class*="banner"] h2, [class*="banner"] h3, [class*="banner"] p,
+figcaption {
+  text-shadow: 0 1px 3px rgba(0,0,0,.55), 0 2px 14px rgba(0,0,0,.35);
+}
+
+/* Long words never break layouts on narrow screens */
+p, li, h1, h2, h3 { overflow-wrap: break-word; }
+
+/* Motion respects the visitor */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+/* Pack B — scrollytelling reveal (injected into every concept site) */
+/* Hidden states only apply when JS is running (html.js), so no-JS visitors see everything. */
+html.js .rv { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+html.js .rv.in { opacity: 1; transform: none; }
+/* Specials / offers get a little extra pop */
+html.js .rv-pop { opacity: 0; transform: translateY(26px) scale(.96); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
+html.js .rv-pop.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html.js .rv, html.js .rv-pop { opacity: 1; transform: none; transition: none; }
+}
+
+/* Pack C — desktop/mobile differentiation (injected into every concept site) */
+
+/* Mobile: roomy tap targets on anything that looks like a call-to-action */
+@media (max-width: 720px) {
+  .btn, .button, a[class*="btn"], a[class*="button"], button {
+    min-height: 48px;
+  }
+  /* Sticky tap-to-call bar (created by pack-reveal.js); mobile only */
+  .kb-callbar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    display: flex; align-items: center; justify-content: center; gap: .5rem;
+    padding: 1rem 1rem calc(1rem + env(safe-area-inset-bottom));
+    font: 700 1.05rem/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    text-decoration: none; color: #fff; background: #1d7a3d;
+    box-shadow: 0 -4px 18px rgba(0,0,0,.25);
+  }
+  body.kb-has-callbar { padding-bottom: 76px; }
+}
+@media (min-width: 721px) {
+  .kb-callbar { display: none; }
+}
+
+</style>
 </head>
 <body>
   <header class="hero"><div class="hero-inner"><div class="hero-mark">Made personal</div><h1>Roann <span>Engraving</span></h1><p class="hero-copy">Custom engraving for gifts, recognition and remembrance — thoughtfully made for the names, dates and moments worth keeping.</p><div class="button-row"><a class="btn btn-primary" href="#request">Request a custom order</a><a class="btn btn-outline" href="tel:+12602291640">Call (260) 229-1640</a></div></div></header>
@@ -42,5 +102,52 @@
   <script>
     (function(){var form=document.getElementById('order-form'),result=document.getElementById('result'),summary=document.getElementById('summary'),copy=document.getElementById('copy');function value(id,fallback){var text=document.getElementById(id).value.trim();return text||fallback}form.addEventListener('submit',function(event){event.preventDefault();var dateValue=document.getElementById('deadline').value,dateText='Not specified';if(dateValue){var parts=dateValue.split('-');dateText=parts[1]+'/'+parts[2]+'/'+parts[0]}summary.textContent=['CUSTOM ORDER REQUEST','','Name: '+value('name','Not provided'),'Contact: '+value('contact','Not provided'),'Order type: '+value('service','Not specified'),'Needed by: '+dateText,'Item or material: '+value('item','Not specified'),'Wording: '+value('wording','Not specified'),'Notes: '+value('notes','None')].join('\n');result.classList.add('is-visible');result.scrollIntoView({behavior:'smooth',block:'nearest'})});copy.addEventListener('click',function(){var text=summary.textContent;if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(function(){copy.textContent='Copied';setTimeout(function(){copy.textContent='Copy request'},1800)})}else{var area=document.createElement('textarea');area.value=text;document.body.appendChild(area);area.select();document.execCommand('copy');area.remove();copy.textContent='Copied';setTimeout(function(){copy.textContent='Copy request'},1800)}})})();
   </script>
+<!--kb-packs-->
+<script>
+/* Pack B+C runtime: scrollytelling reveals + mobile call bar.
+   Runs after parse; content stays visible if this never executes. */
+(function () {
+  document.documentElement.classList.add('js');
+
+  function onReady() {
+    /* ---- scrollytelling: fade/slide sections in as they enter ---- */
+    var special = /special|offer|deal|\bsale\b|limited|coupon|discount|save\b/i;
+    var sections = document.querySelectorAll('body > section, body > main > section, body > main > div > section');
+    var io = ('IntersectionObserver' in window) ? new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' }) : null;
+
+    sections.forEach(function (sec) {
+      if (sec.classList.contains('rv') || sec.classList.contains('rv-pop')) return;
+      var pop = special.test(sec.textContent || '');
+      sec.classList.add(pop ? 'rv-pop' : 'rv');
+      if (io) io.observe(sec);
+      else sec.classList.add('in');
+    });
+
+    /* ---- mobile differentiation: sticky tap-to-call bar ---- */
+    try {
+      var tel = document.querySelector('a[href^="tel:"]');
+      var already = document.querySelector('.kb-callbar, [class*="sticky-call"], [class*="call-bar"]');
+      if (tel && !already) {
+        var name = (document.querySelector('h1') || {}).textContent || 'us';
+        name = name.trim().split('\n')[0].slice(0, 34);
+        var bar = document.createElement('a');
+        bar.className = 'kb-callbar';
+        bar.href = tel.getAttribute('href');
+        bar.textContent = '\uD83D\uDCDE Call ' + name;
+        document.body.appendChild(bar);
+        document.body.classList.add('kb-has-callbar');
+      }
+    } catch (err) { /* never break the page for a call bar */ }
+  }
+
+  if (document.readyState !== 'loading') onReady();
+  else document.addEventListener('DOMContentLoaded', onReady);
+})();
+
+</script>
 </body>
 </html>

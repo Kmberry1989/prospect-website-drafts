@@ -36,6 +36,66 @@ h2 .no{color:#a31621;margin-right:.5rem}
 footer{text-align:center;padding:1.6rem;color:#7d7264;font-size:.85rem;border-top:1px solid #e2d8c4}
 .loading{text-align:center;padding:4rem 1rem;color:#7d7264}
 </style>
+<!--kb-packs-->
+<style>
+/* Kyle Berry site enhancement packs: a11y + reveal + responsive */
+/* Pack A — accessibility guardrails (injected into every concept site) */
+
+/* Visible keyboard focus everywhere */
+:focus-visible { outline: 3px solid #4d9fff; outline-offset: 2px; border-radius: 4px; }
+
+/* Text over imagery: scrim shadow so words survive any background.
+   Applied to reading text only — buttons keep their designed surfaces. */
+.hero h1, .hero h2, .hero h3, .hero p, .hero li,
+[class*="hero"] h1, [class*="hero"] h2, [class*="hero"] h3, [class*="hero"] p, [class*="hero"] li,
+.banner h1, .banner h2, .banner h3, .banner p,
+[class*="banner"] h1, [class*="banner"] h2, [class*="banner"] h3, [class*="banner"] p,
+figcaption {
+  text-shadow: 0 1px 3px rgba(0,0,0,.55), 0 2px 14px rgba(0,0,0,.35);
+}
+
+/* Long words never break layouts on narrow screens */
+p, li, h1, h2, h3 { overflow-wrap: break-word; }
+
+/* Motion respects the visitor */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+/* Pack B — scrollytelling reveal (injected into every concept site) */
+/* Hidden states only apply when JS is running (html.js), so no-JS visitors see everything. */
+html.js .rv { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+html.js .rv.in { opacity: 1; transform: none; }
+/* Specials / offers get a little extra pop */
+html.js .rv-pop { opacity: 0; transform: translateY(26px) scale(.96); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
+html.js .rv-pop.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html.js .rv, html.js .rv-pop { opacity: 1; transform: none; transition: none; }
+}
+
+/* Pack C — desktop/mobile differentiation (injected into every concept site) */
+
+/* Mobile: roomy tap targets on anything that looks like a call-to-action */
+@media (max-width: 720px) {
+  .btn, .button, a[class*="btn"], a[class*="button"], button {
+    min-height: 48px;
+  }
+  /* Sticky tap-to-call bar (created by pack-reveal.js); mobile only */
+  .kb-callbar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    display: flex; align-items: center; justify-content: center; gap: .5rem;
+    padding: 1rem 1rem calc(1rem + env(safe-area-inset-bottom));
+    font: 700 1.05rem/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    text-decoration: none; color: #fff; background: #1d7a3d;
+    box-shadow: 0 -4px 18px rgba(0,0,0,.25);
+  }
+  body.kb-has-callbar { padding-bottom: 76px; }
+}
+@media (min-width: 721px) {
+  .kb-callbar { display: none; }
+}
+
+</style>
 </head>
 <body>
 <div class="banner" id="banner"></div>
@@ -93,6 +153,53 @@ fetch('content.json', { cache: 'no-store' })
   .catch(() => { document.getElementById('content').innerHTML = '<div class="loading">Could not load content.</div>'; });
 function set(id, v) { const e = document.getElementById(id); if (e && v) e.textContent = v; }
 function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+
+</script>
+<!--kb-packs-->
+<script>
+/* Pack B+C runtime: scrollytelling reveals + mobile call bar.
+   Runs after parse; content stays visible if this never executes. */
+(function () {
+  document.documentElement.classList.add('js');
+
+  function onReady() {
+    /* ---- scrollytelling: fade/slide sections in as they enter ---- */
+    var special = /special|offer|deal|\bsale\b|limited|coupon|discount|save\b/i;
+    var sections = document.querySelectorAll('body > section, body > main > section, body > main > div > section');
+    var io = ('IntersectionObserver' in window) ? new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' }) : null;
+
+    sections.forEach(function (sec) {
+      if (sec.classList.contains('rv') || sec.classList.contains('rv-pop')) return;
+      var pop = special.test(sec.textContent || '');
+      sec.classList.add(pop ? 'rv-pop' : 'rv');
+      if (io) io.observe(sec);
+      else sec.classList.add('in');
+    });
+
+    /* ---- mobile differentiation: sticky tap-to-call bar ---- */
+    try {
+      var tel = document.querySelector('a[href^="tel:"]');
+      var already = document.querySelector('.kb-callbar, [class*="sticky-call"], [class*="call-bar"]');
+      if (tel && !already) {
+        var name = (document.querySelector('h1') || {}).textContent || 'us';
+        name = name.trim().split('\n')[0].slice(0, 34);
+        var bar = document.createElement('a');
+        bar.className = 'kb-callbar';
+        bar.href = tel.getAttribute('href');
+        bar.textContent = '\uD83D\uDCDE Call ' + name;
+        document.body.appendChild(bar);
+        document.body.classList.add('kb-has-callbar');
+      }
+    } catch (err) { /* never break the page for a call bar */ }
+  }
+
+  if (document.readyState !== 'loading') onReady();
+  else document.addEventListener('DOMContentLoaded', onReady);
+})();
 
 </script>
 </body>
