@@ -689,7 +689,11 @@ section[id] { scroll-margin-top: 64px; }
     items.forEach(function (it, i) { links[i].textContent = it.label; });
     document.body.appendChild(bar);
 
-    var onScroll = function () { bar.classList.toggle('on', window.scrollY > 480); };
+    var navThreshold = function () {
+      var scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      return Math.min(480, Math.max(120, scrollable * 0.35));
+    };
+    var onScroll = function () { bar.classList.toggle('on', window.scrollY > navThreshold()); };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
   }
