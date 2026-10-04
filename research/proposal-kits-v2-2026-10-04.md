@@ -32,9 +32,13 @@ Deliberately ~half of local agency rates. Page count is never the objection — 
 
 ## What's included in each tier (all prospects)
 
-**Starter ($499):** custom site up to 5 pages, GBP setup/optimization, tap-to-call, directions, hours. 3 months care included.
-**Business ($999):** everything in Starter, up to 15 pages, QR table-menu system OR online booking setup, social starter pack, review-request cards with QR. 6 months care included.
-**Complete ($1,250):** everything in Business, unlimited pages, logo design/refresh, menu redesign, 250 business cards designed (print at cost), QR table tents. 12 months care included.
+List every item per tier — never "everything in Starter." The list should look like a lot, because it is.
+
+**Starter ($499)** — 3 months care included: custom-designed website up to 5 pages · Google Business Profile setup & optimization · tap-to-call on every page · directions & map · hours, services & contact details · mobile-first layout · fast load times, no bloated templates.
+
+**Business ($999)** — 6 months care included: custom-designed website up to 15 pages · Google Business Profile setup & optimization · tap-to-call on every page · directions & map · hours, services & contact details · mobile-first layout · fast load times · QR table-menu system OR online booking setup · social starter pack (profiles polished + 10 launch posts) · review-request cards with QR to Google reviews · local SEO basics.
+
+**Complete ($1,250)** — 12 months care included: unlimited-page custom-designed website · Google Business Profile setup & optimization · tap-to-call on every page · directions & map · hours, services & contact details · mobile-first layout · fast load times · QR table-menu system OR online booking setup · social starter pack (profiles polished + 10 launch posts) · review-request cards with QR · local SEO basics · logo design or refresh · menu redesign, print-ready · 250 business cards designed (print at cost) · QR table tents.
 
 ## Notes
 
