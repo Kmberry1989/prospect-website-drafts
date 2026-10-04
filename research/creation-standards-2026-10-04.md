@@ -18,6 +18,19 @@ no site is finished until it passes.
   text, or `text-shadow: 0 1px 3px rgba(0,0,0,.55), 0 2px 14px rgba(0,0,0,.35)`
   on headings/body text (never on buttons — they have their own surfaces).
   Pack A applies this to `.hero`/`[class*="hero"]`/`.banner` text automatically.
+- **Text borders/outlines during creation.** When placing text over any
+  non-solid background (photo, gradient, pattern), add a contrasting outline
+  from the start: `-webkit-text-stroke: 1px rgba(0,0,0,.6)` for display type,
+  or a `paint-order: stroke` SVG-style stroke, or the text-shadow stack above.
+  Do not ship first and scrim later — the stroke goes in with the text.
+- **Buttons: white text needs a dark-enough fill.** Before choosing a brand
+  color for a button background, check white-on-it ≥ 4.5:1. If the brand color
+  is too light, darken the button fill (keep the brand color for text/borders).
+  Never use `:hover` colors to pass the resting-state check.
+- **Dark mode: lighten text, don't lighten surfaces.** Dark-mode palettes
+  lighten *text* colors for dark backgrounds; button/section *backgrounds*
+  stay dark or get darker. A variable used as both text and surface needs two
+  variables, not one flipped value.
 - **No translucent-white text on unknown backgrounds.** `rgba(255,255,255,.65)`
   text is only allowed on a known-dark, near-opaque surface.
 - **Translucent pills/badges need opaque backing.** A `rgba(8,13,16,.36)` pill
