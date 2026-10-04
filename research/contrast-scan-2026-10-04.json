@@ -1,0 +1,6366 @@
+{
+ "allure-hair-artistry": {
+  "light": [
+   {
+    "text": "\u2726 \u2726 \u2726",
+    "fg": "#c98a94",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.78,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u2026",
+    "fg": "#f7eef1",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.14,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#c98a94",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.78,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Facebook",
+    "fg": "#a89aa0",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.69,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#a89aa0",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.69,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Our work",
+    "fg": "#f7eef1",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.14,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "alpha-nails": {
+  "light": [
+   {
+    "text": "\u2726 \u2726 \u2726",
+    "fg": "#d4a437",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.29,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u2026",
+    "fg": "#f5f0e0",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.14,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#d4a437",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.29,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Facebook",
+    "fg": "#9aa3ad",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.56,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#9aa3ad",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.56,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "arties-tenderloin": {
+  "light": [
+   {
+    "text": "Call (765) 457-9003",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "See the menu",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "1938",
+    "fg": "#162333",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Since",
+    "fg": "#162333",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Eight decades of Kokomo history",
+    "fg": "#1b2731",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Kokomo\u2019s protective local secret",
+    "fg": "#e8dcc7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "A working-class institution.",
+    "fg": "#fff7e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Factory workers at lunch. Retirees who know their order by h",
+    "fg": "#e8dcc7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "No trends and no pretense \u2014 just daily hand-breading, genero",
+    "fg": "#e8dcc7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Kokomo\u2019s longest-running restaurant",
+    "fg": "#fff7e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Prices That Make You Feel Like It Is Still 1975",
+    "fg": "#162333",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "The signature",
+    "fg": "#e8dcc7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Fried Breaded Tenderloin Sandwich",
+    "fg": "#fff7e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Hand-breaded daily, never frozen, with a portion so enormous",
+    "fg": "#e8dcc7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "A seat at Kokomo\u2019s counter",
+    "fg": "#fff7e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "The bun looks like a garnish",
+    "fg": "#fff7e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "922 South Main Street",
+    "fg": "#fff7e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Find us on South Main.",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "922 S Main StKokomo, IN 46901",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "A longtime Kokomo neighborhood stop",
+    "fg": "#ffe4c8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Hours",
+    "fg": "#ffd795",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Mon\u2013Sat \u00b7 6 AM\u20132 PMClosed Sundays",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Phone",
+    "fg": "#ffd795",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "(765) 457-9003",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Address",
+    "fg": "#ffd795",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "922 S Main StKokomo, Indiana",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call Artie\u2019s",
+    "fg": "#f1bd50",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "(765) 457-9003",
+    "fg": "#fff5df",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "922 S Main St \u00b7 Kokomo, IN 46901",
+    "fg": "#cfc6b6",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   }
+  ],
+  "dark": [
+   {
+    "text": "Call (765) 457-9003",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "See the menu",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "1938",
+    "fg": "#162333",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Since",
+    "fg": "#162333",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Eight decades of Kokomo history",
+    "fg": "#1b2731",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Kokomo\u2019s protective local secret",
+    "fg": "#e8dcc7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "A working-class institution.",
+    "fg": "#fff7e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Factory workers at lunch. Retirees who know their order by h",
+    "fg": "#e8dcc7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "No trends and no pretense \u2014 just daily hand-breading, genero",
+    "fg": "#e8dcc7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Kokomo\u2019s longest-running restaurant",
+    "fg": "#fff7e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Prices That Make You Feel Like It Is Still 1975",
+    "fg": "#162333",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "The signature",
+    "fg": "#e8dcc7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Fried Breaded Tenderloin Sandwich",
+    "fg": "#fff7e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Hand-breaded daily, never frozen, with a portion so enormous",
+    "fg": "#e8dcc7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "A seat at Kokomo\u2019s counter",
+    "fg": "#fff7e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "The bun looks like a garnish",
+    "fg": "#fff7e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "922 South Main Street",
+    "fg": "#fff7e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Find us on South Main.",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "922 S Main StKokomo, IN 46901",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "A longtime Kokomo neighborhood stop",
+    "fg": "#ffe4c8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Hours",
+    "fg": "#ffd795",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Mon\u2013Sat \u00b7 6 AM\u20132 PMClosed Sundays",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Phone",
+    "fg": "#ffd795",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "(765) 457-9003",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Address",
+    "fg": "#ffd795",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "922 S Main StKokomo, Indiana",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call Artie\u2019s",
+    "fg": "#f1bd50",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "(765) 457-9003",
+    "fg": "#fff5df",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "922 S Main St \u00b7 Kokomo, IN 46901",
+    "fg": "#cfc6b6",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   }
+  ]
+ },
+ "barlows-barbershop": {
+  "light": [
+   {
+    "text": "Downtown Kokomo \u00b7 Indiana",
+    "fg": "#d7d6d0",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Specializing In the Art of Men's Grooming.",
+    "fg": "#d9dddc",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Book an appointment",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (765) 865-5912",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "5.0\u2605 on Google",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Inside Barlow's Barbershop",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Plan your visit",
+    "fg": "#f6f1e7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.13,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Monday\u2013Friday",
+    "fg": "#d3d8d7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.44,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "10 AM\u20138 PM",
+    "fg": "#d3d8d7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.44,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Saturday",
+    "fg": "#d3d8d7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.44,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "10 AM\u20136 PM",
+    "fg": "#d3d8d7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.44,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Sunday",
+    "fg": "#d3d8d7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.44,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "11 AM\u20133 PM",
+    "fg": "#d3d8d7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.44,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Find the shop",
+    "fg": "#f6f1e7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.13,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Call the shop",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Book an appointment",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call to confirm",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ],
+  "dark": [
+   {
+    "text": "Downtown Kokomo \u00b7 Indiana",
+    "fg": "#d7d6d0",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Specializing In the Art of Men's Grooming.",
+    "fg": "#d9dddc",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Book an appointment",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (765) 865-5912",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "5.0\u2605 on Google",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Inside Barlow's Barbershop",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Plan your visit",
+    "fg": "#f6f1e7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.13,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Monday\u2013Friday",
+    "fg": "#d3d8d7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.44,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "10 AM\u20138 PM",
+    "fg": "#d3d8d7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.44,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Saturday",
+    "fg": "#d3d8d7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.44,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "10 AM\u20136 PM",
+    "fg": "#d3d8d7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.44,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Sunday",
+    "fg": "#d3d8d7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.44,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "11 AM\u20133 PM",
+    "fg": "#d3d8d7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.44,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Find the shop",
+    "fg": "#f6f1e7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.13,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Call the shop",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Book an appointment",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call to confirm",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "bens-small-engine": {
+  "light": [
+   {
+    "text": "Small-engine service in Kokomo",
+    "fg": "#f3b08f",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Ben's Small Engine Repair",
+    "fg": "#fffaf0",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Practical service for the machines you count on\u2014from the fir",
+    "fg": "#d8dfdc",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (765) 459-8997",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Request a tune-up",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "906 S Market St \u00b7 Kokomo, Indiana",
+    "fg": "#b9c4c0",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Mowers",
+    "fg": "#eef1ec",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.14,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Seasonal tune-ups & service",
+    "fg": "#bec8c4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.71,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Snowblowers",
+    "fg": "#eef1ec",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.14,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Ready before winter hits",
+    "fg": "#bec8c4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.71,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Diagnostics",
+    "fg": "#eef1ec",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.14,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Find the problem, plan the fix",
+    "fg": "#bec8c4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.71,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Start a tune-up request",
+    "fg": "#f6f4ea",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Fill in the basics, then send the request by text. Ben's can",
+    "fg": "#bec8c4",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Your name",
+    "fg": "#e7ece8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Best callback number",
+    "fg": "#e7ece8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Equipment",
+    "fg": "#e7ece8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Choose one",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Push mower",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Riding mower",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Snowblower",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Trimmer",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Other small engine",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Service needed",
+    "fg": "#e7ece8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Choose one",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Tune-up",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Blade sharpening",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Diagnostics",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Seasonal prep",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Not sure yet",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "What is the machine doing?",
+    "fg": "#e7ece8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Prepare text request",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "This does not book automatically. Your phone's messaging app",
+    "fg": "#9eaaa6",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Your request is ready. Tap below to open it in your messagin",
+    "fg": "#dce3df",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Text request to Ben's",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Talk to the shop",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "REPAIR \u00b7 TUNE \u00b7 SHARPEN",
+    "fg": "#241910",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Built for work.Serviced to last.",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Find the shop",
+    "fg": "#f7f4e9",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "906 S Market StKokomo, IN",
+    "fg": "#f7f4e9",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Call before heading over to confirm current hours and servic",
+    "fg": "#bcc7c2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.74,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(765) 459-8997",
+    "fg": "#f17a40",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.76,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call for service questions, current hours, and availability.",
+    "fg": "#aeb9b5",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.02,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Ben's Small Engine Repair",
+    "fg": "#f2eee5",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.16,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "906 S Market St \u00b7 Kokomo, IN",
+    "fg": "#aeb9b5",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.02,
+    "need": 4.5,
+    "large": false
+   }
+  ],
+  "dark": [
+   {
+    "text": "Small-engine service in Kokomo",
+    "fg": "#f3b08f",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Ben's Small Engine Repair",
+    "fg": "#fffaf0",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Practical service for the machines you count on\u2014from the fir",
+    "fg": "#d8dfdc",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (765) 459-8997",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Request a tune-up",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "906 S Market St \u00b7 Kokomo, Indiana",
+    "fg": "#b9c4c0",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Mowers",
+    "fg": "#eef1ec",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.14,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Seasonal tune-ups & service",
+    "fg": "#bec8c4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.71,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Snowblowers",
+    "fg": "#eef1ec",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.14,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Ready before winter hits",
+    "fg": "#bec8c4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.71,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Diagnostics",
+    "fg": "#eef1ec",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.14,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Find the problem, plan the fix",
+    "fg": "#bec8c4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.71,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Start a tune-up request",
+    "fg": "#f6f4ea",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Fill in the basics, then send the request by text. Ben's can",
+    "fg": "#bec8c4",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Your name",
+    "fg": "#e7ece8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Best callback number",
+    "fg": "#e7ece8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Equipment",
+    "fg": "#e7ece8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Choose one",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Push mower",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Riding mower",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Snowblower",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Trimmer",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Other small engine",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Service needed",
+    "fg": "#e7ece8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Choose one",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Tune-up",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Blade sharpening",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Diagnostics",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Seasonal prep",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Not sure yet",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "What is the machine doing?",
+    "fg": "#e7ece8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Prepare text request",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "This does not book automatically. Your phone's messaging app",
+    "fg": "#9eaaa6",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Your request is ready. Tap below to open it in your messagin",
+    "fg": "#dce3df",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Text request to Ben's",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Talk to the shop",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "REPAIR \u00b7 TUNE \u00b7 SHARPEN",
+    "fg": "#241910",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Built for work.Serviced to last.",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Find the shop",
+    "fg": "#f7f4e9",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "906 S Market StKokomo, IN",
+    "fg": "#f7f4e9",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Call before heading over to confirm current hours and servic",
+    "fg": "#bcc7c2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.74,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(765) 459-8997",
+    "fg": "#f17a40",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.76,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call for service questions, current hours, and availability.",
+    "fg": "#aeb9b5",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.02,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Ben's Small Engine Repair",
+    "fg": "#f2eee5",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.16,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "906 S Market St \u00b7 Kokomo, IN",
+    "fg": "#aeb9b5",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.02,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "bg-handyman": {
+  "light": [
+   {
+    "text": "Handyman Services",
+    "fg": "#ffe8d6",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.18,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "bk-drive-in-rochester": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#157a6e",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#ffffff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "bk-root-beer-gas-city": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#f6f0e2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.14,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call",
+    "fg": "#f6f0e2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.14,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "bk-rootbeer-peru": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#4a2c14",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#f7ead7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.19,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "bryans-painting": {
+  "light": [
+   {
+    "text": "Directions",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "classic-family-hair": {
+  "light": [
+   {
+    "text": "Now Welcoming Clients",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call Now",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Facebook",
+    "fg": "#8a7668",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.31,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#8a7668",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.31,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "coffings-garage-doors": {
+  "light": [
+   {
+    "text": "Garage Doors & Dock Equipment",
+    "fg": "#ffd75e",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.39,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "cone-palace": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#ffffff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "crazy-omelette": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#e2572b",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#ffffff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#e2572b",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.73,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "dads-garage": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Family-run",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "No upselling",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Clean shop",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   }
+  ]
+ },
+ "debs-laundry": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#2447a8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Attendant always on duty",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Family business",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "5.0 stars on Google",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Content managed with SiteKeeper.",
+    "fg": "#8a96b5",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.95,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "denning-automotive": {
+  "light": [
+   {
+    "text": "Mattoon, Illinois \u00b7 Auto repair & towing",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u201cWe are your 1 stop shop for auto repair and service. We pro",
+    "fg": "#e8e9e7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.22,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "24-HR Towing \u2014 Call Now",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "24-hour emergency towing",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Broken down? Call day or night. We\u2019ll come get you and help ",
+    "fg": "#cdd0d2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.55,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "A small-town shop that gets the job done.",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Tom and Doug have earned loyal customers by diagnosing the p",
+    "fg": "#cdd0d2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.55,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "First-name mechanics who listen",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Practical, cost-efficient repairs",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Same-day rescues when the job allows",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Denning Automotive",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "2005 Lake Land Blvd \u00b7 Mattoon, IL",
+    "fg": "#b9bec1",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.88,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "24-hour towing",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Tap to call (217) 234-8365",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ],
+  "dark": [
+   {
+    "text": "Mattoon, Illinois \u00b7 Auto repair & towing",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u201cWe are your 1 stop shop for auto repair and service. We pro",
+    "fg": "#e8e9e7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.22,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "24-HR Towing \u2014 Call Now",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "24-hour emergency towing",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Broken down? Call day or night. We\u2019ll come get you and help ",
+    "fg": "#cdd0d2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.55,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "A small-town shop that gets the job done.",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Tom and Doug have earned loyal customers by diagnosing the p",
+    "fg": "#cdd0d2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.55,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "First-name mechanics who listen",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Practical, cost-efficient repairs",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Same-day rescues when the job allows",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Denning Automotive",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "2005 Lake Land Blvd \u00b7 Mattoon, IL",
+    "fg": "#b9bec1",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.88,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "24-hour towing",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Tap to call (217) 234-8365",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "dennys-hvac": {
+  "light": [
+   {
+    "text": "Heating & Cooling",
+    "fg": "#bfe3ff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Directions",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "dicks-drive-in": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#ffffff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#ffffff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "dillingers-peru": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#c9a227",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.42,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#c9a227",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.42,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#a89a7c",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.77,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "From the kitchen",
+    "fg": "#c9a227",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.42,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Family restaurant & full bar in a historic 1880s downtown bu",
+    "fg": "#a89a7c",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.77,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "dm-small-engine-repair": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#9a8c6e",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.31,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "SiteKeeper-managed site",
+    "fg": "#9a8c6e",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.31,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\ud83d\udcde Call",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\ud83e\udded Directions",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "east-end-muffler": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call the Shop",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   }
+  ]
+ },
+ "el-patron": {
+  "light": [
+   {
+    "text": "Greentown\u2019s only Mexican restaurant",
+    "fg": "#ffe49a",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "A fresh-faced fiesta on Main Street\u2014bright color, a great at",
+    "fg": "#fff8e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Explore the menu",
+    "fg": "#25150f",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call the restaurant",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Fajitas Texanas",
+    "fg": "#fff8e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Seafood Burrito",
+    "fg": "#fff8e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Margaritas",
+    "fg": "#fff8e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Make it a fiesta",
+    "fg": "#effffb",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.03,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Chips, salsa, and something sizzling.",
+    "fg": "#fff8e7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Start with complimentary chips and salsa, settle in with fri",
+    "fg": "#effffb",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.03,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call (765) 408-0268",
+    "fg": "#fff8e7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call before you visit",
+    "fg": "#fff8e7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "El Patron Mexican Restaurant",
+    "fg": "#fff5dd",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.08,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "204 E Main St \u00b7 Greentown, IN",
+    "fg": "#e6c9ad",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.58,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(765) 408-0268",
+    "fg": "#ffd25e",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.44,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "evers-tire-auto": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#f5efdd",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.15,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u260e Call Evers",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "fatt-matts-tatts": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#ffcf3f",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "The cover-up specialist",
+    "fg": "#191410",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "21 years of tattooing",
+    "fg": "#191410",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "4.8 stars on Google",
+    "fg": "#191410",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#ffcf3f",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.47,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Get Directions",
+    "fg": "#ffcf3f",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.47,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#f5efe4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.14,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Content managed with SiteKeeper.",
+    "fg": "#8a7a5f",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.18,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "filament-tattoo-co": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#ffffff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "4.9 stars on Google",
+    "fg": "#ffb347",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Find us on Facebook",
+    "fg": "#ffb347",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#ffb347",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.78,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Get Directions",
+    "fg": "#ffb347",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.78,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#eef1f6",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.13,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Content managed with SiteKeeper.",
+    "fg": "#77808f",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.99,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "fissel-electric": {
+  "light": [
+   {
+    "text": "Electrical Contractor",
+    "fg": "#ffe27a",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.28,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "friermood-tire": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u00b7 Content managed with SiteKeeper.",
+    "fg": "#8f8a7d",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.44,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "frittatas": {
+  "light": [
+   {
+    "text": "Call (765) 626-0239",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "The namesake frittata",
+    "fg": "#fff8eb",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Hoosier Benedict",
+    "fg": "#fff8eb",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Strawberry Barvarian pancakes",
+    "fg": "#fff8eb",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Jumbo Idaho Omelette",
+    "fg": "#fff8eb",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "A Sunday-morning kind of place.",
+    "fg": "#fff8ed",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Warm waitresses, big portions, small prices and a packed boo",
+    "fg": "#fff8ed",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u201cSo grab some friends and come on down to join us for a hard",
+    "fg": "#fff8ed",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call (765) 626-0239",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(765) 626-0239",
+    "fg": "#fff6e8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.07,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Frittatas Restaurant306 Espanol Dr, Kokomo, IN",
+    "fg": "#cebbaa",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.86,
+    "need": 4.5,
+    "large": false
+   }
+  ],
+  "dark": [
+   {
+    "text": "Call (765) 626-0239",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "The namesake frittata",
+    "fg": "#fff8eb",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Hoosier Benedict",
+    "fg": "#fff8eb",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Strawberry Barvarian pancakes",
+    "fg": "#fff8eb",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Jumbo Idaho Omelette",
+    "fg": "#fff8eb",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "A Sunday-morning kind of place.",
+    "fg": "#fff8ed",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Warm waitresses, big portions, small prices and a packed boo",
+    "fg": "#fff8ed",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u201cSo grab some friends and come on down to join us for a hard",
+    "fg": "#fff8ed",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call (765) 626-0239",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(765) 626-0239",
+    "fg": "#fff6e8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.07,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Frittatas Restaurant306 Espanol Dr, Kokomo, IN",
+    "fg": "#cebbaa",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.86,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "hair-heaven-peru": {
+  "light": [
+   {
+    "text": "Peru \u00b7 Indiana",
+    "fg": "#faf7f0",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.07,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u2026",
+    "fg": "#faf7f0",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.07,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call",
+    "fg": "#faf7f0",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.07,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "hair-razors": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#faf6f2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.08,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call",
+    "fg": "#faf6f2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.08,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Get Directions",
+    "fg": "#b87333",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.79,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Facebook",
+    "fg": "#8a757c",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.27,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#8a757c",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.27,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "hairtique-fountain-blues": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#fdf8f0",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call",
+    "fg": "#fdf8f0",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Facebook",
+    "fg": "#8a7a6d",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.13,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#8a7a6d",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.13,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "hometown-family": {
+  "light": [
+   {
+    "text": "Call (765) 627-4025",
+    "fg": "#fffaf3",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "$",
+    "fg": "#35230a",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Friday special",
+    "fg": "#ffe0a0",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "AYCE catfish Fridays",
+    "fg": "#fff8ed",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call ahead for current availability and pricing.",
+    "fg": "#fff3e6",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Come see us",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Right on Main Street.",
+    "fg": "#fff9ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "721 W Main StGreentown, IN",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Hours",
+    "fg": "#fff9ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "\u00b7 Closed \u00b7 6 AM\u20137:30 PM \u00b7 7 AM\u20131:30 PM",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Monday",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Tuesday\u2013Saturday",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Sunday",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "One source lists Sunday closing at 2 PM. Please confirm with",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (765) 627-4025",
+    "fg": "#32230b",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Hometown Family Restaurant",
+    "fg": "#fff5e6",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "721 W Main St, Greentown, IN",
+    "fg": "#fff5e6",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   }
+  ],
+  "dark": [
+   {
+    "text": "Call (765) 627-4025",
+    "fg": "#fffaf3",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "$",
+    "fg": "#35230a",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Friday special",
+    "fg": "#ffe0a0",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "AYCE catfish Fridays",
+    "fg": "#fff8ed",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call ahead for current availability and pricing.",
+    "fg": "#fff3e6",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Come see us",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Right on Main Street.",
+    "fg": "#fff9ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "721 W Main StGreentown, IN",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Hours",
+    "fg": "#fff9ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "\u00b7 Closed \u00b7 6 AM\u20137:30 PM \u00b7 7 AM\u20131:30 PM",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Monday",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Tuesday\u2013Saturday",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Sunday",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "One source lists Sunday closing at 2 PM. Please confirm with",
+    "fg": "#e6f1ee",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (765) 627-4025",
+    "fg": "#32230b",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Hometown Family Restaurant",
+    "fg": "#fff5e6",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "721 W Main St, Greentown, IN",
+    "fg": "#fff5e6",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   }
+  ]
+ },
+ "jackies-family-restaurant": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#ffe9c2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.19,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call",
+    "fg": "#ffe9c2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.19,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "jarrells-auto-repair": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#f2ecdc",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.18,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call to Schedule",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "jeffs-barber-kokomo": {
+  "light": [
+   {
+    "text": "Kokomo \u00b7 Indiana",
+    "fg": "#f5f1e6",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.13,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u2026",
+    "fg": "#f5f1e6",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.13,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call",
+    "fg": "#f5f1e6",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.13,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "jeffs-barber-peru": {
+  "light": [
+   {
+    "text": "Call",
+    "fg": "#f6f2e9",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.12,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "jerry-love-auto": {
+  "light": [
+   {
+    "text": "Jerry\u2019s one-man neighborhood shop",
+    "fg": "#a9d5f5",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Jerry LoveAuto Repair",
+    "fg": "#f8fbfe",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "You talk to Jerry. Jerry works on your vehicle. Straight ans",
+    "fg": "#dce9f4",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Start a service request",
+    "fg": "#102d48",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "4.9\u2605",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "on Google \u00b7 25+ reviews",
+    "fg": "#bdd0df",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Brake work",
+    "fg": "#f8fbfe",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.04,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "A frequently mentioned reason local drivers recommend the sh",
+    "fg": "#cdddea",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.39,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Diagnostics & tuning",
+    "fg": "#f8fbfe",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.04,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Engine diagnostics and tune-ups are recurring strengths in c",
+    "fg": "#cdddea",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.39,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Fair pricing",
+    "fg": "#f8fbfe",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.04,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "\u201cFair price.\u201d \u201cSuper reasonably priced.\u201d \u201cBelow average\u201d pri",
+    "fg": "#cdddea",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.39,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "4.9\u2605",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "on Google",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "25+ reviews",
+    "fg": "#d9edf9",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.2,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "4.9\u2605 on Google",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Preview request",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Right in Kokomo.",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "218 W Jackson St",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Kokomo, IN",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Jerry Love Auto Repair",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "218 W Jackson St \u00b7 Kokomo, Indiana",
+    "fg": "#9fb2c1",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.18,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(765) 452-4755",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   }
+  ],
+  "dark": [
+   {
+    "text": "Jerry\u2019s one-man neighborhood shop",
+    "fg": "#a9d5f5",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Jerry LoveAuto Repair",
+    "fg": "#f8fbfe",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "You talk to Jerry. Jerry works on your vehicle. Straight ans",
+    "fg": "#dce9f4",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Start a service request",
+    "fg": "#102d48",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "4.9\u2605",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "on Google \u00b7 25+ reviews",
+    "fg": "#bdd0df",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Brake work",
+    "fg": "#f8fbfe",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.04,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "A frequently mentioned reason local drivers recommend the sh",
+    "fg": "#cdddea",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.39,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Diagnostics & tuning",
+    "fg": "#f8fbfe",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.04,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Engine diagnostics and tune-ups are recurring strengths in c",
+    "fg": "#cdddea",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.39,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Fair pricing",
+    "fg": "#f8fbfe",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.04,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "\u201cFair price.\u201d \u201cSuper reasonably priced.\u201d \u201cBelow average\u201d pri",
+    "fg": "#cdddea",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.39,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "4.9\u2605",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "on Google",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "25+ reviews",
+    "fg": "#d9edf9",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.2,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "4.9\u2605 on Google",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Preview request",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Right in Kokomo.",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "218 W Jackson St",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Kokomo, IN",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Jerry Love Auto Repair",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "218 W Jackson St \u00b7 Kokomo, Indiana",
+    "fg": "#9fb2c1",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.18,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(765) 452-4755",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   }
+  ]
+ },
+ "karnes-sweeper": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#8b8570",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.69,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "SiteKeeper-managed site",
+    "fg": "#8b8570",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.69,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\ud83d\udcde Call",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\ud83e\udded Directions",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "kissanes-memorial-flowers": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#5d6b4f",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "24 years in business",
+    "fg": "#5d6b4f",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "BBB A+ rating",
+    "fg": "#5d6b4f",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "4.8 stars on Google",
+    "fg": "#5d6b4f",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Content managed with SiteKeeper.",
+    "fg": "#a89d82",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.69,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "marion-sew-and-vac": {
+  "light": [
+   {
+    "text": "Loading\u2026",
+    "fg": "#8a755e",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.39,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "SiteKeeper-managed site",
+    "fg": "#8a755e",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.39,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\ud83d\udcde Call",
+    "fg": "#fff8ec",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\ud83e\udded Directions",
+    "fg": "#fff8ec",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "mb-body-shop": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   }
+  ]
+ },
+ "melskis-physical-graffiti": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#ffffff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Woman-owned shop",
+    "fg": "#161216",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "4.8 stars on Google",
+    "fg": "#161216",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Find us on Facebook",
+    "fg": "#ff8fb8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#ff8fb8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.13,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Get Directions",
+    "fg": "#ff8fb8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.13,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#f3eef2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.15,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Content managed with SiteKeeper.",
+    "fg": "#8f7d88",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.85,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "mens-classic-cuts": {
+  "light": [
+   {
+    "text": "Call",
+    "fg": "#f4efe6",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.15,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "mid-central-appliance": {
+  "light": [
+   {
+    "text": "Mid Central Appliance Repair",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(479) 318-6855",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call (479) 318-6855",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call for availability",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Ask about the next service opening",
+    "fg": "#c8d6e4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.48,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Household appliances",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Common kitchen and laundry repairs",
+    "fg": "#c8d6e4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.48,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Decatur-based",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call to confirm your service address",
+    "fg": "#c8d6e4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.48,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Local service, centered in Decatur.",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Mid Central Appliance Repair is located on North Main Street",
+    "fg": "#c9d7e4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.47,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Confirm my service area",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Decatur, IL",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call to confirm coverage",
+    "fg": "#d4e3ef",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Please choose an appliance, enter the service city or ZIP co",
+    "fg": "#ffaaa5",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.82,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Prepare call details",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call now",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Ready to talk through the appliance problem?",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Mid Central Appliance Repair \u00b7 2193 N Main St \u00b7 Decatur, IL",
+    "fg": "#c7d5e2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.5,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Tap to call",
+    "fg": "#c7d5e2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.5,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(479) 318-6855",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   }
+  ],
+  "dark": [
+   {
+    "text": "Mid Central Appliance Repair",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(479) 318-6855",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call (479) 318-6855",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call for availability",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Ask about the next service opening",
+    "fg": "#c8d6e4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.48,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Household appliances",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Common kitchen and laundry repairs",
+    "fg": "#c8d6e4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.48,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Decatur-based",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call to confirm your service address",
+    "fg": "#c8d6e4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.48,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Local service, centered in Decatur.",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Mid Central Appliance Repair is located on North Main Street",
+    "fg": "#c9d7e4",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.47,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Confirm my service area",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Decatur, IL",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call to confirm coverage",
+    "fg": "#d4e3ef",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Please choose an appliance, enter the service city or ZIP co",
+    "fg": "#ffaaa5",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.82,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Prepare call details",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call now",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Ready to talk through the appliance problem?",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Mid Central Appliance Repair \u00b7 2193 N Main St \u00b7 Decatur, IL",
+    "fg": "#c7d5e2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.5,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Tap to call",
+    "fg": "#c7d5e2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.5,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(479) 318-6855",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   }
+  ]
+ },
+ "mind-over-metal": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   }
+  ]
+ },
+ "mr-bs-laundry-tanning": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#0d6e80",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Do laundry while you tan",
+    "fg": "#123b4a",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Established 2000",
+    "fg": "#123b4a",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "4.8 stars on Google",
+    "fg": "#123b4a",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Content managed with SiteKeeper.",
+    "fg": "#7fa3ae",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.71,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "murrays-body-shop": {
+  "light": [
+   {
+    "text": "Loading\u2026",
+    "fg": "#8a857a",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.67,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u00b7 Content managed with SiteKeeper.",
+    "fg": "#8a857a",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.67,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "nails-number-1": {
+  "light": [
+   {
+    "text": "Call",
+    "fg": "#fdf9fa",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.04,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Facebook",
+    "fg": "#8a7a82",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.05,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#8a7a82",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.05,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "neffs-septic": {
+  "light": [
+   {
+    "text": "Septic Tank & Sewer Service",
+    "fg": "#f5c26b",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.64,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "pauleys-septic": {
+  "light": [
+   {
+    "text": "Sewer & Septic Services",
+    "fg": "#e8cf7a",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.54,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "phil-and-cheryls-grill": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#a5672e",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#ffffff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "precision-autotech": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "ASE CERTIFIED MASTER TECHNICIAN",
+    "fg": "#a9c3d8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   }
+  ]
+ },
+ "primebridge-appliance": {
+  "light": [
+   {
+    "text": "Appliance repair in Mattoon, Illinois",
+    "fg": "#edf3f0",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "PrimeBridge Appliance Repair Co",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "When a major appliance stops working, get a clear path forwa",
+    "fg": "#edf3f0",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (217) 292-6509",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Prepare a repair request",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Service area",
+    "fg": "#d9e5df",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.29,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Local service, based in Mattoon.",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Need appliance help nearby? Call to confirm current service ",
+    "fg": "#d9e5df",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.29,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Mattoon, Illinois",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Serving customers from the E Vanderhoof Street location.",
+    "fg": "#d9e5df",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.29,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Prepare request summary",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "PrimeBridge Appliance Repair Co",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "1566 E Vanderhoof St \u00b7 Mattoon, Illinois",
+    "fg": "#bcd0c7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.62,
+    "need": 4.5,
+    "large": false
+   }
+  ],
+  "dark": [
+   {
+    "text": "Appliance repair in Mattoon, Illinois",
+    "fg": "#edf3f0",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "PrimeBridge Appliance Repair Co",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "When a major appliance stops working, get a clear path forwa",
+    "fg": "#edf3f0",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (217) 292-6509",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Prepare a repair request",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Service area",
+    "fg": "#d9e5df",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.29,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Local service, based in Mattoon.",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Need appliance help nearby? Call to confirm current service ",
+    "fg": "#d9e5df",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.29,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Mattoon, Illinois",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Serving customers from the E Vanderhoof Street location.",
+    "fg": "#d9e5df",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.29,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Prepare request summary",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "PrimeBridge Appliance Repair Co",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "1566 E Vanderhoof St \u00b7 Mattoon, Illinois",
+    "fg": "#bcd0c7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.62,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "roann-engraving": {
+  "light": [
+   {
+    "text": "Roann",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Engraving",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Request a custom order",
+    "fg": "#23190d",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (260) 229-1640",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Gifts & monograms",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Awards & trophies",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Memorial pieces",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "Make it personal.",
+    "fg": "#f3eee3",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.16,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "rock-solid-concrete": {
+  "light": [
+   {
+    "text": "Concrete Contractor",
+    "fg": "#ffb37a",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Directions",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "ronas-alterations": {
+  "light": [
+   {
+    "text": "Loading\u2026",
+    "fg": "#a39d8d",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.7,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "SiteKeeper-managed site",
+    "fg": "#a39d8d",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.7,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "samis-shags-n-wags": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#c2432b",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Gentle with nervous pups",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "4.9 stars on Google",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Get Directions",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Content managed with SiteKeeper.",
+    "fg": "#a08672",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.42,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "schroders-5th-street-barber": {
+  "light": [
+   {
+    "text": "Logansport \u00b7 Indiana",
+    "fg": "#f7f2e8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.12,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u2026",
+    "fg": "#f7f2e8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.12,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call",
+    "fg": "#f7f2e8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.12,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "securepath-appliance": {
+  "light": [
+   {
+    "text": "Call (217) 564-5819",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Appliance repair in Decatur, Illinois",
+    "fg": "#9fd2db",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Get the household back on track.",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "SecurePath Appliance Repair Group helps diagnose and repair ",
+    "fg": "#d7e6ea",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Tap to call",
+    "fg": "#1f130c",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Prepare a service request",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call to discuss the appliance, symptoms, and current schedul",
+    "fg": "#a9c3cc",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Create request summary",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Copy summary",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Hours & location",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Ready when something at home needs attention.",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Call for current hours, availability, and service-area confi",
+    "fg": "#bed1d8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.58,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Address",
+    "fg": "#8fb0ba",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.31,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "225 S Stevens AveDecatur, IL",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Phone",
+    "fg": "#8fb0ba",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.31,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(217) 564-5819",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Hours",
+    "fg": "#8fb0ba",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.31,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call for current availability",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "SecurePath Appliance Repair Group \u00b7 225 S Stevens Ave, Decat",
+    "fg": "#9fb7c0",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.1,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(217) 564-5819",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ],
+  "dark": [
+   {
+    "text": "Call (217) 564-5819",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Appliance repair in Decatur, Illinois",
+    "fg": "#9fd2db",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Get the household back on track.",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 3.0,
+    "warn": "over-image"
+   },
+   {
+    "text": "SecurePath Appliance Repair Group helps diagnose and repair ",
+    "fg": "#d7e6ea",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Tap to call",
+    "fg": "#1f130c",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Prepare a service request",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call to discuss the appliance, symptoms, and current schedul",
+    "fg": "#a9c3cc",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Create request summary",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Copy summary",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Hours & location",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Ready when something at home needs attention.",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Call for current hours, availability, and service-area confi",
+    "fg": "#bed1d8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.58,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Address",
+    "fg": "#8fb0ba",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.31,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "225 S Stevens AveDecatur, IL",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Phone",
+    "fg": "#8fb0ba",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.31,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(217) 564-5819",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Hours",
+    "fg": "#8fb0ba",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.31,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call for current availability",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "SecurePath Appliance Repair Group \u00b7 225 S Stevens Ave, Decat",
+    "fg": "#9fb7c0",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.1,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(217) 564-5819",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "shear-envy-studio": {
+  "light": [
+   {
+    "text": "\u2726 \u2726 \u2726",
+    "fg": "#3fa98b",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.89,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u2026",
+    "fg": "#f2f5f3",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#3fa98b",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.89,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Facebook",
+    "fg": "#93a09b",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.71,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#93a09b",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.71,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "shear-image": {
+  "light": [
+   {
+    "text": "Call",
+    "fg": "#faf7fb",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Facebook",
+    "fg": "#8d7a93",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.93,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#8d7a93",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.93,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "south-peru-hair-boutique": {
+  "light": [
+   {
+    "text": "\u2726 \u2726 \u2726",
+    "fg": "#d4af6a",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.07,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u2026",
+    "fg": "#f2ead6",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.2,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#d4af6a",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.07,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Facebook",
+    "fg": "#a9b39a",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.19,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#a9b39a",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.19,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "south-pole": {
+  "light": [
+   {
+    "text": "Tipton, Indiana",
+    "fg": "#fff6d7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "The South Pole",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Tasty tenderloins, hot dogs, homemade coney sauce and refres",
+    "fg": "#fff9e8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (765) 675-6869",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "See the full menu",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "5.0\u2605",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Rated 5.0 on Google",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Chocolate-dipped soft-serve",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Chipwich",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Deer Tracks",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Fresh peach ice cream",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Two scoops, South Pole style",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Sandwiches & baskets",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Shakes & sundaes",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Cold drinks",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "\u201cThe large chocolate Dipped Top, just like when I was a kid.",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Pure small-town ice-cream-parlor nostalgia: a polar-blue dri",
+    "fg": "#f8f4e9",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Hours",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Monday\u2013Friday",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "11 AM\u20139 PM",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Saturday",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "11 AM\u20138 PM",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Sunday",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Closed",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Please confirm evening closing times with the owner.",
+    "fg": "#fff9e8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.05,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "The South Pole501 S Main St \u00b7 Tipton, Indiana",
+    "fg": "#d8d4c7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.48,
+    "need": 4.5,
+    "large": false
+   }
+  ],
+  "dark": [
+   {
+    "text": "Tipton, Indiana",
+    "fg": "#fff6d7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "The South Pole",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Tasty tenderloins, hot dogs, homemade coney sauce and refres",
+    "fg": "#fff9e8",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (765) 675-6869",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "See the full menu",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "5.0\u2605",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Rated 5.0 on Google",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Chocolate-dipped soft-serve",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Chipwich",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Deer Tracks",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Fresh peach ice cream",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Two scoops, South Pole style",
+    "fg": "white",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Sandwiches & baskets",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Shakes & sundaes",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "Cold drinks",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "\u201cThe large chocolate Dipped Top, just like when I was a kid.",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Pure small-town ice-cream-parlor nostalgia: a polar-blue dri",
+    "fg": "#f8f4e9",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Hours",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Monday\u2013Friday",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "11 AM\u20139 PM",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Saturday",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "11 AM\u20138 PM",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Sunday",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Closed",
+    "fg": "white",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Please confirm evening closing times with the owner.",
+    "fg": "#fff9e8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.05,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "The South Pole501 S Main St \u00b7 Tipton, Indiana",
+    "fg": "#d8d4c7",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.48,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "stoltes-pools-spas": {
+  "light": [
+   {
+    "text": "Pools, Spas & Service",
+    "fg": "#ffdf80",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.3,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "straight-edge-salon": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#f4f6f8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.08,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call",
+    "fg": "#f4f6f8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.08,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Facebook",
+    "fg": "#7a8a99",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.55,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#7a8a99",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.55,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "sycamore-drive-in": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#0f7b8a",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#ffffff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "tarks-pizza": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#ffffff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#ffffff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "tates-engraving": {
+  "light": [
+   {
+    "text": "Dream up a custom piece",
+    "fg": "#1f2521",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (765) 868-4999",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Quiet craft. Personal meaning.",
+    "fg": "#f4f1e9",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.13,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "\u201cTate's laser engraving can create a custom gift in a timely",
+    "fg": "#f4f1e9",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.13,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "01 \u00b7 Dream it up",
+    "fg": "#e5b18e",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.91,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "02 \u00b7 Work out the details",
+    "fg": "#e5b18e",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.91,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "03 \u00b7 Make it a keepsake",
+    "fg": "#e5b18e",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.91,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Prepare my order brief",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call Tate\u2019s",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Custom engraving and personalized gifts in Kokomo, Indiana.",
+    "fg": "#aeb8b0",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.04,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call (765) 868-4999",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ],
+  "dark": [
+   {
+    "text": "Dream up a custom piece",
+    "fg": "#1f2521",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (765) 868-4999",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Quiet craft. Personal meaning.",
+    "fg": "#f4f1e9",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.13,
+    "need": 3.0,
+    "large": true
+   },
+   {
+    "text": "\u201cTate's laser engraving can create a custom gift in a timely",
+    "fg": "#f4f1e9",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.13,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "01 \u00b7 Dream it up",
+    "fg": "#e5b18e",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.91,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "02 \u00b7 Work out the details",
+    "fg": "#e5b18e",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.91,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "03 \u00b7 Make it a keepsake",
+    "fg": "#e5b18e",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.91,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Prepare my order brief",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call Tate\u2019s",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Custom engraving and personalized gifts in Kokomo, Indiana.",
+    "fg": "#aeb8b0",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.04,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call (765) 868-4999",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "tipton-nails": {
+  "light": [
+   {
+    "text": "Call",
+    "fg": "#f4faf8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.06,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Facebook",
+    "fg": "#758a84",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.67,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#758a84",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.67,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "tracks-end-restaurant": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#b08d3f",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.12,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#b08d3f",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.12,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#a9b2b8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.15,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "No-frills railroad diner \u00b7 Outdoor seating \u00b7 Wheelchair acce",
+    "fg": "#a9b2b8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.15,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "twisted-scissors": {
+  "light": [
+   {
+    "text": "Now Welcoming Clients",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call Now",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Facebook",
+    "fg": "#62807b",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.29,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#62807b",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.29,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "two-sisters-housekeeping": {
+  "light": [
+   {
+    "text": "Now Welcoming Clients",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call Now",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "uptown-style": {
+  "light": [
+   {
+    "text": "Wabash \u00b7 Indiana",
+    "fg": "#f8f4ea",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "\u2026",
+    "fg": "#f8f4ea",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call",
+    "fg": "#f8f4ea",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "usa-nails": {
+  "light": [
+   {
+    "text": "Call",
+    "fg": "#f7f9fc",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.05,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Facebook",
+    "fg": "#7a8496",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.77,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#7a8496",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.77,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "wally-and-olly": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#e86a9b",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call",
+    "fg": "#ffffff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Directions",
+    "fg": "#e86a9b",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.01,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#9a6f82",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.23,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Hard-dip ice cream, shakes, sundaes & concession food",
+    "fg": "#9a6f82",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.23,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "walt-moss-barber": {
+  "light": [
+   {
+    "text": "Call",
+    "fg": "#f7f3e8",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.11,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "williams-small-engines": {
+  "light": [
+   {
+    "text": "\u2026",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Loading\u2026",
+    "fg": "#8a857c",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.67,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "SiteKeeper-managed site",
+    "fg": "#8a857c",
+    "bg": "rgb(255,255,255)",
+    "ratio": 3.67,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ },
+ "winnett-automotive": {
+  "light": [
+   {
+    "text": "Services",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Location",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Request a quote",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Auto repair in Mattoon, Illinois",
+    "fg": "#c5d8e7",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "WinnettAutomotive",
+    "fg": "#f4f8fb",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Straight answers. Solid repairs. A local shop for the mainte",
+    "fg": "#e3edf3",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Call (217) 460-9390",
+    "fg": "#17202a",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Prepare a quote request",
+    "fg": "#fff",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "1805 Lafayette Ave \u00b7 Mattoon, IL",
+    "fg": "#aebfcb",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Maintenance to major repairs",
+    "fg": "#173047",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Start with a conversation.",
+    "fg": "#547086",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Car care without the runaround",
+    "fg": "#edf5fa",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "A neighborhood auto shop should make the next step clear. Br",
+    "fg": "#c8d7e2",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.47,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Clear",
+    "fg": "#edf5fa",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Understand the recommended work.",
+    "fg": "#b9cad6",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.68,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Practical",
+    "fg": "#edf5fa",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Focus on the repair in front of you.",
+    "fg": "#b9cad6",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.68,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Local",
+    "fg": "#edf5fa",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Conveniently located in Mattoon.",
+    "fg": "#b9cad6",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.68,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Direct",
+    "fg": "#edf5fa",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.1,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call and talk through the details.",
+    "fg": "#b9cad6",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.68,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "1",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "2",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "3",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Copy quote details",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Call the shop",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Lafayette Avenue \u00b7 Mattoon",
+    "fg": "#d5e5ef",
+    "bg": "image/gradient",
+    "ratio": null,
+    "need": 4.5,
+    "warn": "over-image"
+   },
+   {
+    "text": "Ready to talk about your vehicle?",
+    "fg": "#e5eff5",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.17,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "Winnett Automotive \u00b7 1805 Lafayette Ave, Mattoon, IL",
+    "fg": "#b9cad6",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.68,
+    "need": 4.5,
+    "large": false
+   },
+   {
+    "text": "(217) 460-9390",
+    "fg": "#fff",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.0,
+    "need": 4.5,
+    "large": false
+   }
+  ]
+ }
+}

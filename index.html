@@ -79,6 +79,78 @@
 </style>
 </head>
 <body>
+<style>
+/* ---- Padlock gate ---- */
+body:not(.unlocked){overflow:hidden;}
+body:not(.unlocked) .site-nav, body:not(.unlocked) .wrap{display:none;}
+#lockscreen{position:fixed;inset:0;z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:radial-gradient(circle at 50% 35%, #1b2438 0%, #0b0f1a 70%);color:#e8ecf4;text-align:center;padding:2rem;
+  transition:opacity .7s ease, transform .7s ease;}
+body.unlocked #lockscreen{opacity:0;transform:scale(1.18);pointer-events:none;}
+.lock-stage{position:relative;width:min(74vmin,440px);margin-bottom:1rem;}
+#padlock{width:100%;height:auto;display:block;filter:drop-shadow(0 24px 40px rgba(0,0,0,.5));}
+#padlock .pupil{animation:plook 3.4s ease-in-out infinite;}
+@keyframes plook{0%,100%{transform:translate(0,0)}25%{transform:translate(-6px,3px)}50%{transform:translate(6px,-3px)}75%{transform:translate(-2px,5px)}}
+#shackleG{transform-origin:285px 195px;transition:transform .5s cubic-bezier(.3,1.7,.5,1);}
+body.lock-open #shackleG{transform:rotate(-42deg);}
+#padlock .m-happy{display:none;}
+body.lock-open #padlock .m-worried{display:none;}
+body.lock-open #padlock .m-happy{display:block;}
+body.lock-open #padlock{animation:pbounce .6s ease;}
+@keyframes pbounce{0%{transform:translateY(0)}35%{transform:translateY(-26px) rotate(-3deg)}70%{transform:translateY(6px) rotate(2deg)}100%{transform:translateY(0)}}
+#padlock.deny{animation:dshake .5s ease;}
+@keyframes dshake{0%,100%{transform:translateX(0)}20%{transform:translateX(-18px)}40%{transform:translateX(16px)}60%{transform:translateX(-10px)}80%{transform:translateX(8px)}}
+#lockkey{position:absolute;left:50%;top:79%;width:118px;z-index:5;opacity:0;
+  transform:translate(calc(-50% + 78vw),-50%) rotate(-30deg);
+  transition:transform 1s cubic-bezier(.25,.9,.3,1), opacity .3s;}
+body.key-in #lockkey{opacity:1;transform:translate(-58%,-50%) rotate(8deg);}
+body.key-turn #lockkey{animation:kturn .55s ease 2;}
+@keyframes kturn{0%{transform:translate(-58%,-50%) rotate(8deg)}35%{transform:translate(-58%,-50%) rotate(38deg)}70%{transform:translate(-58%,-50%) rotate(-12deg)}100%{transform:translate(-58%,-50%) rotate(8deg)}}
+body.lock-open #lockkey{opacity:0;transform:translate(-58%,-50%) scale(.3);transition:opacity .25s, transform .25s;}
+.lock-title{font-size:clamp(2.6rem,9vw,4.5rem);font-weight:800;letter-spacing:.04em;margin:0 0 .4rem;}
+.lock-sub{color:#9aa5b8;font-size:1.02rem;line-height:1.6;margin:0 0 1.6rem;transition:opacity .3s;}
+#lock-signin{font:700 1.05rem/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  background:#fff;color:#1a2233;border:0;border-radius:999px;padding:1rem 2.2rem;cursor:pointer;
+  box-shadow:0 10px 30px rgba(0,0,0,.45);transition:opacity .3s, transform .15s;}
+#lock-signin:hover{transform:scale(1.04);}
+body.locking #lock-signin, body.locking .lock-title, body.locking .lock-sub{opacity:0;pointer-events:none;}
+.lock-denied{margin-top:1.2rem;color:#e88;}
+.lock-denied button{background:none;border:1px solid #e88;color:#e88;border-radius:999px;padding:.5rem 1.1rem;font:inherit;cursor:pointer;}
+@media (prefers-reduced-motion: reduce){
+  #lockscreen *, #padlock .pupil{animation:none !important;transition-duration:.01ms !important;}
+}
+</style>
+<div id="lockscreen">
+  <div class="lock-stage">
+    <svg id="padlock" viewBox="0 0 400 470" aria-hidden="true">
+      <g id="shackleG">
+        <path d="M115 195 V115 a85 85 0 0 1 170 0 V195" fill="none" stroke="#aab4c8" stroke-width="34" stroke-linecap="round"/>
+        <path d="M115 195 V115 a85 85 0 0 1 170 0 V195" fill="none" stroke="#d5dcee" stroke-width="12" stroke-linecap="round" opacity=".55"/>
+      </g>
+      <rect x="62" y="185" width="276" height="228" rx="42" fill="#f5b942"/>
+      <rect x="62" y="185" width="276" height="228" rx="42" fill="none" stroke="#d99a26" stroke-width="7"/>
+      <rect x="86" y="209" width="90" height="26" rx="13" fill="#ffd97a" opacity=".8"/>
+      <g>
+        <circle cx="138" cy="272" r="25" fill="#fff"/><circle class="pupil" cx="138" cy="272" r="10" fill="#20263a"/>
+        <circle cx="262" cy="272" r="25" fill="#fff"/><circle class="pupil" cx="262" cy="272" r="10" fill="#20263a"/>
+      </g>
+      <path class="m-worried" d="M172 348 q28 -20 56 0" fill="none" stroke="#20263a" stroke-width="9" stroke-linecap="round"/>
+      <path class="m-happy" d="M168 336 q32 30 64 0" fill="none" stroke="#20263a" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="200" cy="388" r="13" fill="#20263a"/>
+    </svg>
+    <svg id="lockkey" viewBox="0 0 120 120" aria-hidden="true">
+      <circle cx="86" cy="60" r="24" fill="none" stroke="#ffd75e" stroke-width="13"/>
+      <circle cx="86" cy="60" r="24" fill="none" stroke="#b98d1e" stroke-width="3"/>
+      <rect x="8" y="53" width="58" height="14" rx="5" fill="#ffd75e"/>
+      <rect x="20" y="62" width="9" height="22" fill="#ffd75e"/>
+      <rect x="35" y="62" width="9" height="15" fill="#ffd75e"/>
+    </svg>
+  </div>
+  <h1 class="lock-title">LOCKED.</h1>
+  <p class="lock-sub" id="lock-sub">This sales pipeline belongs to Kyle Berry.<br>Sign in with Google to peek inside.</p>
+  <button id="lock-signin">Sign in with Google</button>
+  <p class="lock-denied" id="lock-denied" hidden>That Google account isn't on the list. <button id="lock-signout" type="button">Sign out</button></p>
+</div>
 <!--site-nav-->
 <style>
 .site-nav{background:#0b101c;border-bottom:1px solid #24304a;}
@@ -233,10 +305,12 @@ function saveLocal(){ try { localStorage.setItem(LS_KEY, JSON.stringify(store));
 
 /* ---- Firebase sync (Google sign-in; Firestore doc tracker/state) ---- */
 let db = null, auth = null, cloudTimer = null, unsub = null, signedIn = false;
+const ALLOWLIST = ['kylematthewberry@gmail.com','rochelleberry731@gmail.com'];
+let authorized = false;
 function cloudAvailable(){ return !!firebaseConfig && typeof firebase !== 'undefined'; }
 function docRef(){ return db.collection('tracker').doc('state'); }
 function scheduleCloudSave(){
-  if (!signedIn || !db) return;
+  if (!authorized || !db) return;
   clearTimeout(cloudTimer);
   cloudTimer = setTimeout(()=>{
     store.updatedAt = Date.now();
@@ -260,18 +334,27 @@ function initFirebase(){
     if (signedIn) { auth.signOut(); }
     else { auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()); }
   });
+  document.getElementById('lock-signin').addEventListener('click', ()=> btn.click());
+  document.getElementById('lock-signout').addEventListener('click', ()=> auth.signOut());
   auth.onAuthStateChanged(user=>{
     signedIn = !!user;
-    document.getElementById('auth-dot').classList.toggle('on', signedIn);
-    document.getElementById('auth-text').textContent = signedIn ? (user.email || 'Signed in') : 'Not signed in';
+    const email = user && user.email;
+    authorized = !!user && ALLOWLIST.includes(email);
+    document.getElementById('auth-dot').classList.toggle('on', authorized);
+    document.getElementById('auth-text').textContent = authorized ? email : (signedIn ? email + ' (not authorized)' : 'Not signed in');
     btn.textContent = signedIn ? 'Sign out' : 'Sign in with Google';
-    document.getElementById('sync-note').textContent = signedIn
+    document.getElementById('sync-note').textContent = authorized
       ? 'Signed in — pipeline syncs across your devices.'
       : 'Sign in to sync your pipeline across devices. Otherwise everything is saved only in this browser.';
     if (unsub){ unsub(); unsub = null; }
-    if (signedIn){
+    if (authorized){
       docRef().get().then(snap=>{ if (snap.exists) applyRemote(snap.data()); scheduleCloudSave(); }).catch(()=>{});
       unsub = docRef().onSnapshot(snap=>{ if (snap.exists) applyRemote(snap.data()); }, ()=>{});
+      playUnlock();
+    } else if (signedIn){
+      showDenied();
+    } else {
+      showLock();
     }
   });
 }
@@ -389,8 +472,50 @@ document.getElementById('mtg-add').addEventListener('click', ()=>{
   save(); renderCal(); renderDay();
 });
 
+/* ---- padlock gate ---- */
+let unlocked = false;
+function resetLock(){
+  document.body.classList.remove('unlocked','locking','key-in','key-turn','lock-open');
+  document.getElementById('lock-denied').hidden = true;
+  document.getElementById('lock-signin').style.display = '';
+  const sub = document.getElementById('lock-sub');
+  sub.innerHTML = 'This sales pipeline belongs to Kyle Berry.<br>Sign in with Google to peek inside.';
+  const pl = document.getElementById('padlock');
+  pl.classList.remove('deny'); void pl.offsetWidth;
+}
+function showLock(){ resetLock(); }
+function showDenied(){
+  resetLock();
+  document.getElementById('lock-denied').hidden = false;
+  document.getElementById('lock-signin').style.display = 'none';
+  document.getElementById('lock-sub').innerHTML = 'Nope. This pipeline is private.';
+  const pl = document.getElementById('padlock');
+  pl.classList.add('deny');
+}
+function playUnlock(){
+  if (unlocked) return;
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.body.classList.add('locking');
+  const finish = ()=>{
+    document.body.classList.add('unlocked');
+    unlocked = true;
+    renderAll();
+    setTimeout(()=>{ document.getElementById('lockscreen').style.display = 'none'; }, 800);
+  };
+  if (reduce){ finish(); return; }
+  setTimeout(()=> document.body.classList.add('key-in'), 350);
+  setTimeout(()=> document.body.classList.add('key-turn'), 1400);
+  setTimeout(()=>{ document.body.classList.remove('key-turn'); document.body.classList.add('lock-open'); }, 2100);
+  setTimeout(finish, 2900);
+}
+if (typeof firebase === 'undefined'){
+  setTimeout(()=>{
+    if (!unlocked) document.getElementById('lock-sub').innerHTML =
+      'Sign-in could not load. Check your connection and reload the page.';
+  }, 6000);
+}
+
 initFirebase();
-renderAll();
 </script>
 </body>
 </html>
